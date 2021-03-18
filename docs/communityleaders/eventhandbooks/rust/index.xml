@@ -348,12 +348,7 @@ Note: The RSVP limits you set in Bevy do not translate to meetup. The best way t
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Get the latest version of Rust by running rustup update.&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;rustup update
 
-&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;rust-analyzer&#34;&gt;Rust Analyzer&lt;/h1&gt;
-&lt;p&gt;&lt;a href=&#34;https://marketplace.visualstudio.com/items?itemName=matklad.rust-analyzer&#34;&gt;VS Code MarketPlace&lt;/a&gt; &lt;br&gt;
-Bringing a great IDE experience to the Rust programming language.
-&lt;a href=&#34;https://rust-analyzer.github.io/manual.html#installation&#34;&gt;https://rust-analyzer.github.io/manual.html#installation&lt;/a&gt;&lt;/p&gt;
-&lt;h1 id=&#34;create-world-famous-hello-world-rust-application&#34;&gt;Create world famous &amp;ldquo;Hello World!&amp;rdquo; Rust Application&lt;/h1&gt;
-
+&lt;/code&gt;&lt;/pre&gt;
       </description>
     </item>
     
