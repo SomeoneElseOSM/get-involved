@@ -1,0 +1,1426 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title> – Docker for Dotnet </title>
+    <link>https://docker.github.io/get-involved/docs/communityleaders/eventhandbooks/dotnet/</link>
+    <description>Recent content in Docker for Dotnet  on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="https://docker.github.io/get-involved/docs/communityleaders/eventhandbooks/dotnet/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: Event Checklist</title>
+      <link>https://docker.github.io/get-involved/docs/communityleaders/eventhandbooks/dotnet/checklists/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docker.github.io/get-involved/docs/communityleaders/eventhandbooks/dotnet/checklists/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;before-the-workshop&#34;&gt;Before the workshop&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;left&#34;&gt;Step #&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Name of Objectives&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Status&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;#getting-familiar-with-bevy-virtual&#34;&gt;Getting Familiar with Bevy Virtual&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;☑️&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;#planning-an-event-agenda&#34;&gt;Planning an Event Agenda&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;☑️&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;3&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;#setting-up-event-registration-page&#34;&gt;Setting up Event Registration Page&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;☑️&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;#sending-confirmation-email-for-workshop&#34;&gt;Sending confirmation email for workshop&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;☑️&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;during-the-workshop&#34;&gt;During the workshop&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;left&#34;&gt;Step #&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Name of Objectives&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Status&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;5&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;#conducting-attendee-survey&#34;&gt;Conducting Attendee Survey&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;☑️&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;after-the-workshop&#34;&gt;After the workshop&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;left&#34;&gt;Step #&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Name of Objectives&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Status&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;6&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;#post-event-followup&#34;&gt;Post-Event FollowUp&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;☑️&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;7&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;#community-leader-survey&#34;&gt;Community Leader Survey&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;☑️&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;8&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;#attendee-survey&#34;&gt;Attendee Survey&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;☑️&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;getting-familiar-with-bevy-virtual&#34;&gt;Getting Familiar with Bevy Virtual&lt;/h2&gt;
+&lt;p&gt;Docker community leaders uses Bevy (&lt;a href=&#34;https://events.docker.com&#34;&gt;https://events.docker.com&lt;/a&gt;) tool to conduct virtual Meetup events. Bevy is the tool that provides the MOST features to your Community, including:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;2 way integration with Meetup.com (create your event in Bevy and it posts to your meetup page and RSVPs from your event on meetup sync with your Bevy events.docker.com page).
+Note: The RSVP limits you set in Bevy do not translate to meetup. The best way to handle this is to keep a watchful eye on both platforms or communicate that seats are first come first serve.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Ability to check in guests.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Mobile App&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;RSVP as Guest&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Forms / Surveys&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Automatic Emails (customizable)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;It&amp;rsquo;s important for all community leaders to be familiar with this tool to conduct virtual events successfully.&lt;/p&gt;
+&lt;h3 id=&#34;events---analytics&#34;&gt;Events |  Analytics&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://help.bevylabs.com/article/344-create-a-new-event&#34;&gt;Create a new event&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://help.bevylabs.com/article/428-virtual-event-type&#34;&gt;Virtual Event Type&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://help.bevylabs.com/article/389-manage-chapter-members&#34;&gt;Manage chapter members&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;bevy-virtual&#34;&gt;Bevy Virtual&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://help.bevylabs.com/article/457-using-bevy-virtual&#34;&gt;Using Bevy Virtual&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://help.bevylabs.com/article/496-test-event-in-bevy-virtual&#34;&gt;How to create a test event in Bevy Virtual&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://help.bevylabs.com/article/470-record-in-bevy-virtual&#34;&gt;Record in Bevy Virtual&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://help.bevylabs.com/article/492-screensharing-in-bevy-virtual&#34;&gt;Screensharing in Bevy Virtual&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://help.bevylabs.com/article/495-breakout-rooms&#34;&gt;Breakout Rooms&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://help.bevylabs.com/article/519-chat-features&#34;&gt;Chat, DM&amp;rsquo;s &amp;amp; Features&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;planning-an-event-agenda&#34;&gt;Planning an Event Agenda&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Your event must be posted on your &lt;a href=&#34;https://events.docker.com/chapters/&#34;&gt;city’s Chapter page&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Try to create event 1 month before the event&lt;/li&gt;
+&lt;li&gt;If you are unsure of how to use your chapter page &lt;a href=&#34;https://drive.google.com/file/d/1ld54sqzTTBMiygUzsjRD7B10XzWozbMl/view?usp=sharing&#34;&gt;please watch this video&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;If you are having issues with your page, do not have a page or need admin permissions please contact William over Docker community Slack or send email to william.quiviger(AT)docker.com&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;setting-up-event-registration-page&#34;&gt;Setting up Event Registration Page&lt;/h2&gt;
+&lt;p&gt;Every Community leader is expected to set up event registration page. While building an event registration page, ensure that the below list of information are captured:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Title of the workshop&lt;/li&gt;
+&lt;li&gt;Date of the workshop&lt;/li&gt;
+&lt;li&gt;Short Description of the workshop&lt;/li&gt;
+&lt;li&gt;Format of the workshop(whether it will be LIVE or recorded)&lt;/li&gt;
+&lt;li&gt;Level of the audience(Beginners/Intermediate/Advanced)&lt;/li&gt;
+&lt;li&gt;Name of the speakers&lt;/li&gt;
+&lt;li&gt;A Form which ask users to supply:
+&lt;ul&gt;
+&lt;li&gt;First Name&lt;/li&gt;
+&lt;li&gt;Last Name&lt;/li&gt;
+&lt;li&gt;Email Address&lt;/li&gt;
+&lt;li&gt;Company Name&lt;/li&gt;
+&lt;li&gt;Job Function&lt;/li&gt;
+&lt;li&gt;Country&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;sending-confirmation-email-for-workshop&#34;&gt;Sending confirmation email for workshop&lt;/h2&gt;
+&lt;p&gt;Once the user register for the event, Community Leaders need to ensure that the interested users should receive a confirmation email.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;A Thank you message for registering for this event&lt;/li&gt;
+&lt;li&gt;Ensure that the registered user should be able to add the events date to their calendar&lt;/li&gt;
+&lt;li&gt;The email should carry workshop title and date of the workshop&lt;/li&gt;
+&lt;li&gt;Gentle reminder as the date of workshop come closer&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;sample-confirmation-email-for-the-workshop&#34;&gt;Sample Confirmation email for the workshop&lt;/h3&gt;
+&lt;h2 id=&#34;post-event-followup&#34;&gt;Post-Event Followup&lt;/h2&gt;
+&lt;h3 id=&#34;1--send-a-thank-you-email&#34;&gt;#1  Send a Thank You email&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;left&#34;&gt;S.No.&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Name of Objectives&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Status&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;“Thank you for attending” post on the social media channels&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;☑️&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&amp;ldquo;Thank you&amp;rdquo; email to all those who registered and attended the event&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;☑️&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;3&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Share the pics you took during the event and share it on social media(LinkedIn, Twitter, Facebook Public Docker Group etc&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;☑️&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Send thanks email to sponsor/vendors if this workshop is part of the Meetup event.&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;☑️&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;5&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Thank core team and volunteers who helped you with the workshop&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;☑️&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;2-post-event-review&#34;&gt;#2 Post-event Review&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;left&#34;&gt;S.No.&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Name of Objectives&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Status&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Sit down with your team for a debrief session where you discuss how the event went&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;☑️&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Consider inviting at least some of the volunteers.&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;☑️&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;3&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Evaluate whether the event was a success according to whatever goals you’ve set&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;☑️&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Have an open discussion about what worked well and what could be done better the next time around.&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;☑️&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;5&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Sit down with your team for a debrief session where you discuss how the event went&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;☑️&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;3-ask-for-feedback&#34;&gt;#3 Ask for feedback&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;left&#34;&gt;S.No.&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Name of Objectives&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Status&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;While the event is still fresh in everyone’s mind, get their feedback about it.&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;☑️&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Be straightforward. Collect input is to send out an email link to a survey that people can fill out online.&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;☑️&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;3&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Pick the one you like. If you can, add an incentive (free tickets to your next events, chance to win a gift card, and the like.).&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;☑️&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Having everyone fill out the same survey makes it easy to compare their input and spot trends and areas that need improvement.&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;☑️&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;4--follow-up-on-social-media&#34;&gt;#4  Follow up on social media&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;left&#34;&gt;S.No.&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Name of Objectives&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Status&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Online chatter about your event won’t immediately quiet down after the event is over.&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;☑️&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Follow the conversation and jump in where it make sense to chip in with your input, thank the guests, or answer questions.&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;☑️&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;3&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Engaging in post-event social media chatter and keeping the buzz going will also help you build audience for your next event.&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;☑️&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Online chatter about your event won’t immediately quiet down after the event is over.&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;☑️&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;5-start-planning-your-next-event&#34;&gt;#5 Start planning your next event&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;left&#34;&gt;S.No.&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Name of Objectives&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Status&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Start putting all of that to good use and begin jotting down ideas for your next fantastic event&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;☑️&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Agenda</title>
+      <link>https://docker.github.io/get-involved/docs/communityleaders/eventhandbooks/dotnet/agenda/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docker.github.io/get-involved/docs/communityleaders/eventhandbooks/dotnet/agenda/</guid>
+      <description>
+        
+        
+        &lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;th&gt;Timing&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Welcome&lt;/td&gt;
+&lt;td&gt;8:45 AM to 9:00 AM&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;../prerequisite/&#34;&gt;Installing Donet&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;9:00 AM to 9:30 AM&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;../basics/&#34;&gt;Basics of Docker&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;9:30 AM to 10:30 AM&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;../building/&#34;&gt;Building and Running a Docker Container&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;10:30 AM to 11:30 AM&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Coffee/Tea Break&lt;/td&gt;
+&lt;td&gt;11:30 AM to 11:45 AM&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;../dotnetwebapp/&#34;&gt;Dockerize your first Dotnet Application - Part 1 &lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;11:45 AM to 1:00 PM&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Lunch&lt;/td&gt;
+&lt;td&gt;1:00 PM to 2:00 PM&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;../dotnetwebapp/&#34;&gt;Dockerize your first Dotnet Application - Part 2 &lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2:00 PM to 2:30 PM&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;../compose/&#34;&gt;Dockerize Multi-Container Go Application Using Docker Compose&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;2:30 PM to 3:00 PM&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Quiz/Prize/Certificate Distribution&lt;/td&gt;
+&lt;td&gt;3:00 PM to 5:30 PM&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Prerequisite</title>
+      <link>https://docker.github.io/get-involved/docs/communityleaders/eventhandbooks/dotnet/prerequisite/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docker.github.io/get-involved/docs/communityleaders/eventhandbooks/dotnet/prerequisite/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;setup-environment&#34;&gt;Setup Environment&lt;/h2&gt;
+&lt;p&gt;This section describes the hardware and software needed for this workshop, and how to configure them.
+This workshop is designed for a BYOL (Bring Your Own Laptop) style hands-on-lab.&lt;/p&gt;
+&lt;h3 id=&#34;hardware--software&#34;&gt;Hardware &amp;amp; Software&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Memory: At least 4 GB+, strongly preferred 8 GB&lt;/li&gt;
+&lt;li&gt;Operating System: Mac OS X (10.10.3+), Windows 10 Pro+ 64-bit, Ubuntu 12+, CentOS 7+.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;install-docker&#34;&gt;Install Docker&lt;/h3&gt;
+&lt;p&gt;Docker runs natively on Mac, Windows and Linux.
+This lab will use &lt;a href=&#34;https://www.docker.com/community-edition&#34;&gt;Docker Community Edition (CE)&lt;/a&gt;.
+Download the Docker CE edition for your machine from the &lt;a href=&#34;https://store.docker.com/search?type=edition&amp;amp;offering=community&#34;&gt;Docker Store&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;NOTE&lt;/em&gt;: Docker CE requires a fairly recent operating system version.
+If your machine does not meet the requirements, then you need to install &lt;a href=&#34;https://www.docker.com/products/docker-toolbox&#34;&gt;Docker Toolbox&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This workshop is tested with Docker Community Edition &lt;code&gt;19.03.13-ce-rc10, build fec3683&lt;/code&gt; on Ubuntu &lt;code&gt;20.04.1 LTS&lt;/code&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;docker-images&#34;&gt;Docker Images&lt;/h3&gt;
+&lt;p&gt;This tutorial uses a few Docker images and software.
+Let&amp;rsquo;s download them before we start the tutorial.&lt;/p&gt;
+&lt;p&gt;In order to download the Docker images we will be using &lt;code&gt;docker-compose&lt;/code&gt;.
+You can install &lt;code&gt;docker-compose&lt;/code&gt; following the instructions provided in the doc &lt;a href=&#34;https://docs.docker.com/compose/install/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Now, download the &lt;a href=&#34;https://raw.githubusercontent.com/docker-community-leaders/dockercommunity/master/content/en/docs/CommunityLeaders/EventHandbooks/Go/prerequisite/docker-compose-pull-images.yml&#34;&gt;docker-compose-pull-images.yml&lt;/a&gt; file and use the following command to pull the required images:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;curl -O https://raw.githubusercontent.com/docker-community-leaders/alphasite/master/pages/handbooks/go/scripts/docker-compose-pull-images.yml
+docker-compose -f docker-compose-pull-images.yml pull --parallel
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;other-software&#34;&gt;Other Software&lt;/h3&gt;
+&lt;p&gt;The softwares in this section are specific to certain parts of the workshop.
+Install them only if you plan to attempt them.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Install &lt;a href=&#34;https://git-scm.com&#34;&gt;git&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Install &lt;a href=&#34;https://dotnet.microsoft.com&#34;&gt;Go&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Download and install a code editor of your choice:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://code.visualstudio.com/download&#34;&gt;Visual Studio Code&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.jetbrains.com/go/download/&#34;&gt;GoLand&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.sublimetext.com/3&#34;&gt;Sublime Text&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Download and install Java IDE of your choice:&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;left&#34;&gt;S.No.&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Name of Software&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Link to Follow&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Git&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://git-scm.com&#34;&gt;Link&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Dotnet&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://dotnet.microsoft.com&#34;&gt;Link&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;3&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Visual Studio Code&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://code.visualstudio.com/download&#34;&gt;Link&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;GoLand&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://www.jetbrains.com/go/download/&#34;&gt;Link&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;5&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Sublime Text 3&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;https://www.sublimetext.com/3&#34;&gt;Link&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h1 id=&#34;download-dotnet&#34;&gt;Download Dotnet&lt;/h1&gt;
+&lt;p&gt;You can download the latest version of Dotnet (5.0) from the below links:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://download.visualstudio.microsoft.com/download/pr/78a6328f-f563-4a7f-a478-3ed0f2ce8ec6/5beb762f64d8a018a5b9e590bc1531e0/dotnet-sdk-5.0.201-win-x64.exe&#34;&gt;Windows&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://download.visualstudio.microsoft.com/download/pr/de613120-9306-4867-b504-45fcc81ba1b6/2a03f18c549f52cf78f88afa44e6dc6a/dotnet-sdk-5.0.201-osx-x64.pkg&#34;&gt;MacOS &lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.microsoft.com/dotnet/core/install/linux&#34;&gt;Linux&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;check-installation&#34;&gt;Check Installation&lt;/h1&gt;
+&lt;p&gt;Select the tab for your computer&amp;rsquo;s operating system below, then follow its instructions.&lt;/p&gt;
+&lt;ul class=&#34;nav nav-tabs&#34; id=&#34;checking-installation&#34; role=&#34;tablist&#34;&gt;&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link active&#34; href=&#34;#checking-installation-0&#34; role=&#34;tab&#34; aria-controls=&#34;checking-installation-0&#34; aria-selected=&#34;true&#34;&gt;Linux&lt;/a&gt;&lt;/li&gt;
+	  
+		&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link&#34; href=&#34;#checking-installation-1&#34; role=&#34;tab&#34; aria-controls=&#34;checking-installation-1&#34;&gt;Mac&lt;/a&gt;&lt;/li&gt;
+		&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link&#34; href=&#34;#checking-installation-2&#34; role=&#34;tab&#34; aria-controls=&#34;checking-installation-2&#34;&gt;Windows&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;div class=&#34;tab-content&#34; id=&#34;checking-installation&#34;&gt;&lt;div id=&#34;checking-installation-0&#34; class=&#34;tab-pane show active&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;checking-installation-0&#34;&gt;
+
+&lt;p&gt;&lt;p&gt;After you&amp;rsquo;ve installed, open a new terminal and run the following command:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;dotnet
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;You should be able to see the output like&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Usage: dotnet [options]
+Usage: dotnet [path-to-application]
+
+Options:
+-h|--help         Display help.
+--info            Display .NET information.
+--list-sdks       Display the installed SDKs.
+--list-runtimes   Display the installed runtimes.
+
+path-to-application:
+The path to an application .dll file to execute.
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+  &lt;div id=&#34;checking-installation-1&#34; class=&#34;tab-pane&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;checking-installation-1&#34;&gt;
+
+&lt;p&gt;&lt;p&gt;After you&amp;rsquo;ve installed, open a new terminal and run the following command:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;dotnet
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;You should be able to see the output like&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Usage: dotnet [options]
+Usage: dotnet [path-to-application]
+
+Options:
+-h|--help         Display help.
+--info            Display .NET information.
+--list-sdks       Display the installed SDKs.
+--list-runtimes   Display the installed runtimes.
+
+path-to-application:
+The path to an application .dll file to execute.
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+  &lt;div id=&#34;checking-installation-2&#34; class=&#34;tab-pane&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;checking-installation-2&#34;&gt;
+
+&lt;p&gt;&lt;p&gt;After you&amp;rsquo;ve installed, open a new terminal and run the following command:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;dotnet
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;You should be able to see the output like&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Usage: dotnet [options]
+Usage: dotnet [path-to-application]
+
+Options:
+-h|--help         Display help.
+--info            Display .NET information.
+--list-sdks       Display the installed SDKs.
+--list-runtimes   Display the installed runtimes.
+
+path-to-application:
+The path to an application .dll file to execute.
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Basics of Docker</title>
+      <link>https://docker.github.io/get-involved/docs/communityleaders/eventhandbooks/dotnet/basics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docker.github.io/get-involved/docs/communityleaders/eventhandbooks/dotnet/basics/</guid>
+      <description>
+        
+        
+        &lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#main-components-of-docker-system&#34;&gt;Main Components of Docker System&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#test-your-knowledge&#34;&gt;Test Your Knowledge&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;basics-of-docker&#34;&gt;Basics of Docker&lt;/h2&gt;
+&lt;p&gt;This section introduces the basic terminology of Docker.&lt;/p&gt;
+&lt;p&gt;Docker is a platform for developers and sysadmins to build, ship, and run applications. Docker lets you quickly assemble applications from components and eliminates the friction that can come when shipping code. Docker lets you test and deploy your code into production as fast as possible.&lt;/p&gt;
+&lt;p&gt;Docker simplifies software delivery by making it easy to build and share images that contain your application’s entire environment, or &lt;em&gt;application operating system&lt;/em&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;what-does-it-mean-by-an-application-operating-system-&#34;&gt;What does it mean by an application operating system ?&lt;/h2&gt;
+&lt;p&gt;Your application typically requires a specific version of operating system, application server, runtime, and database server. It may also require configuration files, and multiple other dependencies. The application may need binding to specific ports and certain amount of memory. The components and configuration together required to run your application is what is referred to as application operating system.&lt;/p&gt;
+&lt;p&gt;You can certainly provide an installation script that will download and install these components. Docker simplifies this process by allowing to create an image that contains your application and infrastructure together, managed as one component. These images are then used to create Docker containers which run on the container virtualization platform, provided by Docker.&lt;/p&gt;
+&lt;h2 id=&#34;main-components-of-docker-system&#34;&gt;Main Components of Docker System&lt;/h2&gt;
+&lt;p&gt;Docker has three main components:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Images are the &lt;em&gt;build component&lt;/em&gt; of Docker and are the read-only templates defining an application operating system.&lt;/li&gt;
+&lt;li&gt;Containers are the &lt;em&gt;run component&lt;/em&gt; of Docker and created from images. Containers can be run, started, stopped, moved, and deleted.&lt;/li&gt;
+&lt;li&gt;Images are stored, shared, and managed in a registry and are the &lt;em&gt;distribution component&lt;/em&gt; of Docker.&lt;/li&gt;
+&lt;li&gt;DockerHub is a publicly available registry and is available at &lt;a href=&#34;http://hub.docker.com&#34;&gt;http://hub.docker.com&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In order for these three components to work together, the &lt;em&gt;Docker Daemon&lt;/em&gt; (or Docker Engine) runs on a host machine and does the heavy lifting of building, running, and distributing Docker containers. In addition, the &lt;em&gt;Client&lt;/em&gt; is a Docker binary which accepts commands from the user and communicates back and forth with the Engine.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;docker-architecture.png&#34; alt=&#34;docker-architecture&#34;&gt;&lt;/p&gt;
+&lt;p&gt;The Client communicates with the Engine that is either co-located on the same host or on a different host. Client uses the &lt;code&gt;pull&lt;/code&gt; command to request the Engine to pull an image from the registry. The Engine then downloads the image from Docker Store, or whichever registry is configured. Multiple images can be downloaded from the registry and installed on the Engine. Client uses the &lt;code&gt;run&lt;/code&gt; run the container.&lt;/p&gt;
+&lt;h2 id=&#34;docker-image&#34;&gt;Docker Image&lt;/h2&gt;
+&lt;p&gt;We&amp;rsquo;ve already seen that Docker images are read-only templates from which Docker containers are launched. Each image consists of a series of layers. Docker makes use of union file systems to combine these layers into a single image. Union file systems allow files and directories of separate file systems, known as branches, to be transparently overlaid, forming a single coherent file system.&lt;/p&gt;
+&lt;p&gt;One of the reasons Docker is so lightweight is because of these layers. When you change a Docker image—for example, update an application to a new version— a new layer gets built. Thus, rather than replacing the whole image or entirely rebuilding, as you may do with a virtual machine, only that layer is added or updated. Now you don&amp;rsquo;t need to distribute a whole new image, just the update, making distributing Docker images faster and simpler.&lt;/p&gt;
+&lt;p&gt;Every image starts from a base image, for example &lt;code&gt;ubuntu&lt;/code&gt;, a base Ubuntu image, or &lt;code&gt;fedora&lt;/code&gt;, a base Fedora image. You can also use images of your own as the basis for a new image, for example if you have a base Apache image you could use this as the base of all your web application images.&lt;/p&gt;
+&lt;p&gt;NOTE: By default, Docker obtains these base images from Docker Store.&lt;/p&gt;
+&lt;p&gt;Docker images are then built from these base images using a simple, descriptive set of steps we call instructions. Each instruction creates a new layer in our image. Instructions include actions like:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Run a command&lt;/li&gt;
+&lt;li&gt;Add a file or directory&lt;/li&gt;
+&lt;li&gt;Create an environment variable&lt;/li&gt;
+&lt;li&gt;Run a process when launching a container&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;These instructions are stored in a file called a Dockerfile. Docker reads this Dockerfile when you request a build of an image, executes the instructions, and returns a final image.&lt;/p&gt;
+&lt;h2 id=&#34;docker-container&#34;&gt;Docker Container&lt;/h2&gt;
+&lt;p&gt;A container consists of an operating system, user-added files, and meta-data. As we&amp;rsquo;ve seen, each container is built from an image. That image tells Docker what the container holds, what process to run when the container is launched, and a variety of other configuration data. The Docker image is read-only. When Docker runs a container from an image, it adds a read-write layer on top of the image (using a union file system as we saw earlier) in which your application can then run.&lt;/p&gt;
+&lt;h2 id=&#34;docker-engine&#34;&gt;Docker Engine&lt;/h2&gt;
+&lt;p&gt;Docker Host is created as part of installing Docker on your machine. Once your Docker host has been created, it then allows you to manage images and containers. For example, the image can be downloaded and containers can be started, stopped and restarted.&lt;/p&gt;
+&lt;h3 id=&#34;docker-client&#34;&gt;Docker Client&lt;/h3&gt;
+&lt;p&gt;The client communicates with the Docker Host and let&amp;rsquo;s you work with images and containers.&lt;/p&gt;
+&lt;p&gt;Check if your client is working using the following command:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;docker -v
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;It shows the output:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Docker version 20.10.2, build 2291f61
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;NOTE: The exact version may differ based upon how recently the installation was performed.&lt;/p&gt;
+&lt;p&gt;The exact version of Client and Server can be seen using &lt;code&gt;docker version&lt;/code&gt; command. This shows the output as:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt; docker version
+Client: Docker Engine - Community
+ Cloud integration: 1.0.7
+ Version:           20.10.2
+ API version:       1.41
+ Go version:        go1.13.15
+ Git commit:        2291f61
+ Built:             Mon Dec 28 16:12:42 2020
+ OS/Arch:           darwin/amd64
+ Context:           default
+ Experimental:      true
+
+Server: Docker Engine - Community
+ Engine:
+  Version:          20.10.2
+  API version:      1.41 (minimum version 1.12)
+  Go version:       go1.13.15
+  Git commit:       8891c58
+  Built:            Mon Dec 28 16:15:28 2020
+  OS/Arch:          linux/amd64
+  Experimental:     true
+ containerd:
+  Version:          1.4.3
+  GitCommit:        269548fa27e0089a8b8278fc4fc781d7f65a939b
+ runc:
+  Version:          1.0.0-rc92
+  GitCommit:        ff819c7e9184c13b7c2607fe6c30ae19403a7aff
+ docker-init:
+  Version:          0.19.0
+  GitCommit:        de40ad0
+ajeetraina@Ajeets-MacBook-Pro realtime-sensor-jetson % 
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;The complete set of commands can be seen using &lt;code&gt;docker --help&lt;/code&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;test-your-knowledge&#34;&gt;Test Your Knowledge&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;left&#34;&gt;S. No.&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Question.&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Response&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;What is difference between Docker Image and Docker Container?&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;2&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Where are all Docker images stored?&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;3&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Is DockerHub a public or private Docker registry?&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;What is the main role of Docker Engine?&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Building and Running a Docker Container</title>
+      <link>https://docker.github.io/get-involved/docs/communityleaders/eventhandbooks/dotnet/building/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docker.github.io/get-involved/docs/communityleaders/eventhandbooks/dotnet/building/</guid>
+      <description>
+        
+        
+        &lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#build-a-docker-image&#34;&gt;Build a Docker Image&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#create-a-dotnet-application&#34;&gt;Create a dotnet application&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;build-a-docker-image&#34;&gt;Build a Docker Image&lt;/h2&gt;
+&lt;p&gt;This section explains how to create a Docker image.&lt;/p&gt;
+&lt;h2 id=&#34;dockerfile&#34;&gt;Dockerfile&lt;/h2&gt;
+&lt;p&gt;Docker build images by reading instructions from a &lt;em&gt;Dockerfile&lt;/em&gt;. A &lt;em&gt;Dockerfile&lt;/em&gt; is a text document that contains all the commands a user could call on the command line to assemble an image. &lt;code&gt;docker image build&lt;/code&gt; command uses this file and executes all the commands in succession to create an image.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;build&lt;/code&gt; command is also passed a context that is used during image creation. This context can be a path on your local filesystem or a URL to a Git repository.&lt;/p&gt;
+&lt;p&gt;Dockerfile is usually called Dockerfile. The complete list of commands that can be specified in this file are explained at &lt;a href=&#34;https://docs.docker.com/reference/builder/&#34;&gt;https://docs.docker.com/reference/builder/&lt;/a&gt;. The common commands are listed below:&lt;/p&gt;
+&lt;h2 id=&#34;common-commands-for-dockerfile&#34;&gt;Common commands for Dockerfile&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;left&#34;&gt;Command&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Purpose&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Example&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;FROM&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;First non-comment instruction in &lt;em&gt;Dockerfile&lt;/em&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;FROM ubuntu&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;COPY&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Copies mulitple source files from the context to the file system of the container at the specified path&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;COPY .bash_profile /home&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;ENV&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Sets the environment variable&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;ENV HOSTNAME=test&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;RUN&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Executes a command&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;RUN apt-get update&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;CMD&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Defaults for an executing container&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;CMD [&amp;quot;/bin/echo&amp;quot;, &amp;quot;hello world&amp;quot;]&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;EXPOSE&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Informs the network ports that the container will listen on&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;EXPOSE 8093&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;==================&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;create-your-first-image&#34;&gt;Create your first image&lt;/h2&gt;
+&lt;p&gt;Create a new directory &lt;code&gt;hellodocker&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;In that directory, create a new text file &lt;code&gt;Dockerfile&lt;/code&gt;. Use the following contents:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;FROM ubuntu:latest
+
+CMD [&amp;quot;/bin/echo&amp;quot;, &amp;quot;hello world&amp;quot;]
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;This image uses &lt;code&gt;ubuntu&lt;/code&gt; as the base image. &lt;code&gt;CMD&lt;/code&gt; command defines the command that needs to run. It provides a different entry point of &lt;code&gt;/bin/echo&lt;/code&gt; and an argument &amp;ldquo;&lt;code&gt;hello world&lt;/code&gt;&amp;rdquo;.&lt;/p&gt;
+&lt;h2 id=&#34;build-the-image&#34;&gt;Build the image&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;  docker image build . -t helloworld
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;code&gt;.&lt;/code&gt; in this command is the context for the command &lt;code&gt;docker image build&lt;/code&gt;. &lt;code&gt;-t&lt;/code&gt; adds a tag to the image.&lt;/p&gt;
+&lt;p&gt;The following output is shown:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Sending build context to Docker daemon  2.048kB
+Step 1/2 : FROM ubuntu:latest
+latest: Pulling from library/ubuntu
+9fb6c798fa41: Pull complete 
+3b61febd4aef: Pull complete 
+9d99b9777eb0: Pull complete 
+d010c8cf75d7: Pull complete 
+7fac07fb303e: Pull complete 
+Digest: sha256:31371c117d65387be2640b8254464102c36c4e23d2abe1f6f4667e47716483f1
+Status: Downloaded newer image for ubuntu:latest
+ ---&amp;gt; 2d696327ab2e
+Step 2/2 : CMD /bin/echo hello world
+ ---&amp;gt; Running in 9356a508590c
+ ---&amp;gt; e61f88f3a0f7
+Removing intermediate container 9356a508590c
+Successfully built e61f88f3a0f7
+Successfully tagged helloworld:latest
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;list-the-images&#34;&gt;List the images&lt;/h2&gt;
+&lt;p&gt;You can list the images available using &lt;code&gt;docker image ls&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+helloworld          latest              e61f88f3a0f7        3 minutes ago       122MB
+ubuntu              latest              2d696327ab2e        4 days ago          122MB
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Other images may be shown as well but we are interested in these two images for now.&lt;/p&gt;
+&lt;p&gt;Run the container using the command:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;docker container run helloworld
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;to see the output:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;hello world
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;If you do not see the expected output, check your Dockerfile that the content exactly matches as shown above. Build the image again and now run it.&lt;/p&gt;
+&lt;p&gt;Change the base image from &lt;code&gt;ubuntu&lt;/code&gt; to &lt;code&gt;busybox&lt;/code&gt; in &lt;code&gt;Dockerfile&lt;/code&gt;. Build the image again:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;docker image build -t helloworld:2 .
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;and view the images using &lt;code&gt;docker image ls&lt;/code&gt; command:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+helloworld          2                   7fbedda27c66        3 seconds ago       1.13MB
+helloworld          latest              e61f88f3a0f7        5 minutes ago       122MB
+ubuntu              latest              2d696327ab2e        4 days ago          122MB
+busybox             latest              54511612f1c4        9 days ago          1.13MB
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;code&gt;helloworld:2&lt;/code&gt; is the format that allows to specify the image name and assign a tag/version to it separated by &lt;code&gt;:&lt;/code&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;create-a-dotnet-application&#34;&gt;Create a dotnet application&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;In your terminal, type the following command&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code&gt;dotnet new console -o myApp
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;You should see the output in terminal&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;# dotnet new console -o myApp
+Getting ready...
+The template &amp;quot;Console Application&amp;quot; was created successfully.
+
+Processing post-creation actions...
+Running &#39;dotnet restore&#39; on myApp/myApp.csproj...
+  Determining projects to restore...
+  Restored /myApp/myApp.csproj (in 90 ms).
+Restore succeeded.
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;this will bootstrap a new console application from template shipped with dotnet sdk. The -o parameter creates a directory named myApp where your app is stored.&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;Navigate to the application directory&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code&gt;cd myApp
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;you will have a Program.cs file&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;using System;
+
+namespace myApp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine(&amp;quot;Hello World!&amp;quot;);
+        }
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;In your terminal, type the following command to run your application&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code&gt;dotnet run
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;you would expect the &amp;ldquo;Hello World&amp;rdquo; will be printed out in terminal&lt;/p&gt;
+&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;Put the application in the container&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Create Dockerfile with following content:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;FROM mcr.microsoft.com/dotnet/sdk as build
+COPY . ./src
+WORKDIR /src
+RUN dotnet build -o /app
+
+FROM mcr.microsoft.com/dotnet/runtime as base
+COPY --from=build  /app /app
+WORKDIR /app
+CMD [&amp;quot;./myApp&amp;quot;]
+
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Now that we have defined everything we need to run in our Dockerfile we can now build an image using this file. In order to do that, we’ll need to run the following command:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ docker build -t myapp .
+[+] Building 8.4s (13/13) FINISHED
+ =&amp;gt; [internal] load build definition from Dockerfile                       0.0s
+ =&amp;gt; =&amp;gt; transferring dockerfile: 37B                                        0.0s
+ =&amp;gt; [internal] load .dockerignore                                          0.0s
+ =&amp;gt; =&amp;gt; transferring context: 2B                                            0.0s
+ =&amp;gt; [internal] load metadata for mcr.microsoft.com/dotnet/runtime:latest   4.2s
+ =&amp;gt; [internal] load metadata for mcr.microsoft.com/dotnet/sdk:latest       0.0s
+ =&amp;gt; [internal] load build context                                          0.0s
+ =&amp;gt; =&amp;gt; transferring context: 359B                                          0.0s
+ =&amp;gt; CACHED [build 1/4] FROM mcr.microsoft.com/dotnet/sdk                   0.0s
+ =&amp;gt; CACHED [base 1/3] FROM mcr.microsoft.com/dotnet/runtime@sha256:8fbb07  0.0s
+ =&amp;gt; [build 2/4] COPY . ./src                                               0.0s
+ =&amp;gt; [build 3/4] WORKDIR /src                                               0.0s
+ =&amp;gt; [build 4/4] RUN dotnet build -o /app                                   3.6s
+ =&amp;gt; [base 2/3] COPY --from=build  /app /app                                0.0s
+ =&amp;gt; [base 3/3] WORKDIR /app                                                0.0s
+ =&amp;gt; exporting to image                                                     0.0s
+ =&amp;gt; =&amp;gt; exporting layers                                                    0.0s
+ =&amp;gt; =&amp;gt; writing image sha256:51886aa5cafd278e6cd2b2ea3ed586dac675b4aaae606  0.0s
+ =&amp;gt; =&amp;gt; naming to docker.io/library/myapp                                   0.0s
+
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;We can now verify that our image exists on our machine by using &lt;code&gt;docker images&lt;/code&gt; command:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ docker images
+REPOSITORY                                                 TAG       IMAGE ID       CREATED          SIZE
+myapp                                                      latest    51886aa5cafd   31 seconds ago   186MB
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;In order to run this newly created image, we can use the docker run command and pass in the ports we want to map to and the image we wish to run.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ docker run --rm myapp
+Hello World
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;-it&lt;/code&gt; - This flag specifies that we want to run this image in interactive mode with a tty for this container process.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;--rm&lt;/code&gt; - This flag will clean the container after it runs&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;myapp &lt;/code&gt; - This is the name of the image that we want to run in a container.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Now we have a dockerized dotnet application.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Dockerize Dotnet Web Application</title>
+      <link>https://docker.github.io/get-involved/docs/communityleaders/eventhandbooks/dotnet/dotnetwebapp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docker.github.io/get-involved/docs/communityleaders/eventhandbooks/dotnet/dotnetwebapp/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;create-a-dotnet-application&#34;&gt;Create a dotnet application&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;In your terminal, type the following command&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code&gt;dotnet new webApp -o myWebApp --no-https
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;You should see the output in terminal&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;# dotnet new webApp -o myWebApp --no-https
+Getting ready...
+The template &amp;quot;ASP.NET Core Web App&amp;quot; was created successfully.
+This template contains technologies from parties other than Microsoft, see https://aka.ms/aspnetcore/5.0-third-party-notices for details.
+
+Processing post-creation actions...
+Running &#39;dotnet restore&#39; on myWebApp/myWebApp.csproj...
+  Determining projects to restore...
+  Restored /myWebApp/myWebApp.csproj (in 90 ms).
+Restore succeeded.
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;this will bootstrap a new web application from template shipped with dotnet sdk. The -o parameter creates a directory named myWebApp where your app is stored.&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;Navigate to the application directory&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code&gt;cd myWebApp
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;you will have a list of files&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;# ls
+Pages  Program.cs  Properties  Startup.cs  appsettings.Development.json  appsettings.json  bin	myWebApp.csproj  obj  wwwroot
+&lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;In your terminal, type the following command to run your application&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code&gt;dotnet run
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;The applciation will start to listen on port 5000 for requests&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;# dotnet run
+Building...
+warn: Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository[60]
+      Storing keys in a directory &#39;/root/.aspnet/DataProtection-Keys&#39; that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed.
+warn: Microsoft.AspNetCore.Server.Kestrel[0]
+      Unable to bind to http://localhost:5000 on the IPv6 loopback interface: &#39;Cannot assign requested address&#39;.
+info: Microsoft.Hosting.Lifetime[0]
+      Now listening on: http://localhost:5000
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: /src
+&lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;Test the application&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;now we can use the curl to test the connection of our web application&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;# curl http://localhost:5000
+&amp;lt;!DOCTYPE html&amp;gt;
+&amp;lt;html lang=&amp;quot;en&amp;quot;&amp;gt;
+&amp;lt;head&amp;gt;
+    &amp;lt;meta charset=&amp;quot;utf-8&amp;quot; /&amp;gt;
+    &amp;lt;meta name=&amp;quot;viewport&amp;quot; content=&amp;quot;width=device-width, initial-scale=1.0&amp;quot; /&amp;gt;
+    &amp;lt;title&amp;gt;Home page - myWebApp&amp;lt;/title&amp;gt;
+    &amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;/lib/bootstrap/dist/css/bootstrap.min.css&amp;quot; /&amp;gt;
+    &amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;/css/site.css&amp;quot; /&amp;gt;
+&amp;lt;/head&amp;gt;
+&amp;lt;body&amp;gt;
+    &amp;lt;header&amp;gt;
+        &amp;lt;nav class=&amp;quot;navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3&amp;quot;&amp;gt;
+            &amp;lt;div class=&amp;quot;container&amp;quot;&amp;gt;
+                &amp;lt;a class=&amp;quot;navbar-brand&amp;quot; href=&amp;quot;/&amp;quot;&amp;gt;myWebApp&amp;lt;/a&amp;gt;
+                &amp;lt;button class=&amp;quot;navbar-toggler&amp;quot; type=&amp;quot;button&amp;quot; data-toggle=&amp;quot;collapse&amp;quot; data-target=&amp;quot;.navbar-collapse&amp;quot; aria-controls=&amp;quot;navbarSupportedContent&amp;quot;
+                        aria-expanded=&amp;quot;false&amp;quot; aria-label=&amp;quot;Toggle navigation&amp;quot;&amp;gt;
+                    &amp;lt;span class=&amp;quot;navbar-toggler-icon&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;
+                &amp;lt;/button&amp;gt;
+                &amp;lt;div class=&amp;quot;navbar-collapse collapse d-sm-inline-flex justify-content-between&amp;quot;&amp;gt;
+                    &amp;lt;ul class=&amp;quot;navbar-nav flex-grow-1&amp;quot;&amp;gt;
+                        &amp;lt;li class=&amp;quot;nav-item&amp;quot;&amp;gt;
+                            &amp;lt;a class=&amp;quot;nav-link text-dark&amp;quot; href=&amp;quot;/&amp;quot;&amp;gt;Home&amp;lt;/a&amp;gt;
+                        &amp;lt;/li&amp;gt;
+                        &amp;lt;li class=&amp;quot;nav-item&amp;quot;&amp;gt;
+                            &amp;lt;a class=&amp;quot;nav-link text-dark&amp;quot; href=&amp;quot;/Privacy&amp;quot;&amp;gt;Privacy&amp;lt;/a&amp;gt;
+                        &amp;lt;/li&amp;gt;
+                    &amp;lt;/ul&amp;gt;
+                &amp;lt;/div&amp;gt;
+            &amp;lt;/div&amp;gt;
+        &amp;lt;/nav&amp;gt;
+    &amp;lt;/header&amp;gt;
+    &amp;lt;div class=&amp;quot;container&amp;quot;&amp;gt;
+        &amp;lt;main role=&amp;quot;main&amp;quot; class=&amp;quot;pb-3&amp;quot;&amp;gt;
+
+&amp;lt;div class=&amp;quot;text-center&amp;quot;&amp;gt;
+    &amp;lt;h1 class=&amp;quot;display-4&amp;quot;&amp;gt;Welcome&amp;lt;/h1&amp;gt;
+    &amp;lt;p&amp;gt;Learn about &amp;lt;a href=&amp;quot;https://docs.microsoft.com/aspnet/core&amp;quot;&amp;gt;building Web apps with ASP.NET Core&amp;lt;/a&amp;gt;.&amp;lt;/p&amp;gt;
+&amp;lt;/div&amp;gt;
+
+        &amp;lt;/main&amp;gt;
+    &amp;lt;/div&amp;gt;
+
+    &amp;lt;footer class=&amp;quot;border-top footer text-muted&amp;quot;&amp;gt;
+        &amp;lt;div class=&amp;quot;container&amp;quot;&amp;gt;
+            &amp;amp;copy; 2021 - myWebApp - &amp;lt;a href=&amp;quot;/Privacy&amp;quot;&amp;gt;Privacy&amp;lt;/a&amp;gt;
+        &amp;lt;/div&amp;gt;
+    &amp;lt;/footer&amp;gt;
+
+    &amp;lt;script src=&amp;quot;/lib/jquery/dist/jquery.min.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+    &amp;lt;script src=&amp;quot;/lib/bootstrap/dist/js/bootstrap.bundle.min.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+    &amp;lt;script src=&amp;quot;/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+
+
+&amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;5&#34;&gt;
+&lt;li&gt;Put the application in the container&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Create Dockerfile with following content:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;FROM mcr.microsoft.com/dotnet/sdk as build
+COPY . ./src
+WORKDIR /src
+RUN dotnet build -o /app
+RUN dotnet publish -o /publish
+
+FROM mcr.microsoft.com/dotnet/aspnet as base
+COPY --from=build  /publish /app
+WORKDIR /app
+EXPOSE 80
+CMD [&amp;quot;./myWebApp&amp;quot;]
+
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;This is a multistage docker file. The build stage uses sdk image to build the appliation and create final articfacts in the publish folder. Then final stage copy artifacts from build stage to app folder, expose port 80 to incoming request and specify the command to run the application &lt;strong&gt;myWebApp&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Now that we have defined everything we need to run in our Dockerfile we can now build an image using this file. In order to do that, we’ll need to run the following command:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ docker build -t mywebapp .
+[+] Building 6.0s (14/14) FINISHED
+ =&amp;gt; [internal] load build definition from Dockerfile                                                                                0.0s
+ =&amp;gt; =&amp;gt; transferring dockerfile: 37B                                                                                                 0.0s
+ =&amp;gt; [internal] load .dockerignore                                                                                                   0.0s
+ =&amp;gt; =&amp;gt; transferring context: 2B                                                                                                     0.0s
+ =&amp;gt; [internal] load metadata for mcr.microsoft.com/dotnet/sdk:latest                                                                0.0s
+ =&amp;gt; [internal] load metadata for mcr.microsoft.com/dotnet/aspnet:latest                                                             0.4s
+ =&amp;gt; [internal] load build context                                                                                                   0.0s
+ =&amp;gt; =&amp;gt; transferring context: 7.38kB                                                                                                 0.0s
+ =&amp;gt; CACHED [build 1/5] FROM mcr.microsoft.com/dotnet/sdk                                                                            0.0s
+ =&amp;gt; CACHED [base 1/3] FROM mcr.microsoft.com/dotnet/aspnet@sha256:2132b0cbc71eb09dae6d9063849e5d8094777eac1e59c33238026ce7fd2cf355  0.0s
+ =&amp;gt; [build 2/5] COPY . ./src                                                                                                        0.1s
+ =&amp;gt; [build 3/5] WORKDIR /src                                                                                                        0.0s
+ =&amp;gt; [build 4/5] RUN dotnet build -o /app                                                                                            2.6s
+ =&amp;gt; [build 5/5] RUN dotnet publish -o /publish                                                                                      2.2s
+ =&amp;gt; [base 2/3] COPY --from=build  /publish /app                                                                                     0.1s
+ =&amp;gt; [base 3/3] WORKDIR /app                                                                                                         0.0s
+ =&amp;gt; exporting to image                                                                                                              0.1s
+ =&amp;gt; =&amp;gt; exporting layers                                                                                                             0.0s
+ =&amp;gt; =&amp;gt; writing image sha256:6acc7ebf3a1d54c7205b2881eca9f3b7cbb6b47927420e117d22aa52f7a67941                                        0.0s
+ =&amp;gt; =&amp;gt; naming to docker.io/library/mywebapp                                                                                         0.0s
+
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;We can now verify that our image exists on our machine by using &lt;code&gt;docker images&lt;/code&gt; command:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ docker images
+REPOSITORY                                                 TAG       IMAGE ID       CREATED              SIZE
+mywebapp                                                   latest    6acc7ebf3a1d   25 seconds ago       210MB
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;In order to run this newly created image, we can use the docker run command and pass in the ports we want to map to and the image we wish to run.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ docker run --rm  -p 5000:80 myweapp
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;-p 5000:80&lt;/code&gt; - This exposes our application which is running on port 80 within our container on http://localhost:5000 on our local machine.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;--rm&lt;/code&gt; - This flag will clean the container after it runs&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;myweapp &lt;/code&gt; - This is the name of the image that we want to run in a container.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Now we start the brower and put http://localhost:5000 to address bar&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;mywebapp.png&#34; alt=&#34;mywebapp&#34;&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Dockerize Multi-Container Go App Using Compose</title>
+      <link>https://docker.github.io/get-involved/docs/communityleaders/eventhandbooks/dotnet/compose/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docker.github.io/get-involved/docs/communityleaders/eventhandbooks/dotnet/compose/</guid>
+      <description>
+        
+        
+        &lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#what-is-docker-compose&#34;&gt;What is Docker Compose&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#update-the-mywebapp&#34;&gt;Update the myWebapp &lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#configuration-file&#34;&gt;Configuration file&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#start-application&#34;&gt;Start application&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#verify-application&#34;&gt;Verify application&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#shutdown-application&#34;&gt;Shutdown application&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;what-is-docker-compose&#34;&gt;What is Docker Compose&lt;/h2&gt;
+&lt;p&gt;Docker Compose is a tool for defining and running complex applications with Docker. With Compose, you define a multi-container application in a single file, then spin your application up in a single command which does everything that needs to be done to get it running.&lt;/p&gt;
+&lt;p&gt;An application using Docker containers will typically consist of multiple containers. With Docker Compose, there is no need to write shell scripts to start your containers. All the containers are defined in a configuration file using &lt;em&gt;services&lt;/em&gt;, and then &lt;code&gt;docker-compose&lt;/code&gt; script is used to start, stop, and restart the application and all the services in that application, and all the containers within that service. The complete list of commands is:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;left&#34;&gt;Command&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;Purpose&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;build&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Build or rebuild services&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;help&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Get help on a command&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;kill&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Kill containers&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;logs&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;View output from containers&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;port&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Print the public port for a port binding&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;ps&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;List containers&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;pull&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Pulls service images&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;restart&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Restart services&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;rm&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Remove stopped containers&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;run&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Run a one-off command&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;scale&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Set number of containers for a service&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;start&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Start services&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;stop&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Stop services&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;up&lt;/code&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Create and start containers&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;`migrate-to-labels  Recreate containers to add labels|&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;left&#34;&gt;====&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;The application used in this section is built based on myWebapp communicating with a Postgresql database. When the page is loaded, it will query the Student table for the record with ID and display the name of student on the page.&lt;/p&gt;
+&lt;p&gt;The myWebApp and Postgresql will be running in two separate containers, and thus making this a multi-container application.&lt;/p&gt;
+&lt;h2 id=&#34;update-the-mywebapp&#34;&gt;Update the myWebapp&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;adding package to allow app taking to database&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code&gt;cd myWebapp
+dotnet add package Npgsql.EntityFrameworkCore.PostgreSQL
+&lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;create student model&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Create a Models folder in the project folder&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Create Models/Student.cs with the following code:&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;using System;
+using System.Collections.Generic;
+
+namespace myWebApp.Models
+{
+    public class Student
+    {
+        public int ID { get; set; }
+        public string LastName { get; set; }
+        public string FirstMidName { get; set; }
+        public DateTime EnrollmentDate { get; set; }
+
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;Create the SchoolContext with the following code&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code&gt;using Microsoft.EntityFrameworkCore;
+
+namespace myWebApp.Data
+{
+    public class SchoolContext : DbContext
+    {
+        public SchoolContext (DbContextOptions&amp;lt;SchoolContext&amp;gt; options)
+            : base(options)
+        {
+        }
+
+        public DbSet&amp;lt;Models.Student&amp;gt; Students { get; set; }
+
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+
+            modelBuilder.Entity&amp;lt;Models.Student&amp;gt;().ToTable(&amp;quot;Student&amp;quot;);
+        }
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;Regsister SchoolContext to DI in Startup.cs&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code&gt;
+        public void ConfigureServices(IServiceCollection services)
+        {
+            services.AddDbContext&amp;lt;myWebApp.Data.SchoolContext&amp;gt;(options =&amp;gt;
+            options.UseNpgsql(Configuration.GetConnectionString(&amp;quot;SchoolContext&amp;quot;)));
+
+            services.AddRazorPages();
+        }
+
+&lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;5&#34;&gt;
+&lt;li&gt;Adding database connectionstring to appsettings.json&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code&gt;{
+  &amp;quot;Logging&amp;quot;: {
+    &amp;quot;LogLevel&amp;quot;: {
+      &amp;quot;Default&amp;quot;: &amp;quot;Information&amp;quot;,
+      &amp;quot;Microsoft&amp;quot;: &amp;quot;Warning&amp;quot;,
+      &amp;quot;Microsoft.Hosting.Lifetime&amp;quot;: &amp;quot;Information&amp;quot;
+    }
+  },
+  &amp;quot;AllowedHosts&amp;quot;: &amp;quot;*&amp;quot;,
+  &amp;quot;ConnectionStrings&amp;quot;: {
+    &amp;quot;SchoolContext&amp;quot;: &amp;quot;Host=db;Database=my_db;Username=postgres;Password=example&amp;quot;
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;6&#34;&gt;
+&lt;li&gt;Boostrap the table if it does not exist in Program.cs&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code&gt; public static void Main(string[] args)
+        {
+           var host= CreateHostBuilder(args).Build();
+           CreateDbIfNotExists(host);
+           host.Run();
+        }
+      private static void CreateDbIfNotExists(IHost host)
+        {
+            using (var scope = host.Services.CreateScope())
+            {
+                var services = scope.ServiceProvider;
+                try
+                {
+                    var context = services.GetRequiredService&amp;lt;Data.SchoolContext&amp;gt;();
+                    context.Database.EnsureCreated();
+                    // DbInitializer.Initialize(context);
+                }
+                catch (Exception ex)
+                {
+                    var logger = services.GetRequiredService&amp;lt;ILogger&amp;lt;Program&amp;gt;&amp;gt;();
+                    logger.LogError(ex, &amp;quot;An error occurred creating the DB.&amp;quot;);
+                }
+            }
+        }
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;configuration-file&#34;&gt;Configuration file&lt;/h2&gt;
+&lt;p&gt;The entry point to Docker Compose is a Compose file, usually called &lt;code&gt;docker-compose.yml&lt;/code&gt;. In project directory, create a new file &lt;code&gt;docker-compose.yml&lt;/code&gt; in it. Use the following contents:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;services:
+
+  db:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: example
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8080:8080
+  app:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+      - 5000:80
+      
+    depends_on:
+    - db
+volumes:
+  postgres-data:
+    
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;In this Compose file:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Two services in this Compose are defined by the name &lt;code&gt;db&lt;/code&gt; and &lt;code&gt;web&lt;/code&gt; attributes; the adminer service is a helper for us to access db&lt;/li&gt;
+&lt;li&gt;Image name for each service defined using &lt;code&gt;image&lt;/code&gt; attribute&lt;/li&gt;
+&lt;li&gt;The &lt;code&gt;postgres&lt;/code&gt; image starts the Postgres server.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;environment&lt;/code&gt; attribute defines environment variables to initialize postgres server.
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;POSTGRES_PASSWORD&lt;/code&gt; are used set that default user,&lt;strong&gt;postgres&lt;/strong&gt; password. This user will be granted superuser permissions for the database &lt;strong&gt;my_db&lt;/strong&gt; in the connectionstring.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;app application uses the &lt;code&gt;db&lt;/code&gt; service as specified in the connection string&lt;/li&gt;
+&lt;li&gt;The app image is built using the Dockerfile in the project directory&lt;/li&gt;
+&lt;li&gt;Port forwarding is achieved using &lt;code&gt;ports&lt;/code&gt; attribute.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;depends_on&lt;/code&gt; attribute allows to express dependency between services. In this case, Postgres will be started before app. Application-level health check are still user&amp;rsquo;s responsibility.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;start-application&#34;&gt;Start application&lt;/h2&gt;
+&lt;p&gt;All services in the application can be started, in detached mode, by giving the command:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;docker-compose up -d
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;An alternate Compose file name can be specified using &lt;code&gt;-f&lt;/code&gt; option.&lt;/p&gt;
+&lt;p&gt;An alternate directory where the compose file exists can be specified using &lt;code&gt;-p&lt;/code&gt; option.&lt;/p&gt;
+&lt;p&gt;This shows the output as:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;docker-compose up -d
+Starting mywebapp_adminer_1 ... done
+Starting mywebapp_db_1      ... done
+Starting mywebapp_app_1     ... done
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;The output may differ slightly if the images are downloaded as well.&lt;/p&gt;
+&lt;p&gt;Started services can be verified using the command &lt;code&gt;docker-compose ps&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;docker-compose ps
+       Name                     Command               State           Ports
+------------------------------------------------------------------------------------
+mywebapp_adminer_1   entrypoint.sh docker-php-e ...   Up      0.0.0.0:8080-&amp;gt;8080/tcp
+mywebapp_app_1       ./myWebApp                       Up      0.0.0.0:5000-&amp;gt;80/tcp
+mywebapp_db_1        docker-entrypoint.sh postgres    Up      5432/tcp
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;This provides a consolidated view of all the services, and containers within each of them.&lt;/p&gt;
+&lt;p&gt;Alternatively, the containers in this application, and any additional containers running on this Docker host can be verified by using the usual &lt;code&gt;docker container ls&lt;/code&gt; command:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;docker container ls
+CONTAINER ID   IMAGE          COMMAND                  CREATED          STATUS              PORTS                    NAMES
+ee35a9399b80   mywebapp_app   &amp;quot;./myWebApp&amp;quot;             29 minutes ago   Up About a minute   0.0.0.0:5000-&amp;gt;80/tcp     mywebapp_app_1
+0fc85278791c   postgres       &amp;quot;docker-entrypoint.s…&amp;quot;   30 minutes ago   Up About a minute   5432/tcp                 mywebapp_db_1
+a9c725d0e684   adminer        &amp;quot;entrypoint.sh docke…&amp;quot;   30 minutes ago   Up About a minute   0.0.0.0:8080-&amp;gt;8080/tcp   mywebapp_adminer_1
+
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Service logs can be seen using &lt;code&gt;docker-compose logs&lt;/code&gt; command, and looks like:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;docker container logs mywebapp_db_1
+
+PostgreSQL Database directory appears to contain a database; Skipping initialization
+
+2021-03-16 04:19:51.862 UTC [1] LOG:  starting PostgreSQL 13.2 (Debian 13.2-1.pgdg100+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 8.3.0-6) 8.3.0, 64-bit
+2021-03-16 04:19:51.863 UTC [1] LOG:  listening on IPv4 address &amp;quot;0.0.0.0&amp;quot;, port 5432
+2021-03-16 04:19:51.863 UTC [1] LOG:  listening on IPv6 address &amp;quot;::&amp;quot;, port 5432
+2021-03-16 04:19:51.868 UTC [1] LOG:  listening on Unix socket &amp;quot;/var/run/postgresql/.s.PGSQL.5432&amp;quot;
+2021-03-16 04:19:51.875 UTC [29] LOG:  database system was shut down at 2021-03-16 04:19:04 UTC
+2021-03-16 04:19:51.884 UTC [1] LOG:  database system is ready to accept connections
+2021-03-16 04:20:03.442 UTC [1] LOG:  received fast shutdown request
+2021-03-16 04:20:03.444 UTC [1] LOG:  aborting any active transactions
+2021-03-16 04:20:03.446 UTC [1] LOG:  background worker &amp;quot;logical replication launcher&amp;quot; (PID 35) exited with exit code 1
+2021-03-16 04:20:03.447 UTC [30] LOG:  shutting down
+2021-03-16 04:20:03.473 UTC [1] LOG:  database system is shut down
+
+PostgreSQL Database directory appears to contain a database; Skipping initialization
+
+2021-03-16 04:20:53.597 UTC [1] LOG:  starting PostgreSQL 13.2 (Debian 13.2-1.pgdg100+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 8.3.0-6) 8.3.0, 64-bit
+2021-03-16 04:20:53.597 UTC [1] LOG:  listening on IPv4 address &amp;quot;0.0.0.0&amp;quot;, port 5432
+2021-03-16 04:20:53.597 UTC [1] LOG:  listening on IPv6 address &amp;quot;::&amp;quot;, port 5432
+2021-03-16 04:20:53.601 UTC [1] LOG:  listening on Unix socket &amp;quot;/var/run/postgresql/.s.PGSQL.5432&amp;quot;
+2021-03-16 04:20:53.606 UTC [26] LOG:  database system was shut down at 2021-03-16 04:20:03 UTC
+2021-03-16 04:20:53.618 UTC [1] LOG:  database system is ready to accept connections
+2021-03-16 04:21:31.054 UTC [38] ERROR:  invalid input syntax for type timestamp: &amp;quot;&amp;quot; at character 91
+2021-03-16 04:21:31.054 UTC [38] STATEMENT:  INSERT INTO &amp;quot;Student&amp;quot; (&amp;quot;LastName&amp;quot;, &amp;quot;FirstMidName&amp;quot;, &amp;quot;EnrollmentDate&amp;quot;)
+	VALUES (&#39;YHH&#39;, &#39;HH&#39;, &#39;&#39;)
+2021-03-16 04:33:09.323 UTC [1] LOG:  received fast shutdown request
+2021-03-16 04:33:09.325 UTC [1] LOG:  aborting any active transactions
+2021-03-16 04:33:09.327 UTC [1] LOG:  background worker &amp;quot;logical replication launcher&amp;quot; (PID 32) exited with exit code 1
+2021-03-16 04:33:09.329 UTC [27] LOG:  shutting down
+2021-03-16 04:33:09.342 UTC [1] LOG:  database system is shut down
+
+PostgreSQL Database directory appears to contain a database; Skipping initialization
+
+2021-03-16 04:49:23.844 UTC [1] LOG:  starting PostgreSQL 13.2 (Debian 13.2-1.pgdg100+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 8.3.0-6) 8.3.0, 64-bit
+2021-03-16 04:49:23.844 UTC [1] LOG:  listening on IPv4 address &amp;quot;0.0.0.0&amp;quot;, port 5432
+2021-03-16 04:49:23.844 UTC [1] LOG:  listening on IPv6 address &amp;quot;::&amp;quot;, port 5432
+2021-03-16 04:49:23.849 UTC [1] LOG:  listening on Unix socket &amp;quot;/var/run/postgresql/.s.PGSQL.5432&amp;quot;
+2021-03-16 04:49:23.855 UTC [26] LOG:  database system was shut down at 2021-03-16 04:33:09 UTC
+2021-03-16 04:49:23.862 UTC [1] LOG:  database system is ready to accept connections
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;verify-application&#34;&gt;Verify application&lt;/h2&gt;
+&lt;p&gt;Let&amp;rsquo;s access the application. In your browser address bar type http://localhost:5000&lt;/p&gt;
+&lt;p&gt;you will see the page show no student name since the database is empty.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;nostudent.png&#34; alt=&#34;no record&#34;&gt;&lt;/p&gt;
+&lt;p&gt;now open another tab with address http://localhost:8080 and you will be asked to login&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;adminerlogin.png&#34; alt=&#34;login&#34;&gt;&lt;/p&gt;
+&lt;p&gt;use &lt;strong&gt;postegres&lt;/strong&gt; and &lt;strong&gt;example&lt;/strong&gt; as username/passowrd to login my_db.&lt;/p&gt;
+&lt;p&gt;once you are logged in, you can create a new student record&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;addnewstudent.png&#34; alt=&#34;add record&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Now, refresh the app page at http://localhost:5000, the new added student name will be there,&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;student1.png&#34; alt=&#34;studnet&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;shutdown-application&#34;&gt;Shutdown application&lt;/h2&gt;
+&lt;p&gt;Shutdown the application using &lt;code&gt;docker-compose down&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;docker-compose down
+Stopping mywebapp_app_1     ... done
+Stopping mywebapp_db_1      ... done
+Stopping mywebapp_adminer_1 ... done
+Removing mywebapp_app_1     ... done
+Removing mywebapp_db_1      ... done
+Removing mywebapp_adminer_1 ... done
+Removing network mywebapp_default
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;This stops the container in each service and removes all the services. It also deletes any networks that were created as part of this application.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Addition Resources</title>
+      <link>https://docker.github.io/get-involved/docs/communityleaders/eventhandbooks/dotnet/resources/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docker.github.io/get-involved/docs/communityleaders/eventhandbooks/dotnet/resources/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Follow the below additional resources which you might find useful:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://training.play-with-docker.com/&#34;&gt;Play with Docker Training Classroom&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://training.https://docs.microsoft.com/en-us/dotnet/&#34;&gt;Dotne &lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>
