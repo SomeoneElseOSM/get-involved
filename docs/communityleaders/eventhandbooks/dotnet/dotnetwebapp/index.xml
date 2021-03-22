@@ -1,8 +1,8 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title> – Dockerize Dotnet Web Application</title>
+    <title> – Dockerize .Net Web Application</title>
     <link>https://docker.github.io/get-involved/docs/communityleaders/eventhandbooks/dotnet/dotnetwebapp/</link>
-    <description>Recent content in Dockerize Dotnet Web Application on </description>
+    <description>Recent content in Dockerize .Net Web Application on </description>
     <generator>Hugo -- gohugo.io</generator>
     
 	  <atom:link href="https://docker.github.io/get-involved/docs/communityleaders/eventhandbooks/dotnet/dotnetwebapp/index.xml" rel="self" type="application/rss+xml" />

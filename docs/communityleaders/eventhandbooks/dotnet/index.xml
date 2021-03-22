@@ -1,8 +1,8 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title> – Docker for Dotnet </title>
+    <title> – Docker for .Net </title>
     <link>https://docker.github.io/get-involved/docs/communityleaders/eventhandbooks/dotnet/</link>
-    <description>Recent content in Docker for Dotnet  on </description>
+    <description>Recent content in Docker for .Net  on </description>
     <generator>Hugo -- gohugo.io</generator>
     
 	  <atom:link href="https://docker.github.io/get-involved/docs/communityleaders/eventhandbooks/dotnet/index.xml" rel="self" type="application/rss+xml" />
@@ -892,7 +892,7 @@ Hello World
     </item>
     
     <item>
-      <title>Docs: Dockerize Dotnet Web Application</title>
+      <title>Docs: Dockerize .Net Web Application</title>
       <link>https://docker.github.io/get-involved/docs/communityleaders/eventhandbooks/dotnet/dotnetwebapp/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -900,7 +900,7 @@ Hello World
       <description>
         
         
-        &lt;h2 id=&#34;create-a-dotnet-application&#34;&gt;Create a dotnet application&lt;/h2&gt;
+        &lt;h2 id=&#34;create-a-net-application&#34;&gt;Create a .Net application&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;In your terminal, type the following command&lt;/li&gt;
 &lt;/ol&gt;
@@ -1062,7 +1062,7 @@ mywebapp                                                   latest    6acc7ebf3a1
     </item>
     
     <item>
-      <title>Docs: Dockerize Multi-Container Go App Using Compose</title>
+      <title>Docs: Dockerize Multi-Container .Net App Using Compose</title>
       <link>https://docker.github.io/get-involved/docs/communityleaders/eventhandbooks/dotnet/compose/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -1144,14 +1144,6 @@ mywebapp                                                   latest    6acc7ebf3a1
 &lt;tr&gt;
 &lt;td align=&#34;left&#34;&gt;&lt;code&gt;up&lt;/code&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;Create and start containers&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;`migrate-to-labels  Recreate containers to add labels|&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;====&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
