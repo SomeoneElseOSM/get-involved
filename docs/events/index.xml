@@ -107,5 +107,22 @@ Each 45 minutes session will focus on one Docker tools: Docker Compose, Docker D
       </description>
     </item>
     
+    <item>
+      <title>Docs: Speakers Directory</title>
+      <link>https://docker.github.io/get-involved/docs/events/speakers/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docker.github.io/get-involved/docs/events/speakers/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;guest-speaker-directory&#34;&gt;Guest Speaker Directory&lt;/h2&gt;
+&lt;p&gt;Are you interested to speak in the upcoming Meetup? Fill up this google form and we should be able to connect you to the Meetup organizer.
+We invite you for speaking at the upcoming Meetup event.&lt;/p&gt;
+&lt;p&gt;Please Note: This page is under construction.&lt;/p&gt;
+
+      </description>
+    </item>
+    
   </channel>
 </rss>
