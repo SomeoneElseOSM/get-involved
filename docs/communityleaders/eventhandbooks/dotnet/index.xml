@@ -1,11 +1,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title> – Docker for .Net Developers</title>
-    <link>https://docker.github.io/get-involved/docs/communityleaders/eventhandbooks/dotnet/</link>
+    <link>https://contribute.docker.com/docs/communityleaders/eventhandbooks/dotnet/</link>
     <description>Recent content in Docker for .Net Developers on </description>
     <generator>Hugo -- gohugo.io</generator>
     
-	  <atom:link href="https://docker.github.io/get-involved/docs/communityleaders/eventhandbooks/dotnet/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="https://contribute.docker.com/docs/communityleaders/eventhandbooks/dotnet/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -15,10 +15,10 @@
     
     <item>
       <title>Docs: Event Checklist</title>
-      <link>https://docker.github.io/get-involved/docs/communityleaders/eventhandbooks/dotnet/checklists/</link>
+      <link>https://contribute.docker.com/docs/communityleaders/eventhandbooks/dotnet/checklists/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://docker.github.io/get-involved/docs/communityleaders/eventhandbooks/dotnet/checklists/</guid>
+      <guid>https://contribute.docker.com/docs/communityleaders/eventhandbooks/dotnet/checklists/</guid>
       <description>
         
         
@@ -335,10 +335,10 @@ Note: The RSVP limits you set in Bevy do not translate to meetup. The best way t
     
     <item>
       <title>Docs: Agenda</title>
-      <link>https://docker.github.io/get-involved/docs/communityleaders/eventhandbooks/dotnet/agenda/</link>
+      <link>https://contribute.docker.com/docs/communityleaders/eventhandbooks/dotnet/agenda/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://docker.github.io/get-involved/docs/communityleaders/eventhandbooks/dotnet/agenda/</guid>
+      <guid>https://contribute.docker.com/docs/communityleaders/eventhandbooks/dotnet/agenda/</guid>
       <description>
         
         
@@ -398,10 +398,10 @@ Note: The RSVP limits you set in Bevy do not translate to meetup. The best way t
     
     <item>
       <title>Docs: Prerequisite</title>
-      <link>https://docker.github.io/get-involved/docs/communityleaders/eventhandbooks/dotnet/prerequisite/</link>
+      <link>https://contribute.docker.com/docs/communityleaders/eventhandbooks/dotnet/prerequisite/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://docker.github.io/get-involved/docs/communityleaders/eventhandbooks/dotnet/prerequisite/</guid>
+      <guid>https://contribute.docker.com/docs/communityleaders/eventhandbooks/dotnet/prerequisite/</guid>
       <description>
         
         
@@ -563,10 +563,10 @@ The path to an application .dll file to execute.
     
     <item>
       <title>Docs: Basics of Docker</title>
-      <link>https://docker.github.io/get-involved/docs/communityleaders/eventhandbooks/dotnet/basics/</link>
+      <link>https://contribute.docker.com/docs/communityleaders/eventhandbooks/dotnet/basics/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://docker.github.io/get-involved/docs/communityleaders/eventhandbooks/dotnet/basics/</guid>
+      <guid>https://contribute.docker.com/docs/communityleaders/eventhandbooks/dotnet/basics/</guid>
       <description>
         
         
@@ -687,10 +687,10 @@ ajeetraina@Ajeets-MacBook-Pro realtime-sensor-jetson %
     
     <item>
       <title>Docs: Building and Running a Docker Container</title>
-      <link>https://docker.github.io/get-involved/docs/communityleaders/eventhandbooks/dotnet/building/</link>
+      <link>https://contribute.docker.com/docs/communityleaders/eventhandbooks/dotnet/building/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://docker.github.io/get-involved/docs/communityleaders/eventhandbooks/dotnet/building/</guid>
+      <guid>https://contribute.docker.com/docs/communityleaders/eventhandbooks/dotnet/building/</guid>
       <description>
         
         
@@ -893,10 +893,10 @@ Hello World
     
     <item>
       <title>Docs: Dockerize .Net Web Application</title>
-      <link>https://docker.github.io/get-involved/docs/communityleaders/eventhandbooks/dotnet/dotnetwebapp/</link>
+      <link>https://contribute.docker.com/docs/communityleaders/eventhandbooks/dotnet/dotnetwebapp/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://docker.github.io/get-involved/docs/communityleaders/eventhandbooks/dotnet/dotnetwebapp/</guid>
+      <guid>https://contribute.docker.com/docs/communityleaders/eventhandbooks/dotnet/dotnetwebapp/</guid>
       <description>
         
         
@@ -1063,10 +1063,10 @@ mywebapp                                                   latest    6acc7ebf3a1
     
     <item>
       <title>Docs: Dockerize Multi-Container .Net App Using Compose</title>
-      <link>https://docker.github.io/get-involved/docs/communityleaders/eventhandbooks/dotnet/compose/</link>
+      <link>https://contribute.docker.com/docs/communityleaders/eventhandbooks/dotnet/compose/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://docker.github.io/get-involved/docs/communityleaders/eventhandbooks/dotnet/compose/</guid>
+      <guid>https://contribute.docker.com/docs/communityleaders/eventhandbooks/dotnet/compose/</guid>
       <description>
         
         
@@ -1398,10 +1398,10 @@ Removing network mywebapp_default
     
     <item>
       <title>Docs: Addition Resources</title>
-      <link>https://docker.github.io/get-involved/docs/communityleaders/eventhandbooks/dotnet/resources/</link>
+      <link>https://contribute.docker.com/docs/communityleaders/eventhandbooks/dotnet/resources/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://docker.github.io/get-involved/docs/communityleaders/eventhandbooks/dotnet/resources/</guid>
+      <guid>https://contribute.docker.com/docs/communityleaders/eventhandbooks/dotnet/resources/</guid>
       <description>
         
         
