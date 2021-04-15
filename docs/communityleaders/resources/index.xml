@@ -168,7 +168,6 @@ Try go get others involved. Spread the tasks across several shoulders, but make 
 &lt;li&gt;Community Leader Private Slack Channel: Great place to interact with other community leaders, make sure you have access&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;As you go through the organizing process, you can use the following phases to structure your planning for a successful event:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;Images_for_meetup_guide/Project_Phases.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Start with a scoping phase that shapes the general purpose of your meetup series. In this phase, you answer questions like: Do I want to organize simple, open discussions about Docker or I want to invite speakers? All the remaining phases belong to a single meetup, i.e. for each meetup you start with planning and finish up with the closing phase. Following this guide will make it easy for you to always have an overview what&amp;rsquo;s important now and next.&lt;/p&gt;
 &lt;h2 id=&#34;scope&#34;&gt;Scope&lt;/h2&gt;
 &lt;ul&gt;
@@ -187,15 +186,12 @@ Usually, Docker Meetup events are 2-3 hours long, start between 4pm and 7pm and 
 &lt;h2 id=&#34;planning&#34;&gt;Planning&lt;/h2&gt;
 &lt;p&gt;We recommend to create a single planning document, i.e. a Markdown file for each meetup. Using Github for that eases file versioning and eases editing since Github is a familiar platform.
 This planning document should gather all relevant information for the particular meetup, divided in categories and tasks. See the following slide as example (it&amp;rsquo;s in German, but you&amp;rsquo;ll get the general idea):&lt;/p&gt;
-&lt;img src=&#34;Images_for_meetup_guide/Planning_Categories_Tasks.png&#34; width=&#34;600&#34;&gt;
 &lt;p&gt;Each category contains a set of associated tasks. Thereby, each tasks ideally has:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;a checkbox to track the progress&lt;/li&gt;
 &lt;li&gt;the name of the one who is responsible for the tasks&lt;/li&gt;
 &lt;li&gt;a deadline, if appropriate&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;See the following as example:&lt;/p&gt;
-&lt;img src=&#34;Images_for_meetup_guide/Screenshot_Tasks.png&#34; width=&#34;480&#34;&gt;
 &lt;h2 id=&#34;plan-each-category&#34;&gt;Plan each category&lt;/h2&gt;
 &lt;p&gt;Next, see the following tips for each category:&lt;/p&gt;
 &lt;ul&gt;
