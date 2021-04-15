@@ -47,6 +47,11 @@
 &lt;td&gt;Akihiro Suda&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/containersolutions/trow&#34;&gt;Trow&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Container Registry and Image Management for Kubernetes Clusters&lt;/td&gt;
+&lt;td&gt;Adrian Mouat&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
 &lt;td&gt;&lt;a href=&#34;https://github.com/collabnix/pico&#34;&gt;&lt;strong&gt;The Pico Project&lt;/strong&gt;&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Object detection and Analytics using Docker, AWS Rekognition System &amp;amp; Raspberry Pi&lt;/td&gt;
 &lt;td&gt;Ajeet S Raina&lt;/td&gt;
