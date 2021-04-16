@@ -54,11 +54,13 @@
         
         &lt;h3 id=&#34;docker-community-groups-bevy-training-and-qa&#34;&gt;Docker Community Groups: Bevy Training and Q&amp;amp;A!&lt;/h3&gt;
 &lt;h3 id=&#34;agenda&#34;&gt;Agenda&lt;/h3&gt;
-&lt;p&gt;Updated Community Leaders Playbook
-Ongoing Organizer Enablement &amp;amp; Training
-Consistent Member Communications
-Technology Consolidation
-Monthly Updates&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Updated Community Leaders Playbook&lt;/li&gt;
+&lt;li&gt;Ongoing Organizer Enablement &amp;amp; Training&lt;/li&gt;
+&lt;li&gt;Consistent Member Communications&lt;/li&gt;
+&lt;li&gt;Technology Consolidation&lt;/li&gt;
+&lt;li&gt;Monthly Updates&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h3 id=&#34;event-recording&#34;&gt;Event Recording&lt;/h3&gt;
 &lt;div class=&#34;-bg-primary p-3 display-4&#34;&gt;Docker Community Groups: Kick-Off! Meeting ( April 15 2021)&lt;/div&gt;
 
