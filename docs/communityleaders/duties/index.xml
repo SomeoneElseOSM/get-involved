@@ -1,11 +1,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title> – Duties &amp; Responsibilities</title>
-    <link>https://contribute.docker.com/docs/communityleaders/duties/</link>
+    <link>/docs/communityleaders/duties/</link>
     <description>Recent content in Duties &amp; Responsibilities on </description>
     <generator>Hugo -- gohugo.io</generator>
     
-	  <atom:link href="https://contribute.docker.com/docs/communityleaders/duties/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="/docs/communityleaders/duties/index.xml" rel="self" type="application/rss+xml" />
     
     
       

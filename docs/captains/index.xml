@@ -1,12 +1,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title> – Docker Captains</title>
-    <link>https://contribute.docker.com/docs/captains/</link>
+    <link>/docs/captains/</link>
     <description>Recent content in Docker Captains on </description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Thu, 05 Jan 2017 00:00:00 +0000</lastBuildDate>
     
-	  <atom:link href="https://contribute.docker.com/docs/captains/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="/docs/captains/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -16,10 +16,10 @@
     
     <item>
       <title>Docs: Projects</title>
-      <link>https://contribute.docker.com/docs/captains/projects/</link>
+      <link>/docs/captains/projects/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://contribute.docker.com/docs/captains/projects/</guid>
+      <guid>/docs/captains/projects/</guid>
       <description>
         
         
@@ -147,10 +147,10 @@
     
     <item>
       <title>Docs: Resources</title>
-      <link>https://contribute.docker.com/docs/captains/resources/</link>
+      <link>/docs/captains/resources/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://contribute.docker.com/docs/captains/resources/</guid>
+      <guid>/docs/captains/resources/</guid>
       <description>
         
         
@@ -172,10 +172,10 @@
     
     <item>
       <title>Docs: NewsFeed</title>
-      <link>https://contribute.docker.com/docs/captains/newsfeed/</link>
+      <link>/docs/captains/newsfeed/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://contribute.docker.com/docs/captains/newsfeed/</guid>
+      <guid>/docs/captains/newsfeed/</guid>
       <description>
         
         
@@ -186,10 +186,10 @@
     
     <item>
       <title>Docs: Blogs &amp; Twitter</title>
-      <link>https://contribute.docker.com/docs/captains/twitter/</link>
+      <link>/docs/captains/twitter/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://contribute.docker.com/docs/captains/twitter/</guid>
+      <guid>/docs/captains/twitter/</guid>
       <description>
         
         

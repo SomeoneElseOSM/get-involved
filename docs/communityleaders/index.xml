@@ -1,11 +1,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title> – Community Leaders Program</title>
-    <link>https://contribute.docker.com/docs/communityleaders/</link>
+    <link>/docs/communityleaders/</link>
     <description>Recent content in Community Leaders Program on </description>
     <generator>Hugo -- gohugo.io</generator>
     
-	  <atom:link href="https://contribute.docker.com/docs/communityleaders/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="/docs/communityleaders/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -15,10 +15,10 @@
     
     <item>
       <title>Docs: Projects</title>
-      <link>https://contribute.docker.com/docs/communityleaders/projects/</link>
+      <link>/docs/communityleaders/projects/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://contribute.docker.com/docs/communityleaders/projects/</guid>
+      <guid>/docs/communityleaders/projects/</guid>
       <description>
         
         
@@ -64,10 +64,10 @@
     
     <item>
       <title>Docs: Resources</title>
-      <link>https://contribute.docker.com/docs/communityleaders/resources/</link>
+      <link>/docs/communityleaders/resources/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://contribute.docker.com/docs/communityleaders/resources/</guid>
+      <guid>/docs/communityleaders/resources/</guid>
       <description>
         
         
@@ -77,10 +77,10 @@
     
     <item>
       <title>Docs: Duties &amp; Responsibilities</title>
-      <link>https://contribute.docker.com/docs/communityleaders/duties/</link>
+      <link>/docs/communityleaders/duties/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://contribute.docker.com/docs/communityleaders/duties/</guid>
+      <guid>/docs/communityleaders/duties/</guid>
       <description>
         
         
@@ -100,10 +100,10 @@
     
     <item>
       <title>Docs: Event Handbooks</title>
-      <link>https://contribute.docker.com/docs/communityleaders/eventhandbooks/</link>
+      <link>/docs/communityleaders/eventhandbooks/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://contribute.docker.com/docs/communityleaders/eventhandbooks/</guid>
+      <guid>/docs/communityleaders/eventhandbooks/</guid>
       <description>
         
         
