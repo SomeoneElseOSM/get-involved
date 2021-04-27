@@ -14,48 +14,63 @@
     
     
     <item>
-      <title>Docs: </title>
-      <link>/docs/events/meetings/april/2021-04-14/</link>
+      <title>Docs: Community Meetings in April 2021</title>
+      <link>/docs/events/meetings/april/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/events/meetings/april/2021-04-14/</guid>
+      <guid>/docs/events/meetings/april/</guid>
       <description>
         
         
-        &lt;h2 id=&#34;agenda&#34;&gt;Agenda&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Updated Community Leaders Playbook&lt;/li&gt;
-&lt;li&gt;Ongoing Organiser Enablement &amp;amp; Training&lt;/li&gt;
-&lt;li&gt;Consistent Member Communications&lt;/li&gt;
-&lt;li&gt;Technology Consolidation&lt;/li&gt;
-&lt;li&gt;Monthly Updates&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;bevy-event-page--recording&#34;&gt;Bevy Event Page &amp;amp; Recording&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;https://events.docker.com/events/details/docker-docker-community-leaders-presents-docker-community-groups-re-activation-kick-off/&#34;&gt;Click Here to Access&lt;/a&gt;&lt;/p&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Docs: </title>
-      <link>/docs/events/meetings/april/2021-04-15/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/docs/events/meetings/april/2021-04-15/</guid>
-      <description>
-        
-        
-        &lt;h3 id=&#34;docker-community-groups-bevy-training-and-qa&#34;&gt;Docker Community Groups: Bevy Training and Q&amp;amp;A!&lt;/h3&gt;
-&lt;h3 id=&#34;agenda&#34;&gt;Agenda&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Updated Community Leaders Playbook&lt;/li&gt;
-&lt;li&gt;Ongoing Organizer Enablement &amp;amp; Training&lt;/li&gt;
-&lt;li&gt;Consistent Member Communications&lt;/li&gt;
-&lt;li&gt;Technology Consolidation&lt;/li&gt;
-&lt;li&gt;Monthly Updates&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;event-page--recording&#34;&gt;Event Page &amp;amp; Recording&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&#34;https://events.docker.com/events/details/docker-docker-community-leaders-presents-docker-community-groups-bevy-training-and-qa/&#34;&gt;Click Here to Access&lt;/a&gt;&lt;/p&gt;
+        &lt;h2 id=&#34;april-2021&#34;&gt;April 2021&lt;/h2&gt;
+&lt;h3 id=&#34;community-meetings&#34;&gt;Community Meetings&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Name of Event&lt;/th&gt;
+&lt;th&gt;Organizers&lt;/th&gt;
+&lt;th&gt;Meetings&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Docker Community 100 Days Re-activation Meeting&lt;/td&gt;
+&lt;td&gt;Bevy Team&lt;/td&gt;
+&lt;td&gt;Docker Community Groups: 100 Days Re-Activation (April - June 2021):&lt;br&gt;  1. Kick-Off! Meeting: &lt;a href=&#34;https://events.docker.com/events/details/docker-docker-community-leaders-presents-docker-community-groups-re-activation-kick-off/&#34;&gt;2021-04-14.md&lt;/a&gt;&lt;br&gt; 2. Bevy Training and Q&amp;amp;A! : &lt;a href=&#34;https://events.docker.com/events/details/docker-docker-community-leaders-presents-docker-community-groups-bevy-training-and-qa/&#34;&gt;2021-04-15.md&lt;/a&gt;&lt;br&gt; 3. Bevy Training and Q&amp;amp;A! : &lt;a href=&#34;https://events.docker.com/events/details/docker-docker-community-leaders-presents-docker-community-groups-bevy-training-and-qa-1/&#34;&gt;2021-04-22.md&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;virtual-events&#34;&gt;Virtual Events&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;S. No.&lt;/th&gt;
+&lt;th&gt;Title of Event&lt;/th&gt;
+&lt;th&gt;Chapter Name&lt;/th&gt;
+&lt;th&gt;Date&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://events.docker.com/events/details/docker-pune-presents-a-joint-meetup-with-open-source-community-conference-osconf-2021-online-virtual-event/&#34;&gt;Docker Bangalore Joint Meetup with OSCONF Community and Docker Pune&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Docker Bangalore&lt;/td&gt;
+&lt;td&gt;10-April&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://events.docker.com/events/details/docker-madrid-presents-kroquecon-kubernetes-pero-en-espanol/&#34;&gt;KroqueCon: Kubernetes, pero en español&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Docker Madrid&lt;/td&gt;
+&lt;td&gt;29-April&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://events.docker.com/events/details/docker-rio-de-janeiro-presents-kong-api-gateway-e-docker/&#34;&gt;Kong API Gateway e Docker&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Docker RIO DE JANEIRO&lt;/td&gt;
+&lt;td&gt;29-April&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
 
       </description>
     </item>
