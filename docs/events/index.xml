@@ -46,13 +46,13 @@
 5 presenters: 600 viewers maximum
 10 presenters: 300 viewers maximum
 20 presenters: 150 viewers maximum
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;This is a third party limit that ensures optimal performance and stability.The above maximum # of viewers also applies to standard Bevy Virtual events.
-Further Reference: &lt;a href=&#34;https://help.bevylabs.com/article/554-max-limits&#34;&gt;https://help.bevylabs.com/article/554-max-limits&lt;/a&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;This is a third party limit that ensures optimal performance and stability.The above maximum # of viewers also applies to standard Bevy Virtual events.&lt;/p&gt;
+&lt;p&gt;Further Reference: &lt;a href=&#34;https://help.bevylabs.com/article/554-max-limits&#34;&gt;https://help.bevylabs.com/article/554-max-limits&lt;/a&gt;&lt;/p&gt;
 &lt;h4 id=&#34;2-can-i-stream-bevy-virtual-directly-over-the-social-media-platform-like-youtube-and-twitter&#34;&gt;2. Can I stream Bevy Virtual directly over the social media platform like YouTube and Twitter?&lt;/h4&gt;
 &lt;p&gt;Ans: No, today it is not possible with Bevy Virtual. Bevy Labs have such capabilities with Bevy Virtual Conference which is a seperate product.
 Bevy Virtual and Bevy Conference are 2 separate products and are separately enabled on your Bevy Dashboard. Docker Community Leaders have just access to Bevy Virtual(and not for Bevy Conference)&lt;/p&gt;
-&lt;p&gt;With Bevy Conference, you can Livestream to FB, Twitch, YouTube, etc.(upto 4 services at the same time).
-Further Reference: &lt;a href=&#34;https://help.bevylabs.com/article/503-bevyvirtual-vs-bevyvirtualconferencing&#34;&gt;https://help.bevylabs.com/article/503-bevyvirtual-vs-bevyvirtualconferencing&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;With Bevy Conference, you can Livestream to FB, Twitch, YouTube, etc.(upto 4 services at the same time).&lt;/p&gt;
+&lt;p&gt;Further Reference: &lt;a href=&#34;https://help.bevylabs.com/article/503-bevyvirtual-vs-bevyvirtualconferencing&#34;&gt;https://help.bevylabs.com/article/503-bevyvirtual-vs-bevyvirtualconferencing&lt;/a&gt;&lt;/p&gt;
 &lt;h4 id=&#34;3-is-it-possible-to-stream-bevy-virtual-live-under-720p&#34;&gt;3. Is it possible to stream Bevy Virtual LIVE under 720p?&lt;/h4&gt;
 &lt;p&gt;Ans: Yes, it is possible to do Unlimited 720p HD Video Calls with Bevy Virtual.&lt;/p&gt;
 &lt;h4 id=&#34;4-does-bevy-virtual-support-screen-sharing-and-breakout-rooms&#34;&gt;4. Does Bevy Virtual support screen sharing and breakout Rooms?&lt;/h4&gt;
