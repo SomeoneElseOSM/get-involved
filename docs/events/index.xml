@@ -37,16 +37,7 @@
 &lt;p&gt;For more information, please visit &lt;a href=&#34;https://events.docker.com&#34;&gt;https://events.docker.com&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&#34;faqs&#34;&gt;FAQs:&lt;/h3&gt;
 &lt;h4 id=&#34;1-what-is-the-maximum-number-of-users-that-can-join-event-if-it-is-hosted-over-bevy-virtual&#34;&gt;1. What is the maximum number of users that can join event if it is hosted over Bevy Virtual?&lt;/h4&gt;
-&lt;p&gt;Ans: The maximum number of attendees who can watch a live session is variable, averaging around 500 (see below). Pre-recorded sessions are not subject to the aforementioned attendee limits. Depending on the number of people on screen, the presenter and attendee max looks like:&lt;/p&gt;
-&lt;p&gt;Speakers (presenters) x viewers (attendees) &amp;gt;= 3000&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;1 presenter: 3000 viewers maximum
-2 presenters: 1500 viewers maximum
-3 presenters: 1000 viewers maximum
-4 presenters: 750 viewers maximum
-5 presenters: 600 viewers maximum
-10 presenters: 300 viewers maximum
-20 presenters: 150 viewers maximum
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;This is a third party limit that ensures optimal performance and stability.The above maximum # of viewers also applies to standard Bevy Virtual events.&lt;/p&gt;
+&lt;p&gt;Ans: The maximum number of attendees who can watch a live session is variable, averaging around 500&lt;/p&gt;
 &lt;p&gt;Further Reference: &lt;a href=&#34;https://help.bevylabs.com/article/554-max-limits&#34;&gt;https://help.bevylabs.com/article/554-max-limits&lt;/a&gt;&lt;/p&gt;
 &lt;h4 id=&#34;2-can-i-stream-bevy-virtual-directly-over-the-social-media-platform-like-youtube-and-twitter&#34;&gt;2. Can I stream Bevy Virtual directly over the social media platform like YouTube and Twitter?&lt;/h4&gt;
 &lt;p&gt;Ans: No, today it is not possible with Bevy Virtual. Bevy Labs have such capabilities with Bevy Virtual Conference which is a seperate product.
