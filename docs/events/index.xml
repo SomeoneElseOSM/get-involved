@@ -64,7 +64,8 @@ Each 45 minutes session will focus on one Docker tools: Docker Compose, Docker D
       <description>
         
         
-        &lt;hr&gt;
+        &lt;h2 id=&#34;april-2021&#34;&gt;April 2021&lt;/h2&gt;
+&lt;h3 id=&#34;community-meeting&#34;&gt;Community Meeting&lt;/h3&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -78,6 +79,37 @@ Each 45 minutes session will focus on one Docker tools: Docker Compose, Docker D
 &lt;td&gt;Docker Community 100 Days Re-activation Meeting&lt;/td&gt;
 &lt;td&gt;Bevy Team&lt;/td&gt;
 &lt;td&gt;Docker Community Groups: 100 Days Re-Activation (April - June 2021):&lt;br&gt;  1. Kick-Off! Meeting: &lt;a href=&#34;https://events.docker.com/events/details/docker-docker-community-leaders-presents-docker-community-groups-re-activation-kick-off/&#34;&gt;2021-04-14.md&lt;/a&gt;&lt;br&gt; 2. Bevy Training and Q&amp;amp;A! : &lt;a href=&#34;https://events.docker.com/events/details/docker-docker-community-leaders-presents-docker-community-groups-bevy-training-and-qa/&#34;&gt;2021-04-15.md&lt;/a&gt;&lt;br&gt; 3. Bevy Training and Q&amp;amp;A! : &lt;a href=&#34;https://events.docker.com/events/details/docker-docker-community-leaders-presents-docker-community-groups-bevy-training-and-qa-1/&#34;&gt;2021-04-22.md&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;virtual-event&#34;&gt;Virtual Event&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;S. No.&lt;/th&gt;
+&lt;th&gt;Title of Event&lt;/th&gt;
+&lt;th&gt;Chapter Name&lt;/th&gt;
+&lt;th&gt;Date&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://events.docker.com/events/details/docker-pune-presents-a-joint-meetup-with-open-source-community-conference-osconf-2021-online-virtual-event/&#34;&gt;Docker Bangalore Joint Meetup with OSCONF Community and Docker Pune&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Docker Bangalore&lt;/td&gt;
+&lt;td&gt;10-April 2021&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://events.docker.com/events/details/docker-madrid-presents-kroquecon-kubernetes-pero-en-espanol/&#34;&gt;KroqueCon: Kubernetes, pero en español&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Docker Madrid&lt;/td&gt;
+&lt;td&gt;29-April 2021&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://events.docker.com/events/details/docker-rio-de-janeiro-presents-kong-api-gateway-e-docker/&#34;&gt;Kong API Gateway e Docker&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Docker RIO DE JANEIRO&lt;/td&gt;
+&lt;td&gt;29-April 2021&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
