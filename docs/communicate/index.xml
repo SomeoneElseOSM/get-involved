@@ -14,6 +14,20 @@
     
     
     <item>
+      <title>Docs: Docker Community Book</title>
+      <link>/docs/communicate/ebook/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/communicate/ebook/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;the-docker-community-book&#34;&gt;The Docker Community Book&lt;/h2&gt;
+
+      </description>
+    </item>
+    
+    <item>
       <title>Docs: Slack</title>
       <link>/docs/communicate/slack/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
