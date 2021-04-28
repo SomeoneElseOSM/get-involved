@@ -1,8 +1,8 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title> –  Community Tools</title>
+    <title> –  Community Tools &amp; Resources</title>
     <link>/docs/communicate/</link>
-    <description>Recent content in  Community Tools on </description>
+    <description>Recent content in  Community Tools &amp; Resources on </description>
     <generator>Hugo -- gohugo.io</generator>
     
 	  <atom:link href="/docs/communicate/index.xml" rel="self" type="application/rss+xml" />
