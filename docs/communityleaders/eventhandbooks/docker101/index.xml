@@ -2504,14 +2504,11 @@ $
 &lt;/table&gt;
 &lt;h3 id=&#34;pre-requisite&#34;&gt;Pre-requisite&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Create an account with &lt;a href=&#34;https://hub.docker.com&#34;&gt;DockerHub&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Open &lt;a href=&#34;https://labs.play-with-docker.com/&#34;&gt;PWD&lt;/a&gt; Platform on your browser&lt;/li&gt;
 &lt;li&gt;Click on &lt;strong&gt;Add New Instance&lt;/strong&gt; on the left side of the screen to bring up Alpine OS instance on the right side&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;create-a-directory-to-permanently-store-images&#34;&gt;Create a directory to permanently store images.&lt;/h3&gt;
 &lt;pre&gt;&lt;code&gt;$ mkdir -p /registry/data
-&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;authenticate-with-dockerhub&#34;&gt;Authenticate with DockerHub&lt;/h3&gt;
-&lt;pre&gt;&lt;code&gt;$docker login
 &lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;start-the-registry-container&#34;&gt;Start the registry container.&lt;/h3&gt;
 &lt;pre&gt;&lt;code&gt;$ docker run -d \
   -p 5000:5000 \
