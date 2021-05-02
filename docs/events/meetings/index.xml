@@ -1,8 +1,8 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title> – Community Meetings &amp; Events</title>
+    <title> – Community Meetings, Events &amp; Office Hours</title>
     <link>/docs/events/meetings/</link>
-    <description>Recent content in Community Meetings &amp; Events on </description>
+    <description>Recent content in Community Meetings, Events &amp; Office Hours on </description>
     <generator>Hugo -- gohugo.io</generator>
     
 	  <atom:link href="/docs/events/meetings/index.xml" rel="self" type="application/rss+xml" />
