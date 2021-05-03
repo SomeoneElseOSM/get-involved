@@ -121,7 +121,7 @@ The docker tag is rarely used alone and is often paired with other tags such as 
 &lt;li&gt;How do I install Docker&lt;/li&gt;
 &lt;li&gt;Running the first “Hello World” container&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;chap-2---installing-upgrading-and-maintaining-docker&#34;&gt;Chap 2.   Installing, Upgrading, and Maintaining Docker&lt;/h2&gt;
+&lt;h2 id=&#34;chap-2---installing-upgrading-and-maintaining-dockerhttpsgithubcomdockerget-involvedtreemastercontentendocscommunicateebookchap2&#34;&gt;&lt;a href=&#34;https://github.com/docker/get-involved/tree/master/content/en/docs/communicate/ebook/chap2&#34;&gt;Chap 2.   Installing, Upgrading, and Maintaining Docker&lt;/a&gt;)&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Installing Docker on Linux
 &lt;ul&gt;
@@ -153,7 +153,7 @@ The docker tag is rarely used alone and is often paired with other tags such as 
 &lt;li&gt;Installing Docker Desktop for Windows&lt;/li&gt;
 &lt;li&gt;Installing Docker on Windows Server&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;chap-3--understanding-docker-components&#34;&gt;Chap 3.  Understanding Docker components&lt;/h2&gt;
+&lt;h2 id=&#34;chap-3--understanding-docker-componentshttpsgithubcomdockerget-involvedtreemastercontentendocscommunicateebookchap3&#34;&gt;&lt;a href=&#34;https://github.com/docker/get-involved/tree/master/content/en/docs/communicate/ebook/chap3&#34;&gt;Chap 3.  Understanding Docker components&lt;/a&gt;)&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Docker Client-Server architecture&lt;/li&gt;
 &lt;li&gt;Docker Daemon&lt;/li&gt;
@@ -164,7 +164,7 @@ The docker tag is rarely used alone and is often paired with other tags such as 
 &lt;li&gt;What is a Docker registry?&lt;/li&gt;
 &lt;li&gt;How to build a local private Docker registry?&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;chap-4--working-with-docker-image-and-container&#34;&gt;Chap 4.  Working with Docker Image and container&lt;/h2&gt;
+&lt;h2 id=&#34;chap-4--working-with-docker-image-and-containerhttpsgithubcomdockerget-involvedtreemastercontentendocscommunicateebookchap4&#34;&gt;&lt;a href=&#34;https://github.com/docker/get-involved/tree/master/content/en/docs/communicate/ebook/chap4&#34;&gt;Chap 4.  Working with Docker Image and container&lt;/a&gt;)&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Listing the Docker images&lt;/li&gt;
 &lt;li&gt;Listing the Docker images by names and tags&lt;/li&gt;
@@ -178,7 +178,7 @@ The docker tag is rarely used alone and is often paired with other tags such as 
 &lt;li&gt;Executing a command in Docker container&lt;/li&gt;
 &lt;li&gt;Managing Docker containers&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;chap-5-introduction-to-docker-hub&#34;&gt;Chap 5. Introduction to Docker Hub&lt;/h2&gt;
+&lt;h2 id=&#34;chap-5-introduction-to-docker-hubhttpsgithubcomdockerget-involvedtreemastercontentendocscommunicateebookchap5&#34;&gt;&lt;a href=&#34;https://github.com/docker/get-involved/tree/master/content/en/docs/communicate/ebook/chap5&#34;&gt;Chap 5. Introduction to Docker Hub&lt;/a&gt;&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;What is Docker Hub?&lt;/li&gt;
 &lt;li&gt;Installing the hub-CLI tool&lt;/li&gt;
@@ -188,7 +188,7 @@ The docker tag is rarely used alone and is often paired with other tags such as 
 &lt;li&gt;Managing Your Docker Hub Repositories&lt;/li&gt;
 &lt;li&gt;Managing Your Docker Hub Tags&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;chap-6---getting-started-with-dockerfile&#34;&gt;Chap 6.   Getting Started with Dockerfile&lt;/h2&gt;
+&lt;h2 id=&#34;chap-6---getting-started-with-dockerfilehttpsgithubcomdockerget-involvedtreemastercontentendocscommunicateebookchap6&#34;&gt;&lt;a href=&#34;https://github.com/docker/get-involved/tree/master/content/en/docs/communicate/ebook/chap6&#34;&gt;Chap 6.   Getting Started with Dockerfile&lt;/a&gt;&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;What is Dockerfile?&lt;/li&gt;
 &lt;li&gt;Understanding Layering Concept with Dockerfile&lt;/li&gt;
@@ -211,7 +211,7 @@ The docker tag is rarely used alone and is often paired with other tags such as 
 &lt;li&gt;USER instruction&lt;/li&gt;
 &lt;li&gt;Writing Dockerfile with Hello Python Script Added&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;chap-7--docker-networking&#34;&gt;Chap 7.  Docker networking&lt;/h2&gt;
+&lt;h2 id=&#34;chap-7--docker-networkinghttpsgithubcomdockerget-involvedtreemastercontentendocscommunicateebookchap7&#34;&gt;&lt;a href=&#34;https://github.com/docker/get-involved/tree/master/content/en/docs/communicate/ebook/chap7&#34;&gt;Chap 7.  Docker networking&lt;/a&gt;&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Introduction&lt;/li&gt;
 &lt;li&gt;How does Docker networking work?&lt;/li&gt;
@@ -230,7 +230,7 @@ The docker tag is rarely used alone and is often paired with other tags such as 
 &lt;li&gt;Test Routing Mesh&lt;/li&gt;
 &lt;li&gt;Test standalone containersinOverlayNetwork&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;chap-8-docker-volume&#34;&gt;Chap 8. Docker Volume&lt;/h2&gt;
+&lt;h2 id=&#34;chap-8-docker-volumehttpsgithubcomdockerget-involvedtreemastercontentendocscommunicateebookchap8&#34;&gt;&lt;a href=&#34;https://github.com/docker/get-involved/tree/master/content/en/docs/communicate/ebook/chap8&#34;&gt;Chap 8. Docker Volume&lt;/a&gt;&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Introduction to Docker volume&lt;/li&gt;
 &lt;li&gt;Creating a volume&lt;/li&gt;
@@ -243,7 +243,7 @@ The docker tag is rarely used alone and is often paired with other tags such as 
 &lt;li&gt;Start service with Docker volume&lt;/li&gt;
 &lt;li&gt;Populate a volume using Docker container&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;chap-9--getting-started-with-docker-compose&#34;&gt;Chap 9.  Getting Started with Docker Compose&lt;/h2&gt;
+&lt;h2 id=&#34;chap-9--getting-started-with-docker-composehttpsgithubcomdockerget-involvedtreemastercontentendocscommunicateebookchap9&#34;&gt;&lt;a href=&#34;https://github.com/docker/get-involved/tree/master/content/en/docs/communicate/ebook/chap9&#34;&gt;Chap 9.  Getting Started with Docker Compose&lt;/a&gt;&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Introduction to Docker Compose&lt;/li&gt;
 &lt;li&gt;Dockerfile Vs Docker compose&lt;/li&gt;
@@ -277,7 +277,7 @@ The docker tag is rarely used alone and is often paired with other tags such as 
 &lt;li&gt;Use JSON instead of YAML compose file in Docker?&lt;/li&gt;
 &lt;li&gt;A Simple WordPress Application running on Single Node using Docker Compose&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;chap-10-getting-started-with-docker-swarm&#34;&gt;Chap 10 Getting Started with Docker Swarm&lt;/h2&gt;
+&lt;h2 id=&#34;chap-10-getting-started-with-docker-swarmhttpsgithubcomdockerget-involvedtreemastercontentendocscommunicateebookchap10&#34;&gt;&lt;a href=&#34;https://github.com/docker/get-involved/tree/master/content/en/docs/communicate/ebook/chap10&#34;&gt;Chap 10 Getting Started with Docker Swarm&lt;/a&gt;&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;What is Docker Swarm&lt;/li&gt;
 &lt;li&gt;Docker Swarm: Terminology&lt;/li&gt;
