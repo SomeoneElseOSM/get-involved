@@ -100,7 +100,8 @@ The docker tag is rarely used alone and is often paired with other tags such as 
       <description>
         
         
-        &lt;h2 id=&#34;table-of-contents&#34;&gt;Table of Contents&lt;/h2&gt;
+        &lt;p&gt;The Docker community has gathered together to create a book called &amp;ldquo;The Docker Community Book&amp;rdquo;. This book is targeted at Beginners, intermediate as well as advanced users of Docker. It&amp;rsquo;s not owned by a single author or any publisher. It&amp;rsquo;s an open community book and dedicated to all Docker community members, contributors as well as community influencers.&lt;/p&gt;
+&lt;h2 id=&#34;table-of-contents&#34;&gt;Table of Contents&lt;/h2&gt;
 &lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Who Should Read This Book?&lt;/li&gt;
