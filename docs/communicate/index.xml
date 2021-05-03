@@ -121,7 +121,7 @@ The docker tag is rarely used alone and is often paired with other tags such as 
 &lt;li&gt;How do I install Docker&lt;/li&gt;
 &lt;li&gt;Running the first “Hello World” container&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;chap-2---installing-upgrading-and-maintaining-dockerhttpsgithubcomdockerget-involvedtreemastercontentendocscommunicateebookchap2&#34;&gt;&lt;a href=&#34;https://github.com/docker/get-involved/tree/master/content/en/docs/communicate/ebook/chap2&#34;&gt;Chap 2.   Installing, Upgrading, and Maintaining Docker&lt;/a&gt;)&lt;/h2&gt;
+&lt;h2 id=&#34;chap-2installing-upgrading-and-maintaining-dockerhttpsgithubcomdockerget-involvedtreemastercontentendocscommunicateebookchap2&#34;&gt;&lt;a href=&#34;https://github.com/docker/get-involved/tree/master/content/en/docs/communicate/ebook/chap2&#34;&gt;Chap 2.Installing, Upgrading, and Maintaining Docker&lt;/a&gt;&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Installing Docker on Linux
 &lt;ul&gt;
@@ -153,7 +153,7 @@ The docker tag is rarely used alone and is often paired with other tags such as 
 &lt;li&gt;Installing Docker Desktop for Windows&lt;/li&gt;
 &lt;li&gt;Installing Docker on Windows Server&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;chap-3--understanding-docker-componentshttpsgithubcomdockerget-involvedtreemastercontentendocscommunicateebookchap3&#34;&gt;&lt;a href=&#34;https://github.com/docker/get-involved/tree/master/content/en/docs/communicate/ebook/chap3&#34;&gt;Chap 3.  Understanding Docker components&lt;/a&gt;)&lt;/h2&gt;
+&lt;h2 id=&#34;chap-3--understanding-docker-componentshttpsgithubcomdockerget-involvedtreemastercontentendocscommunicateebookchap3&#34;&gt;&lt;a href=&#34;https://github.com/docker/get-involved/tree/master/content/en/docs/communicate/ebook/chap3&#34;&gt;Chap 3.  Understanding Docker components&lt;/a&gt;&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Docker Client-Server architecture&lt;/li&gt;
 &lt;li&gt;Docker Daemon&lt;/li&gt;
@@ -164,7 +164,7 @@ The docker tag is rarely used alone and is often paired with other tags such as 
 &lt;li&gt;What is a Docker registry?&lt;/li&gt;
 &lt;li&gt;How to build a local private Docker registry?&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;chap-4--working-with-docker-image-and-containerhttpsgithubcomdockerget-involvedtreemastercontentendocscommunicateebookchap4&#34;&gt;&lt;a href=&#34;https://github.com/docker/get-involved/tree/master/content/en/docs/communicate/ebook/chap4&#34;&gt;Chap 4.  Working with Docker Image and container&lt;/a&gt;)&lt;/h2&gt;
+&lt;h2 id=&#34;chap-4--working-with-docker-image-and-containerhttpsgithubcomdockerget-involvedtreemastercontentendocscommunicateebookchap4&#34;&gt;&lt;a href=&#34;https://github.com/docker/get-involved/tree/master/content/en/docs/communicate/ebook/chap4&#34;&gt;Chap 4.  Working with Docker Image and container&lt;/a&gt;&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Listing the Docker images&lt;/li&gt;
 &lt;li&gt;Listing the Docker images by names and tags&lt;/li&gt;
