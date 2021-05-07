@@ -215,5 +215,104 @@
       </description>
     </item>
     
+    <item>
+      <title>Docs: June 2021</title>
+      <link>/docs/events/meetings/june/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/events/meetings/june/</guid>
+      <description>
+        
+        
+        &lt;h3 id=&#34;community-meetings&#34;&gt;Community Meetings&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Name of Event&lt;/th&gt;
+&lt;th&gt;Organizers&lt;/th&gt;
+&lt;th&gt;Meetings&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Docker Community 100 Days Re-activation Meeting&lt;/td&gt;
+&lt;td&gt;Bevy Team&lt;/td&gt;
+&lt;td&gt;Docker Community Groups: 100 Days Re-Activation (April - June 2021):&lt;br&gt;  1. Bevy Training and Q&amp;amp;A! : &lt;a href=&#34;https://events.docker.com/events/details/docker-docker-community-leaders-presents-docker-community-groups-bevy-training-and-qa-4/&#34;&gt;2021-05-06&lt;/a&gt;&lt;br&gt; 2. Bevy Training and Q&amp;amp;A! : &lt;a href=&#34;https://events.docker.com/events/details/docker-docker-community-leaders-presents-docker-community-groups-bevy-training-and-qa-3/&#34;&gt;2021-05-20&lt;/a&gt;&lt;br&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;virtual-events&#34;&gt;Virtual Events&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;S.No.&lt;/th&gt;
+&lt;th&gt;Title of Event&lt;/th&gt;
+&lt;th&gt;Chapter Name&lt;/th&gt;
+&lt;th&gt;Date&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://events.docker.com/events/details/docker-milwaukee-presents-creating-containerized-development-environments/&#34;&gt;Creating Containerized Development Environments&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Docker Milwaukee&lt;/td&gt;
+&lt;td&gt;03-June&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://events.docker.com/events/details/docker-bangalore-presents-docker-bangalore-joint-meetup-with-jfrog-collabnix-community/&#34;&gt;Joint Meetup with Jfrog and Collabnix&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Docker Bangalore&lt;/td&gt;
+&lt;td&gt;19-June&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;office-hours&#34;&gt;Office Hours&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;S.No.&lt;/th&gt;
+&lt;th&gt;Title of Event&lt;/th&gt;
+&lt;th&gt;Type of Event&lt;/th&gt;
+&lt;th&gt;Date&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://events.docker.com/events/details/docker-docker-community-leaders-presents-docker-community-groups-office-hours-5&#34;&gt;Docker Community Groups: Office Hours&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Virtual Online/Slack&lt;/td&gt;
+&lt;td&gt;01-June&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://events.docker.com/events/details/docker-docker-community-leaders-presents-docker-community-groups-office-hours-1/&#34;&gt;Docker Community Groups: Office Hours&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Virtual Online/Slack&lt;/td&gt;
+&lt;td&gt;15-June&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;quarterly-updates-meetings&#34;&gt;Quarterly Updates Meetings&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;S.No.&lt;/th&gt;
+&lt;th&gt;Title of Event&lt;/th&gt;
+&lt;th&gt;Chapter Name&lt;/th&gt;
+&lt;th&gt;Date&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://events.docker.com/events/details/docker-docker-community-leaders-presents-docker-community-groups-quarterly-update/&#34;&gt;Docker Community Groups: Quarterly Updates&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Virtual&lt;/td&gt;
+&lt;td&gt;29-June&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+      </description>
+    </item>
+    
   </channel>
 </rss>
