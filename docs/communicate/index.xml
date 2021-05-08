@@ -128,10 +128,12 @@ The docker tag is rarely used alone and is often paired with other tags such as 
 &lt;li&gt;Ubuntu&lt;/li&gt;
 &lt;li&gt;Debian&lt;/li&gt;
 &lt;li&gt;Red Hat Enterprise Linux&lt;/li&gt;
+&lt;li&gt;CentOS&lt;/li&gt;
 &lt;li&gt;OpenSUSE&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;Alpine OS&lt;/li&gt;
+&lt;li&gt;Arch Linux&lt;/li&gt;
 &lt;li&gt;Installing Docker on Cloud
 &lt;ul&gt;
 &lt;li&gt;AWS&lt;/li&gt;
