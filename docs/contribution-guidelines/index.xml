@@ -401,87 +401,39 @@ Docker Captains or Docker Community Leaders should contact: &lt;a href=&#34;mail
         
         &lt;p&gt;Community and participation are the backbone of Docker. Whether you&amp;rsquo;re technical or not, we welcome contributions from anyone around the world. This page is intended for people who want to contribute content sections of this website and who don&amp;rsquo;t use Git or GitHub often. This will help you get going with a GitHub repository, using either Git on CLI or the GitHub web user interface (UI).&lt;/p&gt;
 &lt;h2 id=&#34;using-the-command-line&#34;&gt;Using the command line&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Fork/Clone the docker-community-leaders/community repository:&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Go to the docker-community-leaders/dockercommunity on GitHub.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Click Fork to make your own copy of the repository. GitHub creates a copy at &lt;a href=&#34;https://github.com/&#34;&gt;https://github.com/&lt;/a&gt;&lt;your-github-username&gt;/community.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Open a terminal on your local machine.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Clone your forked repository, to copy the files down to your local machine. This example creates a directory called community and uses SSH cloning to download the files:&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;pre&gt;&lt;code&gt;mkdir community
-cd community/
-git clone git@github.com:&amp;lt;your-github-username&amp;gt;/dockercommunity.git
-cd dockercommunity/
-&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;add-the-upstream-repository-as-a-git-remote-repository&#34;&gt;Add the upstream repository as a Git remote repository:&lt;/h2&gt;
-&lt;pre&gt;&lt;code&gt;git remote add upstream https://github.com/docker-community-leaders/dockercommunity.git
-&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;check-your-remotes&#34;&gt;Check your remotes:&lt;/h2&gt;
-&lt;pre&gt;&lt;code&gt;git remote -vv
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;You should have 2 remote repositories:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;origin - points to your own fork of the repository on gitHub - that is, the one you cloned your local repository from.&lt;/li&gt;
-&lt;li&gt;upstream - points to the actual repository on gitHub.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Create a branch. In this example, replace documentupdates with any branch name you like. Choose a branch name that helps you recognize the updates you plan to make in that branch:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;git checkout -b documentupdates
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Add and edit the files as you like. The doc pages are in the /community/content/docs/ directory.&lt;/p&gt;
-&lt;p&gt;Run git status at any time, to check the status of your local files. Git tells you which files need adding or committing to your local repository.&lt;/p&gt;
-&lt;p&gt;Commit your updated files to your local Git repository. Example commit:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;git commit -a -m &amp;quot;Fixed some doc errors.&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Or:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;git add add-this-doc.md
-git commit -a -m &amp;quot;Added a shiny new doc.&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Push from your branch (for example, updates) to the relevant branch on your fork on GitHub:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;git checkout documentupdates
-git push origin documentsupdates
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;When you&amp;rsquo;re ready to start the review process, create a pull request (PR) in the branch on your fork on the GitHub UI, based on the above push. The PR is auto-sent to the upstream repository - that is, the one you forked from.&lt;/p&gt;
-&lt;p&gt;If you need to change the files in your PR, continue changing them locally in the same branch, then push them again in the same way. GitHub automatically sends them through to the same PR on the upstream repository!&lt;/p&gt;
-&lt;p&gt;Hint: If you&amp;rsquo;re authenticating to GitHub via SSH, use ssh-add to add your SSH key passphrase to the managing agent, so that you don&amp;rsquo;t have to keep authenticating to GitHub. You need to do this again after every reboot.&lt;/p&gt;
-&lt;h2 id=&#34;using-the-github-web-ui&#34;&gt;Using the GitHub web UI&lt;/h2&gt;
-&lt;p&gt;Note: The GitHub web UI is suitable for quick updates to a single file. If your update is more complex or you need to update more than one file within one pull request (PR), then the command line provides a better experience.&lt;/p&gt;
-&lt;p&gt;Follow these steps to edit a page using the GitHub UI:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Sign in to GitHub if you haven&amp;rsquo;t yet done so.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Go to the page that you want to edit on the Docker Community Site.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Click Edit this page.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;If this is the first time you&amp;rsquo;re updating a file in the Community site repository, a screen opens asking you to fork the repository. A fork is a copy of the repository where you can make your updates before submitting them for review. You only have to fork the repository once:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Click Fork this repository.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;If GitHub asks you Where should we fork the site and offers your username as an option, click the link on your username.
-Wait a few seconds while GitHub makes a copy of the repository at &lt;a href=&#34;https://github.com/yourusername/community&#34;&gt;https://github.com/yourusername/community&lt;/a&gt;. This copy is your fork of the docker-community-leaders/community repository.&lt;/p&gt;
-&lt;p&gt;The GitHub editor interface opens for the selected page. Make your updates to the content.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Click Preview changes at the top of the editing area to see the effect of your changes.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;If you need to make more changes, click Edit file at the top of the preview area.&lt;/p&gt;
-&lt;p&gt;When you are ready to submit your changes, scroll down to the Propose file change section at the bottom of the editing area.&lt;/p&gt;
-&lt;p&gt;Enter a short description of your update. This short description becomes the title of your pull request (PR).&lt;/p&gt;
-&lt;p&gt;In the second text box (for the extended description), enter a more detailed description.&lt;/p&gt;
-&lt;p&gt;Click Propose file change. A new screen appears, offering you the opportunity to open a pull request.&lt;/p&gt;
-&lt;p&gt;Click Create pull request.&lt;/p&gt;
-&lt;p&gt;Optionally, edit the pull request title and description.&lt;/p&gt;
-&lt;p&gt;Make sure Allow edits from maintainers remains checked.&lt;/p&gt;
-&lt;p&gt;Click Create pull request again. You have now sent a request to the repository maintainers to review your change.&lt;/p&gt;
-&lt;p&gt;Check the online preview of your changes:&lt;/p&gt;
-&lt;p&gt;Wait for the automated PR workflow to do some checks. When it&amp;rsquo;s ready, you should see a comment like this: deploy/netlify — Deploy preview ready!
-Click Details to the right of &amp;ldquo;Deploy preview ready&amp;rdquo; to see a preview of your updates.&lt;/p&gt;
+&lt;h1 id=&#34;clone-the-repository&#34;&gt;Clone the repository&lt;/h1&gt;
+&lt;p&gt;To start contributing you need to clone &lt;a href=&#34;https://github.com/docker/get-involved&#34;&gt;this&lt;/a&gt; repository.
+Use the following command that will also clone the submodules used.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;git clone --recurse-submodules --depth &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;1&lt;/span&gt; https://github.com/docker/get-involved
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;running-the-website-locally&#34;&gt;Running the website locally&lt;/h2&gt;
+&lt;p&gt;Building and running the site locally requires a recent extended version of Hugo.
+You can find out more about how to install Hugo for your environment in our Getting started guide.&lt;/p&gt;
+&lt;p&gt;You need a &lt;a href=&#34;https://github.com/gohugoio/hugo/releases&#34;&gt;recent &lt;strong&gt;extended&lt;/strong&gt; version&lt;/a&gt; of
+&lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; to do local builds and preview the website.
+We recommend using version &lt;code&gt;0.75.0&lt;/code&gt; or later.
+If you install from the release page, make sure to get the &lt;code&gt;extended&lt;/code&gt; Hugo version.
+The extended versions support &lt;a href=&#34;https://sass-lang.com/documentation/file.SCSS_FOR_SASS_USERS.html&#34;&gt;SCSS&lt;/a&gt;;
+you may need to scroll down the list of releases to see it.&lt;/p&gt;
+&lt;p&gt;For comprehensive Hugo documentation, see &lt;a href=&#34;https://gohugo.io/&#34;&gt;gohugo.io&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Once you&amp;rsquo;ve made your working copy of the site repo, from the repo root folder, run:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;hugo server
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;troubleshooting&#34;&gt;Troubleshooting&lt;/h2&gt;
+&lt;p&gt;If you have not cloned this repository as suggested above, you may face the following error during the run:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;➜ hugo server -D
+Start building sites … 
+Built in &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;1079&lt;/span&gt; ms
+Error: Error building site: &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;/home/get-involved/content/en/_index.html:7:1&amp;#34;&lt;/span&gt;: failed to extract shortcode: template &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;for&lt;/span&gt; shortcode &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;blocks/cover&amp;#34;&lt;/span&gt; not found
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This is primarily because you have not yet cloned the submodules used in the repository.
+In order to fix the issue run the following command and retry:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;git submodule update --init --recursive
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;code-reviews&#34;&gt;Code reviews&lt;/h2&gt;
+&lt;p&gt;All submissions, including submissions by project members, require review. We
+use GitHub pull requests for this purpose. Consult
+&lt;a href=&#34;https://help.github.com/articles/about-pull-requests/&#34;&gt;GitHub Help&lt;/a&gt; for more
+information on using pull requests.&lt;/p&gt;
+&lt;h2 id=&#34;community-guidelines&#34;&gt;Community Guidelines&lt;/h2&gt;
+&lt;p&gt;This project follows
+&lt;a href=&#34;https://opensource.google.com/conduct/&#34;&gt;Google&amp;rsquo;s Open Source Community Guidelines&lt;/a&gt;.&lt;/p&gt;
 
       </description>
     </item>
