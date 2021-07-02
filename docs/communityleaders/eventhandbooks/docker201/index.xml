@@ -405,5 +405,190 @@ Note: The RSVP limits you set in Bevy do not translate to meetup. The best way t
       </description>
     </item>
     
+    <item>
+      <title>Docs: Getting Started with Docker Compose</title>
+      <link>/docs/communityleaders/eventhandbooks/docker201/gettingstarted/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/communityleaders/eventhandbooks/docker201/gettingstarted/</guid>
+      <description>
+        
+        
+        &lt;h1 id=&#34;docker-compose&#34;&gt;Docker compose&lt;/h1&gt;
+&lt;p&gt;Docker compose is a tool built by docker to ease the task to creating and configring multiple containers in a development environment counter-part of docker-compose for prodcution environment is &lt;code&gt;docker swarm&lt;/code&gt;. Docker compose takes as input a &lt;code&gt;YAML&lt;/code&gt; configuration file and creates the resources (&lt;em&gt;containers&lt;/em&gt;, &lt;em&gt;networks&lt;/em&gt;, &lt;em&gt;volumes&lt;/em&gt; etc.) by communicating with the docker daemon through docker api.&lt;/p&gt;
+&lt;h1 id=&#34;introduction-to-compose&#34;&gt;Introduction to Compose&lt;/h1&gt;
+&lt;p&gt;&lt;code&gt;Compose&lt;/code&gt; project is the official open source project for Docker and is responsible for the rapid orchestration of Docker container clusters. Functionally, it is very similar to Heat OpenStack .&lt;/p&gt;
+&lt;p&gt;The code is currently open sourced at &lt;a href=&#34;https://github.com/docker/compose&#34;&gt;https://github.com/docker/compose&lt;/a&gt; .&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;Compose&lt;/code&gt; positioned as &amp;ldquo;Defining and running multi-container Docker applications&amp;rdquo;, and its predecessor is the open source project Fig.&lt;/p&gt;
+&lt;p&gt;Through the introduction in the first part, we know that using a Dockerfile template file allows users to easily define a separate application container. However, in daily work, it is often the case that multiple containers need to cooperate to complete a certain task. For example, to implement a Web project, in addition to the Web service container itself, it is often necessary to add a back-end database service container, and even a load balancing container.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;Compose&lt;/code&gt; just meets this need. It allows the user to define a set of associated application containers as a project through a separate docker-compose.yml template file (YAML format).&lt;/p&gt;
+&lt;p&gt;There are two important concepts in Compose :&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;Service:&lt;/code&gt; A container for an application that can actually include several container instances running the same image.&lt;/p&gt;
+&lt;p&gt;Project: A complete business unit consisting of a set of associated application containers, defined in the &lt;code&gt;docker-compose.yml &lt;/code&gt;file.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;Compose&lt;/code&gt; &amp;lsquo;s default management object is a project that provides convenient lifecycle management of a set of containers in a project through subcommands.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;Compose&lt;/code&gt; project is written in Python, and the implementation calls the API provided by the Docker service to manage the container. Therefore, as long as the platform being operated supports the Docker API, you can use Compose to manage it.&lt;/p&gt;
+&lt;h2 id=&#34;compose-file-used-in-examples&#34;&gt;Compose file used in examples&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;version&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;3&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;services&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;    &lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;web&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;        &lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;build&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt; &lt;/span&gt;.&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;        &lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;image&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt; &lt;/span&gt;web-client&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;        &lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;depends_on&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;        &lt;/span&gt;- server&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;        &lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;ports&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;        &lt;/span&gt;- &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;8080:8080&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;    &lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;server&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;        &lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;image&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt; &lt;/span&gt;helloworld&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;        &lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;volumes&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;        &lt;/span&gt;- &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;/app&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# Anonymous volume&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;        &lt;/span&gt;- &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;data:/data&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# Named volume&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;        &lt;/span&gt;- &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;mydata:/data&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# External volume&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;volumes&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;    &lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;data&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;    &lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;mydata&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;        &lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;external&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;true&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Refer &lt;a href=&#34;https://docs.docker.com/compose/compose-file/&#34;&gt;this&lt;/a&gt; for configuring your compose file.&lt;/p&gt;
+&lt;h2 id=&#34;cli-cheatsheet&#34;&gt;CLI Cheatsheet&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#docker-compose&#34;&gt;Docker compose&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#compose-file-used-in-examples&#34;&gt;Compose file used in examples&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#cli-cheatsheet&#34;&gt;CLI Cheatsheet&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#build&#34;&gt;Build&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#bundle&#34;&gt;Bundle&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#config&#34;&gt;Config&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#up&#34;&gt;Up&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#down&#34;&gt;Down&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#scale&#34;&gt;Scale&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#start&#34;&gt;Start&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#stop&#34;&gt;Stop&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;build&#34;&gt;Build&lt;/h3&gt;
+&lt;p&gt;Used to build services specified in docker-compose.yml file with &lt;code&gt;build&lt;/code&gt; specification.&lt;/p&gt;
+&lt;p&gt;Refer &lt;a href=&#34;https://docs.docker.com/compose/compose-file/#build&#34;&gt;this&lt;/a&gt; for more details.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt;
+Images build will be tagged as {DIR}_{SERVICE} unless image name is specified in the service specification.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;docker-compose build [OPTIONS] [SERVICE...]
+
+OPTIONS:
+
+--compress | Command line flag to compress the build context, Build context is nothing but a directory where docker-compose.yml file is located. As this directory can container a lot of files, sending build context to the container can take a lot of time thus compression is needed.
+
+--force-rm | Remove any intermediate container while building.
+
+--no-cache | Build images without using any cached layers from previoud builds.
+
+--pull | Allways pull newer version of the base image.
+
+-m, --memory | Set memory limit for the container used for building the image.
+
+--parallel | Exploit go routines to parallely build images, As docker daemon is written in go.
+
+--build-arg key=val | Pass any varaible to the dockerfile from the command line.
+
+
+SERVICE:
+
+If you want to build any particular services instead of every service specified in the compose file pass the name (same as in the compose file) as arguments to the command.
+
+Example:
+
+docker-compose build --compress     # Will compress the build context of service web.
+
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;bundle&#34;&gt;Bundle&lt;/h3&gt;
+&lt;p&gt;Used to generate distributed application bundle (DAB) from the compose file.&lt;/p&gt;
+&lt;p&gt;Refer &lt;a href=&#34;https://docs.docker.com/compose/bundles/&#34;&gt;this&lt;/a&gt; for more details about DBA.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;docker-compose bundle [OPTIONS]
+
+OPTIONS:
+
+--push-image | Push images to the register if any service has build specifcation.
+
+-o, --output PATH | Output path for .dab file.
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;config&#34;&gt;Config&lt;/h3&gt;
+&lt;p&gt;Used to validate the compose file&lt;/p&gt;
+&lt;p&gt;NOTE:
+Run this command in direcotry where docker-compose.yml file is located.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;docker-compose config
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;up&#34;&gt;Up&lt;/h3&gt;
+&lt;p&gt;Creates and starts the resources as per the specification the docker-compose.yml file.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;docker-compose up [OPTIONS] [SERVICE...]
+
+OPTIONS:
+
+-d, --detach | Run containers in background.
+
+--build | Always build images even if it exists.
+
+--no-deps | Avoid creating any linked services.
+
+--force-recreate | Force recreating containers even if specification is not changed.
+
+--no-recreate | Do not recreate containers.
+
+--no-build | Do not build any image even if it is missing.
+
+--no-start | Just create the containers without starting them.
+
+--scale SERVICE=NUM | Create multiple containers for a service.
+
+-V, --renew-anon-volumes | Recreate anonymous volumes instead of getting data from previous ones.
+
+Example:
+
+docker-compose up -d        # Will run service containers in background
+docker-compose up web       # Will start service web and server because of &#39;depends_on&#39; field
+docker-compose up server    # will start server service only.
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;down&#34;&gt;Down&lt;/h3&gt;
+&lt;p&gt;Stop and clear any resources created while lifting docker-compose.&lt;/p&gt;
+&lt;p&gt;By default only containers and networks defined in the compose file are removed.
+Networks and Volumes with external = true and never removed.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;docker-compose down [OPTIONS]
+
+--rmi type | Remove images Type = all (Remove every image in the compose file), local (Remove images with no custom tag)
+
+-v, --volumes | Remove named volumes except the external ones and also remove anonymous volumes
+
+-t, --timeout TIMEOUT | Speficy shutdown time in seconds. (default = 10)
+
+Example:
+
+docker-compose down         # Will delete all containers of both web and server and no volume will be removed
+
+docker-compose down -v      # Will also delete anonymous and data volumes.
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;scale&#34;&gt;Scale&lt;/h3&gt;
+&lt;p&gt;Scale particular services&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;docker-compose scale [SERVICE=NUM...]
+
+Example:
+
+docker-compose scale server=3 web=2
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;start&#34;&gt;Start&lt;/h3&gt;
+&lt;p&gt;Start created containers.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;docker-compose start [SERVICE...]
+
+Example:
+
+docker-compose start        # Start containers for every service.
+docker-compose start web    # Start containers only for service web. 
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;stop&#34;&gt;Stop&lt;/h3&gt;
+&lt;p&gt;Stop running containers.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;docker-compose stop [SERVICE...]
+
+Example:
+
+docker-compose stop         # Stop containers for every service.
+docker-compose stop web     # Stop containers only for service web.
+&lt;/code&gt;&lt;/pre&gt;
+      </description>
+    </item>
+    
   </channel>
 </rss>
