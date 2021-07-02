@@ -40,20 +40,6 @@
     </item>
     
     <item>
-      <title>Docs: Docker for Advanced </title>
-      <link>/docs/communityleaders/eventhandbooks/docker301/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/docs/communityleaders/eventhandbooks/docker301/</guid>
-      <description>
-        
-        
-        &lt;p&gt;&lt;img src=&#34;under-construction.png&#34; alt=&#34;My Image&#34;&gt;&lt;/p&gt;
-
-      </description>
-    </item>
-    
-    <item>
       <title>Docs: Kubernetes</title>
       <link>/docs/communityleaders/eventhandbooks/kube101/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
