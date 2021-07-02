@@ -1045,6 +1045,94 @@ CONTAINER ID        IMAGE               COMMAND             CREATED             
     </item>
     
     <item>
+      <title>Docs: Building Wordpress application using Docker Swarm</title>
+      <link>/docs/communityleaders/eventhandbooks/docker201/swarm-wordpress/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/communityleaders/eventhandbooks/docker201/swarm-wordpress/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;tested-infrastructure&#34;&gt;Tested Infrastructure&lt;/h2&gt;
+&lt;table class=&#34;tg&#34;&gt;
+  &lt;tr&gt;
+    &lt;th class=&#34;tg-yw4l&#34;&gt;&lt;b&gt;Platform&lt;/b&gt;&lt;/th&gt;
+    &lt;th class=&#34;tg-yw4l&#34;&gt;&lt;b&gt;Number of Instance&lt;/b&gt;&lt;/th&gt;
+    &lt;th class=&#34;tg-yw4l&#34;&gt;&lt;b&gt;Reading Time&lt;/b&gt;&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&#34;tg-yw4l&#34;&gt;&lt;b&gt; Play with Docker&lt;/b&gt;&lt;/td&gt;
+    &lt;td class=&#34;tg-yw4l&#34;&gt;&lt;b&gt;5&lt;/b&gt;&lt;/td&gt;
+    &lt;td class=&#34;tg-yw4l&#34;&gt;&lt;b&gt;5 min&lt;/b&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;pre-requisite&#34;&gt;Pre-requisite&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Create an account with &lt;a href=&#34;https://hub.docker.com&#34;&gt;DockerHub&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Open &lt;a href=&#34;https://labs.play-with-docker.com/&#34;&gt;PWD&lt;/a&gt; Platform on your browser&lt;/li&gt;
+&lt;li&gt;Click on &amp;ldquo;Template&amp;rdquo; sign near to Instance on the left side of the PWD window.&lt;/li&gt;
+&lt;li&gt;Select 3 Managers and 2 worker nodes template from drop-down menu&lt;/li&gt;
+&lt;li&gt;This will bring up 5-Node Docker Swarm Mode cluster for you.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;create-a-wordpress-docker-compose-file-for-docker-swarm&#34;&gt;Create a WordPress Docker Compose file for Docker Swarm&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;version: &#39;3.6&#39;
+
+services:
+  db:
+    image: mysql:5.7
+    volumes:
+      - db_data:/var/lib/mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: wordpress
+      MYSQL_DATABASE: wordpress
+      MYSQL_USER: wordpress
+      MYSQL_PASSWORD: wordpress
+    deploy:
+      placement:
+          constraints: [node.role == worker]
+      replicas: 1
+      update_config:
+        parallelism: 2
+        delay: 10s
+      restart_policy:
+        condition: on-failure
+
+  wordpress:
+    depends_on:
+      - db
+    image: wordpress:latest
+    ports:
+      - &amp;quot;8000:80&amp;quot;
+    restart: always
+    environment:
+      WORDPRESS_DB_HOST: db:3306
+      WORDPRESS_DB_PASSWORD: wordpress
+    deploy:
+      placement:
+          constraints: [node.role == worker]
+      replicas: 1
+      update_config:
+        parallelism: 2
+        delay: 10s
+      restart_policy:
+        condition: on-failure
+
+volumes:
+    db_data:
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Save the file with a name &amp;ldquo;stack.yml&amp;rdquo;.&lt;/p&gt;
+&lt;h2 id=&#34;bring-up-wordpress-application-stack&#34;&gt;Bring up WordPress Application Stack&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;$ docker stack deploy -c stack.yml myapp4
+
+Creating network myapp4_default
+Creating service myapp4_db
+Creating service myapp4_wordpress
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;A Port 8000 will appear instantly. Wait for 20 seconds and then click it to open WordPress App.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
       <title>Docs: Introduction to Docker Networking</title>
       <link>/docs/communityleaders/eventhandbooks/docker201/networking/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1373,94 +1461,6 @@ To create an overlay network which can be used by swarm services or standalone c
 &lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;testing-able-to-communicate-from-worker-node&#34;&gt;Testing able to communicate (From worker Node)&lt;/h3&gt;
 &lt;pre&gt;&lt;code&gt;$ docker exec -it worker-host sh -c &amp;quot;wget manager-host; cat index.html
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;We will be getting nginx default home page, which the container running on master node.&lt;/p&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Docs: Building Wordpress application using Docker Swarm</title>
-      <link>/docs/communityleaders/eventhandbooks/docker201/swarm-wordpress/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/docs/communityleaders/eventhandbooks/docker201/swarm-wordpress/</guid>
-      <description>
-        
-        
-        &lt;h2 id=&#34;tested-infrastructure&#34;&gt;Tested Infrastructure&lt;/h2&gt;
-&lt;table class=&#34;tg&#34;&gt;
-  &lt;tr&gt;
-    &lt;th class=&#34;tg-yw4l&#34;&gt;&lt;b&gt;Platform&lt;/b&gt;&lt;/th&gt;
-    &lt;th class=&#34;tg-yw4l&#34;&gt;&lt;b&gt;Number of Instance&lt;/b&gt;&lt;/th&gt;
-    &lt;th class=&#34;tg-yw4l&#34;&gt;&lt;b&gt;Reading Time&lt;/b&gt;&lt;/th&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td class=&#34;tg-yw4l&#34;&gt;&lt;b&gt; Play with Docker&lt;/b&gt;&lt;/td&gt;
-    &lt;td class=&#34;tg-yw4l&#34;&gt;&lt;b&gt;5&lt;/b&gt;&lt;/td&gt;
-    &lt;td class=&#34;tg-yw4l&#34;&gt;&lt;b&gt;5 min&lt;/b&gt;&lt;/td&gt;
-  &lt;/tr&gt;
-&lt;/table&gt;
-&lt;h2 id=&#34;pre-requisite&#34;&gt;Pre-requisite&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Create an account with &lt;a href=&#34;https://hub.docker.com&#34;&gt;DockerHub&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Open &lt;a href=&#34;https://labs.play-with-docker.com/&#34;&gt;PWD&lt;/a&gt; Platform on your browser&lt;/li&gt;
-&lt;li&gt;Click on &amp;ldquo;Template&amp;rdquo; sign near to Instance on the left side of the PWD window.&lt;/li&gt;
-&lt;li&gt;Select 3 Managers and 2 worker nodes template from drop-down menu&lt;/li&gt;
-&lt;li&gt;This will bring up 5-Node Docker Swarm Mode cluster for you.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;create-a-wordpress-docker-compose-file-for-docker-swarm&#34;&gt;Create a WordPress Docker Compose file for Docker Swarm&lt;/h2&gt;
-&lt;pre&gt;&lt;code&gt;version: &#39;3.6&#39;
-
-services:
-  db:
-    image: mysql:5.7
-    volumes:
-      - db_data:/var/lib/mysql
-    restart: always
-    environment:
-      MYSQL_ROOT_PASSWORD: wordpress
-      MYSQL_DATABASE: wordpress
-      MYSQL_USER: wordpress
-      MYSQL_PASSWORD: wordpress
-    deploy:
-      placement:
-          constraints: [node.role == worker]
-      replicas: 1
-      update_config:
-        parallelism: 2
-        delay: 10s
-      restart_policy:
-        condition: on-failure
-
-  wordpress:
-    depends_on:
-      - db
-    image: wordpress:latest
-    ports:
-      - &amp;quot;8000:80&amp;quot;
-    restart: always
-    environment:
-      WORDPRESS_DB_HOST: db:3306
-      WORDPRESS_DB_PASSWORD: wordpress
-    deploy:
-      placement:
-          constraints: [node.role == worker]
-      replicas: 1
-      update_config:
-        parallelism: 2
-        delay: 10s
-      restart_policy:
-        condition: on-failure
-
-volumes:
-    db_data:
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Save the file with a name &amp;ldquo;stack.yml&amp;rdquo;.&lt;/p&gt;
-&lt;h2 id=&#34;bring-up-wordpress-application-stack&#34;&gt;Bring up WordPress Application Stack&lt;/h2&gt;
-&lt;pre&gt;&lt;code&gt;$ docker stack deploy -c stack.yml myapp4
-
-Creating network myapp4_default
-Creating service myapp4_db
-Creating service myapp4_wordpress
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;A Port 8000 will appear instantly. Wait for 20 seconds and then click it to open WordPress App.&lt;/p&gt;
 
       </description>
     </item>
