@@ -2853,21 +2853,21 @@
         <li><a href="#pre-requisite-5">Pre-requisite</a></li>
       </ul>
     </li>
-    <li><a href="#lab-5-test-service-discovery">Lab #5: Test Service Discovery</a>
+    <li><a href="#lab-4-test-service-discovery">Lab #4: Test Service Discovery</a>
       <ul>
         <li><a href="#pre-requisite-6">Pre-requisite:</a></li>
         <li><a href="#tested-infrastructure-3">Tested Infrastructure</a></li>
         <li><a href="#pre-requisite-7">Pre-requisite</a></li>
       </ul>
     </li>
-    <li><a href="#lab-6-test-routing-mesh">Lab #6: Test Routing Mesh</a>
+    <li><a href="#lab-5-test-routing-mesh">Lab #5: Test Routing Mesh</a>
       <ul>
         <li><a href="#pre-requisite-8">Pre-requisite:</a></li>
         <li><a href="#tested-infrastructure-4">Tested Infrastructure</a></li>
         <li><a href="#pre-requisite-9">Pre-requisite</a></li>
       </ul>
     </li>
-    <li><a href="#lab-7-test-standalone-containers-in-overlay-network">Lab #7: Test standalone containers in Overlay Network</a>
+    <li><a href="#lab-6-test-standalone-containers-in-overlay-network">Lab #6: Test standalone containers in Overlay Network</a>
       <ul>
         <li><a href="#pre-requisite-10">Pre-requisite:</a></li>
         <li><a href="#tested-infrastructure-5">Tested Infrastructure</a></li>
@@ -3132,7 +3132,7 @@ e7e3f13ebea6        none                null                local
 <pre><code>$ docker service inspect --format={{.Endpoint.VirtualIPs}} testApp
 </code></pre><h4 id="removing-user-defined-network-myoverlay0-for-service-testapp">Removing user defined network myoverlay0 for service testApp</h4>
 <pre><code>$ docker service update --network-rm myoverlay0 testApp
-</code></pre><h1 id="lab-5-test-service-discovery">Lab #5: Test Service Discovery</h1>
+</code></pre><h1 id="lab-4-test-service-discovery">Lab #4: Test Service Discovery</h1>
 <p>Service Discovery which allows containers on the <b>same network</b> can access each other by name. Service Discovery is achive through Docker’s embedded DNS server(DNS IP 127.0.0.11). Embedded DNS server which provides built-in service discovery for any container created with a <b>valid name</b>(&ndash;name) or net-alias(&ndash;network-alias) or aliased by link. Service discovery which wont work on default networks.</p>
 <h2 id="pre-requisite-6">Pre-requisite:</h2>
 <h2 id="tested-infrastructure-3">Tested Infrastructure</h2>
@@ -3192,7 +3192,7 @@ e7e3f13ebea6        none                null                local
 </code></pre><h4 id="testing-wehther-able-to-resolve-using-service-name-from-centos-1">Testing wehther able to resolve using service name from centos</h4>
 <pre><code>$ docker exec -it &lt;Container_ID&gt; curl myWeb
 </code></pre><p>Now you will get response of nginx home page</p>
-<h1 id="lab-6-test-routing-mesh">Lab #6: Test Routing Mesh</h1>
+<h1 id="lab-5-test-routing-mesh">Lab #5: Test Routing Mesh</h1>
 <p>Docker swarm by default use ingress mode layer 4 routing mesh. The routing mesh enables each node in the swarm to accept connections on published ports for any service running in the swarm, even if there’s no task running on the node. You can bypass the routing mesh, using <b>host mode</b> when you create the service. Then you will able to access the service only from the node where task is running.</p>
 <h2 id="pre-requisite-8">Pre-requisite:</h2>
 <h2 id="tested-infrastructure-4">Tested Infrastructure</h2>
@@ -3226,7 +3226,7 @@ e7e3f13ebea6        none                null                local
 <pre><code>$ docker service inspect --format &quot;{{json .Endpoint.Ports}}&quot; bypassRM
 
 [{&quot;Protocol&quot;:&quot;tcp&quot;,&quot;TargetPort&quot;:80,&quot;PublishedPort&quot;:8080,&quot;PublishMode&quot;:&quot;host&quot;}
-</code></pre><h1 id="lab-7-test-standalone-containers-in-overlay-network">Lab #7: Test standalone containers in Overlay Network</h1>
+</code></pre><h1 id="lab-6-test-standalone-containers-in-overlay-network">Lab #6: Test standalone containers in Overlay Network</h1>
 <p>The overlay network driver creates a distributed network among multiple Docker daemon hosts and which are used commonly in docker swarm.
 In this lab we are going to attach containers in Overlay network make them to communicate with container in another host.</p>
 <h2 id="pre-requisite-10">Pre-requisite:</h2>
@@ -3500,7 +3500,7 @@ To create an overlay network which can be used by swarm services or standalone c
 
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">Last modified 07.07.2027: <a  href="https://github.com/docker/get-involved/commit/28b30a0543dcd4c2cae6ed45c0107be4b5c307a6">Update _index.md (28b30a0)</a>
+	<div class="text-muted mt-5 pt-3 border-top">Last modified 07.07.2027: <a  href="https://github.com/docker/get-involved/commit/2e807a4d8e58e4d34fb4c0ee49482a15cd5c44d0">Update _index.md (2e807a4)</a>
 </div>
 </div>
 
