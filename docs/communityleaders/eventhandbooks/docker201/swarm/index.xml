@@ -1,0 +1,17 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title> – Getting Started with Docker Swarm - Part 1</title>
+    <link>/docs/communityleaders/eventhandbooks/docker201/swarm/</link>
+    <description>Recent content in Getting Started with Docker Swarm - Part 1 on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="/docs/communityleaders/eventhandbooks/docker201/swarm/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+  </channel>
+</rss>
