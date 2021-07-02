@@ -414,8 +414,7 @@ Note: The RSVP limits you set in Bevy do not translate to meetup. The best way t
       <description>
         
         
-        &lt;h1 id=&#34;running-dockerized-wordpress-application-in-5-node-docker-swarm-mode-cluster&#34;&gt;Running Dockerized WordPress Application in 5-Node Docker Swarm Mode Cluster&lt;/h1&gt;
-&lt;h2 id=&#34;tested-infrastructure&#34;&gt;Tested Infrastructure&lt;/h2&gt;
+        &lt;h2 id=&#34;tested-infrastructure&#34;&gt;Tested Infrastructure&lt;/h2&gt;
 &lt;table class=&#34;tg&#34;&gt;
   &lt;tr&gt;
     &lt;th class=&#34;tg-yw4l&#34;&gt;&lt;b&gt;Platform&lt;/b&gt;&lt;/th&gt;
