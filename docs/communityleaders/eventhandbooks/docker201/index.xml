@@ -1133,5 +1133,338 @@ CONTAINER ID        IMAGE               COMMAND             CREATED             
       </description>
     </item>
     
+    <item>
+      <title>Docs: Introduction to Docker Networking</title>
+      <link>/docs/communityleaders/eventhandbooks/docker201/networking/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/communityleaders/eventhandbooks/docker201/networking/</guid>
+      <description>
+        
+        
+        &lt;h1 id=&#34;docker-networking&#34;&gt;Docker Networking&lt;/h1&gt;
+&lt;p&gt;For Docker containers to communicate with each other and the outside world via the host machine, there has to be a layer of networking involved. Docker supports different types of networks, each fit for certain use cases.&lt;/p&gt;
+&lt;h2 id=&#34;what-are-different-types-of-networking-in-docker&#34;&gt;What are different types of Networking in Docker&lt;/h2&gt;
+&lt;p&gt;Docker comes with network drivers geared towards different use cases. Docker’s networking subsystem is pluggable, using drivers.&lt;/p&gt;
+&lt;h3 id=&#34;what-is-docker0-in-terms-of-docker-networking&#34;&gt;What is &lt;code&gt;docker0&lt;/code&gt; in terms of Docker Networking&lt;/h3&gt;
+&lt;p&gt;When Docker is installed, a default &lt;strong&gt;bridge&lt;/strong&gt; network named &lt;strong&gt;docker0&lt;/strong&gt; is created. Each new Docker container is automatically attached to this network, unless a custom network is specified.&lt;/p&gt;
+&lt;p&gt;Besides &lt;strong&gt;docker0&lt;/strong&gt;, two other networks get created automatically by Docker: &lt;strong&gt;host&lt;/strong&gt;(no isolation between host and containers on this network, to the outside world they are on the same network) and &lt;strong&gt;none&lt;/strong&gt;(attached containers run on container-specific network stack)&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;h3 id=&#34;host-networks&#34;&gt;Host networks&lt;/h3&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Using host network driver for a container, that container’s network stack is not isolated from the Docker host, and use the host’s networking directly.
+Host is only available for swarm services on &lt;strong&gt;&lt;em&gt;Docker 17.06 and higher&lt;/em&gt;&lt;/strong&gt;.
+The host networking driver only works on Linux hosts, and is not supported on Docker for Mac, Docker for Windows, or Docker EE for Windows Server.&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;
+&lt;h3 id=&#34;bridge-networks&#34;&gt;Bridge networks&lt;/h3&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The default network driver. If you don’t specify a driver, this is the type of network you are creating. Bridge networks are usually used when your applications run in standalone containers that need to communicate. A bridge network uses a software bridge which allows containers connected to the same bridge network to communicate, while providing isolation from containers which are not connected to that bridge network.&lt;/p&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;
+&lt;h3 id=&#34;macvlan-networks&#34;&gt;Macvlan networks&lt;/h3&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Legacy applications expect to be directly connected to the physical network, rather than routed through the Docker host’s network stack. Macvlan networks assign a MAC address to a container, making it appear as a physical device on your network. The Docker daemon routes traffic to containers by their MAC addresses. We need to designate a physical interface on our Docker host to use for the Macvlan, as well as the subnet and gateway of the Macvlan.&lt;/p&gt;
+&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;
+&lt;h3 id=&#34;none-networks&#34;&gt;None networks&lt;/h3&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;This mode will not configure any IP to the container and doesn’t have any access to the external network as well as to other containers. It does have the loopback address and can be used for running batch jobs.&lt;/p&gt;
+&lt;ol start=&#34;5&#34;&gt;
+&lt;li&gt;
+&lt;h3 id=&#34;overlay-networks&#34;&gt;Overlay networks&lt;/h3&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;You have multiple docker host running containers in which each docker host has its own internal private bridge network allowing the containers to communicate with each other however, containers across the host has no way to communicate with each other unless you publish the port on those containers and set up some kind of routing yourself. This is where &lt;code&gt;Overlay network&lt;/code&gt; comes into play. With docker swarm you can create an overlay network which will create an internal private network that spans across all the nodes participating in the swarm network as we could attach a container or service to this network using the network option while creating a service. So, the containers across the nodes can communicate over this overlay network.&lt;/p&gt;
+&lt;h2 id=&#34;few-basic-commands&#34;&gt;Few Basic commands&lt;/h2&gt;
+&lt;h3 id=&#34;1-how-to-assign-static-ip-address-to-a-container&#34;&gt;1. How to assign Static IP address to a Container&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Create a new bridge network with your subnet and gateway for your ip block&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-docker&#34; data-lang=&#34;docker&#34;&gt;$ docker network create --subnet 198.0.125.0/24 --gateway 198.0.125.254 mystaticip&lt;span style=&#34;color:#a40000&#34;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;Run a nginx container with a specific ip in that block&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-docker&#34; data-lang=&#34;docker&#34;&gt;$ docker run --rm -it --net mystaticip --ip 198.0.125.2 nginx&lt;span style=&#34;color:#a40000&#34;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;Curl the ip&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-docker&#34; data-lang=&#34;docker&#34;&gt;$ curl 198.0.125.2&lt;span style=&#34;color:#a40000&#34;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;2-how-to-expose-container-port-on-host&#34;&gt;2. How to Expose Container Port on Host&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-docker&#34; data-lang=&#34;docker&#34;&gt;$ docker run -d -p 80:80 nginx&lt;span style=&#34;color:#a40000&#34;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;If you have multiple interface, then you will need to provide specific IP. Example:-&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-docker&#34; data-lang=&#34;docker&#34;&gt;$ docker run -p 127.0.0.1:&lt;span style=&#34;color:#000&#34;&gt;$HOSTPORT&lt;/span&gt;:&lt;span style=&#34;color:#000&#34;&gt;$CONTAINERPORT&lt;/span&gt; --name CONTAINER -t image_name&lt;span style=&#34;color:#a40000&#34;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;3-networking-containers-on-multiple-hosts-with-docker-network-work&#34;&gt;3. Networking Containers on Multiple Hosts with Docker Network work&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-docker&#34; data-lang=&#34;docker&#34;&gt;&lt;span style=&#34;color:#000&#34;&gt;base&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt;https://github.com/docker/machine/releases/download/v0.14.0 &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt;&lt;span style=&#34;color:#a40000&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#a40000&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#a40000&#34;&gt;&lt;/span&gt;curl -L &lt;span style=&#34;color:#000&#34;&gt;$base&lt;/span&gt;/docker-machine-&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;$(&lt;/span&gt;uname -s&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;)&lt;/span&gt;-&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;$(&lt;/span&gt;uname -m&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;)&lt;/span&gt; &amp;gt;/tmp/docker-machine &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt;&lt;span style=&#34;color:#a40000&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#a40000&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#a40000&#34;&gt;&lt;/span&gt;sudo install /tmp/docker-machine /usr/local/bin/docker-machine&lt;span style=&#34;color:#a40000&#34;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h1 id=&#34;lab-1-docker-overlay-networking&#34;&gt;Lab #1: Docker Overlay Networking&lt;/h1&gt;
+&lt;p&gt;The overlay network driver creates a distributed network among multiple Docker daemon hosts. It allows you to create a secure, layer-2 network, spanning into multiple docker hosts. When you setup a Docker swarm/ Docker in swarm mode, docker automatically create an overlay network called &lt;b&gt;ingress&lt;/b&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;firewall-rules-for-docker-daemons-using-overlay-networks&#34;&gt;Firewall rules for Docker daemons using overlay networks&lt;/h3&gt;
+&lt;p&gt;You need the following ports open to traffic to and from each Docker host participating on an overlay network:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;TCP port 2377 for cluster management communications
+TCP and UDP port 7946 for communication among nodes
+UDP port 4789 for overlay network traffic
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;pre-requisite&#34;&gt;Pre-requisite:&lt;/h2&gt;
+&lt;h2 id=&#34;tested-infrastructure&#34;&gt;Tested Infrastructure&lt;/h2&gt;
+&lt;table class=&#34;tg&#34;&gt;
+  &lt;tr&gt;
+    &lt;th class=&#34;tg-yw4l&#34;&gt;&lt;b&gt;Platform&lt;/b&gt;&lt;/th&gt;
+    &lt;th class=&#34;tg-yw4l&#34;&gt;&lt;b&gt;Number of Instance&lt;/b&gt;&lt;/th&gt;
+    &lt;th class=&#34;tg-yw4l&#34;&gt;&lt;b&gt;Reading Time&lt;/b&gt;&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&#34;tg-yw4l&#34;&gt;&lt;b&gt; Play with Docker&lt;/b&gt;&lt;/td&gt;
+    &lt;td class=&#34;tg-yw4l&#34;&gt;&lt;b&gt;2&lt;/b&gt;&lt;/td&gt;
+    &lt;td class=&#34;tg-yw4l&#34;&gt;&lt;b&gt;5 min&lt;/b&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;pre-requisite-1&#34;&gt;Pre-requisite&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Create an account with &lt;a href=&#34;https://hub.docker.com&#34;&gt;DockerHub&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Open &lt;a href=&#34;https://labs.play-with-docker.com/&#34;&gt;PWD&lt;/a&gt; Platform on your browser&lt;/li&gt;
+&lt;li&gt;Click on &lt;strong&gt;Add New Instance&lt;/strong&gt; on the left side of the screen to bring up Alpine OS instance on the right side&lt;/li&gt;
+&lt;li&gt;Create a swarm cluster&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;check-docker-network-in-host-mode&#34;&gt;Check docker network in host mode&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;$ docker network ls
+NETWORK ID          NAME                DRIVER              SCOPE
+e2ff8b7516b8        bridge              bridge              local
+2bbb99678f58        host                host                local
+04212f972673        none                null                local
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;setting-up-a-swarm&#34;&gt;Setting up a swarm&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;$ docker swarm init --advertise-addr=&amp;lt;Manager_Private_IP&amp;gt; --listen-addr=&amp;lt;Manager_Private_IP&amp;gt;:2377
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Once swarm is ready lets check network&lt;/p&gt;
+&lt;h3 id=&#34;network-in-swarm-mode&#34;&gt;Network in swarm mode&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;$ docker network ls
+NETWORK ID          NAME                DRIVER              SCOPE
+e2ff8b7516b8        bridge              bridge              local
+6a424c3904d1        docker_gwbridge     bridge              local
+2bbb99678f58        host                host                local
+s0ty6ay3lgdx        ingress             overlay             swarm
+04212f972673        none                null                local
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;You will see the default overlay network &lt;b&gt;ingress&lt;/b&gt; has been created on both hosts (Worker and Manager). But when you create a custom overlay network, Only on manager node the network will get created on host node once the task is assigned then on the custom network will get created.&lt;/p&gt;
+&lt;h1 id=&#34;lab-2-create-an-overlay-network&#34;&gt;Lab #2: Create an Overlay network&lt;/h1&gt;
+&lt;p&gt;In this lab we are going to create a user defined &lt;b&gt;Overlay network&lt;/b&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;pre-requisite-2&#34;&gt;Pre-requisite:&lt;/h2&gt;
+&lt;h2 id=&#34;tested-infrastructure-1&#34;&gt;Tested Infrastructure&lt;/h2&gt;
+&lt;table class=&#34;tg&#34;&gt;
+  &lt;tr&gt;
+    &lt;th class=&#34;tg-yw4l&#34;&gt;&lt;b&gt;Platform&lt;/b&gt;&lt;/th&gt;
+    &lt;th class=&#34;tg-yw4l&#34;&gt;&lt;b&gt;Number of Instance&lt;/b&gt;&lt;/th&gt;
+    &lt;th class=&#34;tg-yw4l&#34;&gt;&lt;b&gt;Reading Time&lt;/b&gt;&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&#34;tg-yw4l&#34;&gt;&lt;b&gt; Play with Docker&lt;/b&gt;&lt;/td&gt;
+    &lt;td class=&#34;tg-yw4l&#34;&gt;&lt;b&gt;2&lt;/b&gt;&lt;/td&gt;
+    &lt;td class=&#34;tg-yw4l&#34;&gt;&lt;b&gt;5 min&lt;/b&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;pre-requisite-3&#34;&gt;Pre-requisite&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Create an account with &lt;a href=&#34;https://hub.docker.com&#34;&gt;DockerHub&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Open &lt;a href=&#34;https://labs.play-with-docker.com/&#34;&gt;PWD&lt;/a&gt; Platform on your browser&lt;/li&gt;
+&lt;li&gt;Click on &lt;strong&gt;Add New Instance&lt;/strong&gt; on the left side of the screen to bring up Alpine OS instance on the right side&lt;/li&gt;
+&lt;li&gt;Create a swarm cluster&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;create-an-overlay-network-called-myoverlay0&#34;&gt;Create an overlay network called myoverlay0&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;$ docker network create --driver=overlay --subnet=192.168.1.0/24 --gateway=192.168.1.100 myoverlay0
+&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;listout-the-networks-in-the-host&#34;&gt;Listout the networks in the host&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;$ docker network ls
+NETWORK ID          NAME                DRIVER              SCOPE
+7bbea9e2f1c4        bridge              bridge              local
+99e0866a81c5        docker_gwbridge     bridge              local
+180292624b34        host                host                local
+pp47xrb8x4da        ingress             overlay             swarm
+1o0u8kqharpe        myoverlay0          overlay             swarm
+e7e3f13ebea6        none                null                local
+&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;view-the-details-of-network-myoverlay0&#34;&gt;View the details of network myoverlay0&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;$ docker network inspect myoverlay0
+&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;create-an-encrypted-overlay-network&#34;&gt;Create an encrypted overlay network&lt;/h4&gt;
+&lt;p&gt;By default application data is not encrypted, to encrypt application data as well, we need to add &lt;b&gt;&amp;ndash;opt encrypted&lt;/b&gt; while creating Overlaynetwork.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ docker network create -d overlay --opt encrypted encrypted_overlay
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;lab-3-create-a-service&#34;&gt;Lab #3: Create a service&lt;/h1&gt;
+&lt;p&gt;In this lab we will be looking to different option to connect service with user defined Overlay network.&lt;/p&gt;
+&lt;h2 id=&#34;pre-requisite-4&#34;&gt;Pre-requisite:&lt;/h2&gt;
+&lt;h2 id=&#34;tested-infrastructure-2&#34;&gt;Tested Infrastructure&lt;/h2&gt;
+&lt;table class=&#34;tg&#34;&gt;
+  &lt;tr&gt;
+    &lt;th class=&#34;tg-yw4l&#34;&gt;&lt;b&gt;Platform&lt;/b&gt;&lt;/th&gt;
+    &lt;th class=&#34;tg-yw4l&#34;&gt;&lt;b&gt;Number of Instance&lt;/b&gt;&lt;/th&gt;
+    &lt;th class=&#34;tg-yw4l&#34;&gt;&lt;b&gt;Reading Time&lt;/b&gt;&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&#34;tg-yw4l&#34;&gt;&lt;b&gt; Play with Docker&lt;/b&gt;&lt;/td&gt;
+    &lt;td class=&#34;tg-yw4l&#34;&gt;&lt;b&gt;2&lt;/b&gt;&lt;/td&gt;
+    &lt;td class=&#34;tg-yw4l&#34;&gt;&lt;b&gt;5 min&lt;/b&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;pre-requisite-5&#34;&gt;Pre-requisite&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Create an account with &lt;a href=&#34;https://hub.docker.com&#34;&gt;DockerHub&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Open &lt;a href=&#34;https://labs.play-with-docker.com/&#34;&gt;PWD&lt;/a&gt; Platform on your browser&lt;/li&gt;
+&lt;li&gt;Click on &lt;strong&gt;Add New Instance&lt;/strong&gt; on the left side of the screen to bring up Alpine OS instance on the right side&lt;/li&gt;
+&lt;li&gt;Swarm cluster&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;create-service-on-overlay-network-myoverlay0&#34;&gt;Create service on overlay network myoverlay0&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;$ docker service create --name testWeb -p 80:80 --network=myoverlay0 --replicas 3 httpd
+&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;checking-network-id-for-the-service&#34;&gt;Checking Network ID for the service&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;$ docker service inspect --format={{.Endpoint.VirtualIPs}} testWeb
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;connect-an-existing-service-to-an-overlay-network&#34;&gt;Connect an existing service to an overlay network&lt;/h3&gt;
+&lt;h4 id=&#34;createing-a-new-service-with-name-testapp&#34;&gt;Createing A new service with name testApp&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;$ docker service create --name testApp -p 8081:80 --replicas 3 nginx:alpine
+&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;checking-the-current-network-for-the-service&#34;&gt;Checking the current network for the service&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;$ docker service inspect --format={{.Endpoint.VirtualIPs}} testApp
+&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;connecting-service-to-userdefined-network-myoverlay0&#34;&gt;Connecting service to userdefined network myoverlay0&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;$ docker service update --network-add myoverlay0 testApp
+&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;checking-the-current-network-endpoint-for-the-service&#34;&gt;Checking the current network Endpoint for the service&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;$ docker service inspect --format={{.Endpoint.VirtualIPs}} testApp
+&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;removing-user-defined-network-myoverlay0-for-service-testapp&#34;&gt;Removing user defined network myoverlay0 for service testApp&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;$ docker service update --network-rm myoverlay0 testApp
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;lab-5-test-service-discovery&#34;&gt;Lab #5: Test Service Discovery&lt;/h1&gt;
+&lt;p&gt;Service Discovery which allows containers on the &lt;b&gt;same network&lt;/b&gt; can access each other by name. Service Discovery is achive through Docker’s embedded DNS server(DNS IP 127.0.0.11). Embedded DNS server which provides built-in service discovery for any container created with a &lt;b&gt;valid name&lt;/b&gt;(&amp;ndash;name) or net-alias(&amp;ndash;network-alias) or aliased by link. Service discovery which wont work on default networks.&lt;/p&gt;
+&lt;h2 id=&#34;pre-requisite-6&#34;&gt;Pre-requisite:&lt;/h2&gt;
+&lt;h2 id=&#34;tested-infrastructure-3&#34;&gt;Tested Infrastructure&lt;/h2&gt;
+&lt;table class=&#34;tg&#34;&gt;
+  &lt;tr&gt;
+    &lt;th class=&#34;tg-yw4l&#34;&gt;&lt;b&gt;Platform&lt;/b&gt;&lt;/th&gt;
+    &lt;th class=&#34;tg-yw4l&#34;&gt;&lt;b&gt;Number of Instance&lt;/b&gt;&lt;/th&gt;
+    &lt;th class=&#34;tg-yw4l&#34;&gt;&lt;b&gt;Reading Time&lt;/b&gt;&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&#34;tg-yw4l&#34;&gt;&lt;b&gt;Play with Docker&lt;/b&gt;&lt;/td&gt;
+    &lt;td class=&#34;tg-yw4l&#34;&gt;&lt;b&gt;2&lt;/b&gt;&lt;/td&gt;
+    &lt;td class=&#34;tg-yw4l&#34;&gt;&lt;b&gt;10 min&lt;/b&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;pre-requisite-7&#34;&gt;Pre-requisite&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Create an account with &lt;a href=&#34;https://hub.docker.com&#34;&gt;DockerHub&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Open &lt;a href=&#34;https://labs.play-with-docker.com/&#34;&gt;PWD&lt;/a&gt; Platform on your browser&lt;/li&gt;
+&lt;li&gt;Click on **Add&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;testing-service-discovery-in-default-network&#34;&gt;Testing service discovery in default network&lt;/h3&gt;
+&lt;h4 id=&#34;running-an-nginx-server&#34;&gt;Running an nginx server&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;$ docker container run -d --rm --name default_ntwrk nginx:alpine
+&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;testing-wehther-able-to-resolve-using-service-name&#34;&gt;Testing wehther able to resolve using service name&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;$ docker run --rm byrnedo/alpine-curl default_ntwrk
+% Total    % Received % Xferd  Average Speed   Time    Time     Time  Current Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: default_ntwrk
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;We are getting error that &lt;b&gt;Could not resolve host: default_ntwrk&lt;/b&gt;&lt;/p&gt;
+&lt;h4 id=&#34;creating-a-bridge-network&#34;&gt;Creating a bridge network&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;$ docker network create --driver=bridge --subnet=192.168.1.0/24 --gateway=192.168.1.250 my_bridge
+&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;running-an-nginx-server-in-user-defined-network&#34;&gt;Running an nginx server in user defined network&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;$ docker container run -d --rm --name usr_ntwrk --network my_bridge nginx:alpine
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;testing-service-discovery-in-user-defined-network&#34;&gt;Testing service discovery in User defined network&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;$ docker run --rm --network my_bridge byrnedo/alpine-curl usr_ntwrk
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;You will be getting nginx homepage on success.&lt;/p&gt;
+&lt;h3 id=&#34;testing-service-discovery-in-swarm-mode&#34;&gt;Testing service discovery in Swarm Mode&lt;/h3&gt;
+&lt;h4 id=&#34;creating-an-nginx-service-on-default-overlayingress&#34;&gt;Creating an nginx service on default overlay(ingress)&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;$ docker service create --name myWeb --replicas 2 --publish 8080:80 nginx:alpine
+&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;creating-another-service-mycentos&#34;&gt;Creating another Service myCentos&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;$ docker service create --replicas 2 --name myCentos centos sleep 1d
+&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;getting-container-id-of-centos&#34;&gt;Getting container ID of Centos&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;$ docker container ls
+&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;testing-wehther-able-to-resolve-using-service-name-from-centos&#34;&gt;Testing wehther able to resolve using service name from centos&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;$ docker exec -it &amp;lt;Container_ID&amp;gt; curl myWeb
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;You will be getting error &lt;b&gt;curl: (6) Could not resolve host: myWeb; Unknown error&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;Lets remove the Services&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ docker service rm myWeb myCentos
+&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;create-a-overlay-network&#34;&gt;Create a Overlay network&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;$ docker network create -d overlay --opt encrypted CustomOverlay
+&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;create-nginx-service-with-customoverlay-network&#34;&gt;Create nginx service with CustomOverlay network&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;$ docker service create --name myWeb --replicas 2 --publish 8080:80 --network=CustomOverlay  nginx:alpine
+&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;creating-another-service-mycentos-with-customoverlay-network&#34;&gt;Creating another Service myCentos with CustomOverlay network&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;docker service create --replicas 2 --name myCentos --network=CustomOverlay centos sleep 1d
+&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;getting-container-id-of-centos-1&#34;&gt;Getting container ID of Centos&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;$ docker container ls
+&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;testing-wehther-able-to-resolve-using-service-name-from-centos-1&#34;&gt;Testing wehther able to resolve using service name from centos&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;$ docker exec -it &amp;lt;Container_ID&amp;gt; curl myWeb
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Now you will get response of nginx home page&lt;/p&gt;
+&lt;h1 id=&#34;lab-6-test-routing-mesh&#34;&gt;Lab #6: Test Routing Mesh&lt;/h1&gt;
+&lt;p&gt;Docker swarm by default use ingress mode layer 4 routing mesh. The routing mesh enables each node in the swarm to accept connections on published ports for any service running in the swarm, even if there’s no task running on the node. You can bypass the routing mesh, using &lt;b&gt;host mode&lt;/b&gt; when you create the service. Then you will able to access the service only from the node where task is running.&lt;/p&gt;
+&lt;h2 id=&#34;pre-requisite-8&#34;&gt;Pre-requisite:&lt;/h2&gt;
+&lt;h2 id=&#34;tested-infrastructure-4&#34;&gt;Tested Infrastructure&lt;/h2&gt;
+&lt;table class=&#34;tg&#34;&gt;
+  &lt;tr&gt;
+    &lt;th class=&#34;tg-yw4l&#34;&gt;&lt;b&gt;Platform&lt;/b&gt;&lt;/th&gt;
+    &lt;th class=&#34;tg-yw4l&#34;&gt;&lt;b&gt;Number of Instance&lt;/b&gt;&lt;/th&gt;
+    &lt;th class=&#34;tg-yw4l&#34;&gt;&lt;b&gt;Reading Time&lt;/b&gt;&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&#34;tg-yw4l&#34;&gt;&lt;b&gt;Play with Docker&lt;/b&gt;&lt;/td&gt;
+    &lt;td class=&#34;tg-yw4l&#34;&gt;&lt;b&gt;1&lt;/b&gt;&lt;/td&gt;
+    &lt;td class=&#34;tg-yw4l&#34;&gt;&lt;b&gt;5 min&lt;/b&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;pre-requisite-9&#34;&gt;Pre-requisite&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Create an account with &lt;a href=&#34;https://hub.docker.com&#34;&gt;DockerHub&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Open &lt;a href=&#34;https://labs.play-with-docker.com/&#34;&gt;PWD&lt;/a&gt; Platform on your browser&lt;/li&gt;
+&lt;li&gt;Click on **Add&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;create-a-service-in-ingress-mode&#34;&gt;Create a service in ingress mode&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;$ docker service create --name myWebApp --publish published=80,target=80,mode=ingress nginx:alpine
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Checking Current PublishMode&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ docker service inspect --format &amp;quot;{{json .Endpoint.Ports}}&amp;quot; myWebApp
+
+[{&amp;quot;Protocol&amp;quot;:&amp;quot;tcp&amp;quot;,&amp;quot;TargetPort&amp;quot;:80,&amp;quot;PublishedPort&amp;quot;:80,&amp;quot;PublishMode&amp;quot;:&amp;quot;ingress&amp;quot;}]
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;bypass-the-routing-mesh-by-host-mode&#34;&gt;Bypass the routing mesh by host Mode&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;$ docker service create --name bypassRM --publish published=8080,target=80,mode=host nginx:alpine
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Checking Current PublishMode&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ docker service inspect --format &amp;quot;{{json .Endpoint.Ports}}&amp;quot; bypassRM
+
+[{&amp;quot;Protocol&amp;quot;:&amp;quot;tcp&amp;quot;,&amp;quot;TargetPort&amp;quot;:80,&amp;quot;PublishedPort&amp;quot;:8080,&amp;quot;PublishMode&amp;quot;:&amp;quot;host&amp;quot;}
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;lab-7-test-standalone-containers-in-overlay-network&#34;&gt;Lab #7: Test standalone containers in Overlay Network&lt;/h1&gt;
+&lt;p&gt;The overlay network driver creates a distributed network among multiple Docker daemon hosts and which are used commonly in docker swarm.
+In this lab we are going to attach containers in Overlay network make them to communicate with container in another host.&lt;/p&gt;
+&lt;h2 id=&#34;pre-requisite-10&#34;&gt;Pre-requisite:&lt;/h2&gt;
+&lt;h2 id=&#34;tested-infrastructure-5&#34;&gt;Tested Infrastructure&lt;/h2&gt;
+&lt;table class=&#34;tg&#34;&gt;
+  &lt;tr&gt;
+    &lt;th class=&#34;tg-yw4l&#34;&gt;&lt;b&gt;Platform&lt;/b&gt;&lt;/th&gt;
+    &lt;th class=&#34;tg-yw4l&#34;&gt;&lt;b&gt;Number of Instance&lt;/b&gt;&lt;/th&gt;
+    &lt;th class=&#34;tg-yw4l&#34;&gt;&lt;b&gt;Reading Time&lt;/b&gt;&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&#34;tg-yw4l&#34;&gt;&lt;b&gt; Play with Docker&lt;/b&gt;&lt;/td&gt;
+    &lt;td class=&#34;tg-yw4l&#34;&gt;&lt;b&gt;2&lt;/b&gt;&lt;/td&gt;
+    &lt;td class=&#34;tg-yw4l&#34;&gt;&lt;b&gt;5 min&lt;/b&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;pre-requisite-11&#34;&gt;Pre-requisite&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Create an account with &lt;a href=&#34;https://hub.docker.com&#34;&gt;DockerHub&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Open &lt;a href=&#34;https://labs.play-with-docker.com/&#34;&gt;PWD&lt;/a&gt; Platform on your browser&lt;/li&gt;
+&lt;li&gt;Click on &lt;strong&gt;Add New Instance&lt;/strong&gt; on the left side of the screen to bring up Alpine OS instance on the right side&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;bring-up-a-swarm-mode-cluster&#34;&gt;Bring up a swarm mode cluster&lt;/h2&gt;
+&lt;h3 id=&#34;try-to-attach-a-container-on-default-docker-overlayingress-network&#34;&gt;Try to attach a container on default docker overlay(ingress) network&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;$ docker container run --network=ingress -d nginx:alpine
+docker: Error response from daemon: Could not attach to network ingress: rpc error: code = PermissionDenied desc = network ingress not manually attachable.
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;We failed to attach, since by default attachable flag is disabled.&lt;br&gt;
+To create an overlay network which can be used by swarm services or standalone containers to communicate with other standalone containers running on other Docker daemons, we should add the &lt;b&gt;&amp;ndash;attachable&lt;/b&gt; flag while creating an overlay network.&lt;/p&gt;
+&lt;h3 id=&#34;create-an-attachable-overlay-network&#34;&gt;Create an attachable overlay network&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;$ docker network create --driver overlay --attachable myOverlay
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;launch-a-container-on-manager-node-with-network-myoverlay&#34;&gt;Launch a container on Manager node with network myOverlay&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;$ docker container run --network=myOverlay --name=manager-host -d nginx:alpine
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;launch-a-container-on-worker-node-with-network-myoverlay&#34;&gt;Launch a container on Worker node with network myOverlay&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;$ docker container run --network=myOverlay --name=worker-host -d httpd:alpine
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;testing-able-to-communicate-from-worker-node&#34;&gt;Testing able to communicate (From worker Node)&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;$ docker exec -it worker-host sh -c &amp;quot;wget manager-host; cat index.html
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;We will be getting nginx default home page, which the container running on master node.&lt;/p&gt;
+
+      </description>
+    </item>
+    
   </channel>
 </rss>
