@@ -720,6 +720,326 @@ more.&lt;/p&gt;
 &lt;p&gt;Up until now, you have been using Docker in a single-host mode on your local machine. But Docker also can be switched into swarm mode, and that’s what enables the use of swarms. Enabling swarm mode instantly makes the current machine a swarm manager. From then on, Docker runs the commands you execute on the swarm you’re managing, rather than just on the current machine.&lt;/p&gt;
 &lt;p&gt;Swarm managers can use several strategies to run containers, such as “emptiest node” &amp;ndash; which fills the least utilized machines with containers. Or “global”, which ensures that each machine gets exactly one instance of the specified container.&lt;/p&gt;
 &lt;p&gt;A swarm is made up of multiple nodes, which can be either physical or virtual machines. The basic concept is simple enough: run docker swarm init to enable swarm mode and make our current machine a swarm manager, then run docker swarm join on other machines to have them join the swarm as workers.&lt;/p&gt;
+&lt;h2 id=&#34;getting-started-with-docker-swarm&#34;&gt;Getting Started with Docker Swarm&lt;/h2&gt;
+&lt;p&gt;To get started with Docker Swarm, you can use &amp;ldquo;Play with Docker&amp;rdquo;, aka PWD.
+It&amp;rsquo;s free of cost and open for all.
+You get maximum of 5 instances of Linux system to play around with Docker.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Open &lt;a href=&#34;https://labs.play-with-docker.com&#34;&gt;Play with Docker labs&lt;/a&gt; on your browser&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Click on Icon near to Instance to choose 3 Managers &amp;amp; 2 Worker Nodes&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/collabnix/dockerlabs/master/images/pwd_1.png&#34; alt=&#34;My image&#34;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Wait for few seconds to bring up 5-Node Swarm Cluster&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;We recommend you start with one of our Beginners Guides, and then move to intermediate and expert level tutorials that cover most of the features of Docker. For a comprehensive approach to understanding Docker, I have categorized it as shown below:&lt;/p&gt;
+&lt;h1 id=&#34;a-bonus-docker-swarm-visualizer&#34;&gt;A Bonus&amp;hellip; Docker Swarm Visualizer&lt;/h1&gt;
+&lt;p&gt;Swarm Visualizer is a fancy tool which visualized the Swarm Cluster setup. It displays containers running on each node in the form of visuals. If you are conducting Docker workshop, it&amp;rsquo;s a perfect way to show your audience how the containers are placed under each node. Go..try it out..&lt;/p&gt;
+&lt;h2 id=&#34;clone-the-repository&#34;&gt;Clone the Repository&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-docker&#34; data-lang=&#34;docker&#34;&gt;git clone https://github.com/dockersamples/docker-swarm-visualizer&lt;span style=&#34;color:#a40000&#34;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-docker&#34; data-lang=&#34;docker&#34;&gt;&lt;span style=&#34;color:#204a87&#34;&gt;cd&lt;/span&gt; docker-swarm-visualizer&lt;span style=&#34;color:#a40000&#34;&gt;
+&lt;/span&gt;&lt;span style=&#34;color:#a40000&#34;&gt;&lt;/span&gt;docker-compose up -d&lt;span style=&#34;color:#a40000&#34;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/collabnix/dockerlabs/master/images/visualizer.png&#34; alt=&#34;My image&#34;&gt;&lt;/p&gt;
+&lt;p&gt;To run in a docker swarm:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-docker&#34; data-lang=&#34;docker&#34;&gt;$ docker service create &lt;span style=&#34;color:#4e9a06&#34;&gt;\
+&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&lt;/span&gt;  --name&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt;viz &lt;span style=&#34;color:#4e9a06&#34;&gt;\
+&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&lt;/span&gt;  --publish&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt;8080:8080/tcp &lt;span style=&#34;color:#4e9a06&#34;&gt;\
+&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&lt;/span&gt;  --constraint&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt;node.role&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;==&lt;/span&gt;manager &lt;span style=&#34;color:#4e9a06&#34;&gt;\
+&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&lt;/span&gt;  --mount&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;type&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt;bind,src&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt;/var/run/docker.sock,dst&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt;/var/run/docker.sock &lt;span style=&#34;color:#4e9a06&#34;&gt;\
+&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&lt;/span&gt;  dockersamples/visualizer&lt;span style=&#34;color:#a40000&#34;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h1 id=&#34;lab01---create-overlay-network-under-docker-swarm&#34;&gt;Lab01 - Create Overlay Network under Docker Swarm&lt;/h1&gt;
+&lt;p&gt;The overlay network is used to enable containers on different hosts to communicate. Under this lab exercise, we will see how to create Overlay network.&lt;/p&gt;
+&lt;h2 id=&#34;pre-requisite&#34;&gt;Pre-requisite:&lt;/h2&gt;
+&lt;h2 id=&#34;tested-infrastructure&#34;&gt;Tested Infrastructure&lt;/h2&gt;
+&lt;table class=&#34;tg&#34;&gt;
+  &lt;tr&gt;
+    &lt;th class=&#34;tg-yw4l&#34;&gt;&lt;b&gt;Platform&lt;/b&gt;&lt;/th&gt;
+    &lt;th class=&#34;tg-yw4l&#34;&gt;&lt;b&gt;Number of Instance&lt;/b&gt;&lt;/th&gt;
+    &lt;th class=&#34;tg-yw4l&#34;&gt;&lt;b&gt;Reading Time&lt;/b&gt;&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&#34;tg-yw4l&#34;&gt;&lt;b&gt; Play with Docker&lt;/b&gt;&lt;/td&gt;
+    &lt;td class=&#34;tg-yw4l&#34;&gt;&lt;b&gt;5&lt;/b&gt;&lt;/td&gt;
+    &lt;td class=&#34;tg-yw4l&#34;&gt;&lt;b&gt;5 min&lt;/b&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;pre-requisite-1&#34;&gt;Pre-requisite&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Create an account with &lt;a href=&#34;https://hub.docker.com&#34;&gt;DockerHub&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Open &lt;a href=&#34;https://labs.play-with-docker.com/&#34;&gt;PWD&lt;/a&gt; Platform on your browser&lt;/li&gt;
+&lt;li&gt;Create 5 Node Instances by clicking on &amp;ldquo;hammer&amp;rdquo; sign on the left side of the UI interface&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The following command will create a new overlay network called collabnet. All containers registered to this network can communicate with
+each other, regardless of which node they are deployed onto.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;docker network create -d overlay collabnet
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;displaying-the-overlay-network&#34;&gt;Displaying the overlay network&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;docker network ls
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;inspecting-the-overlay-network&#34;&gt;Inspecting the overlay network&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;docker network inspect collabnet
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;lab2---deploy-service&#34;&gt;Lab2 - Deploy Service&lt;/h1&gt;
+&lt;p&gt;By default, Docker uses a spread replication model for deciding which containers should run on which hosts.
+The spread approach ensures that containers are deployed across the cluster evenly. This means that if one of the nodes is removed from
+the cluster,  the instances would be already running on the other nodes. There workload on the removed node would be rescheduled across
+the remaining available nodes.&lt;/p&gt;
+&lt;p&gt;A new concept of Services is used to run containers across the cluster. This is a higher-level concept than containers.
+A service allows you to define how applications should be deployed at scale. By updating the service, Docker updates the container
+required in a managed way.&lt;/p&gt;
+&lt;h2 id=&#34;task&#34;&gt;Task&lt;/h2&gt;
+&lt;p&gt;In this case, we are deploying the Docker Image ajeetraina/hellowhale. We are defining a friendly name of a service called
+http and that it should be attached to the newly created collabnet network.&lt;/p&gt;
+&lt;p&gt;For ensuring replication and availability, we are running two instances, of replicas, of the container across our cluster.&lt;/p&gt;
+&lt;p&gt;Finally, we load balance these two containers together on port 80. Sending an HTTP request to any of the nodes in the cluster will process the request by one of the containers within the cluster.
+The node which accepted the request might not be the node where the container responds. Instead, Docker load-balances requests across all available containers.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;docker service create --name http --network collabnet --replicas 2 -p 80:80 ajeetraina/hellowhale
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;You can view the services running on the cluster using the CLI command docker service ls&lt;/p&gt;
+&lt;p&gt;As containers are started you will see them using the ps command. You should see one instance of the container on each host.&lt;/p&gt;
+&lt;p&gt;List containers on the first host -&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;docker ps
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;List containers on the second host -&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;docker ps
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;If we issue an HTTP request to the public port, it will be processed by the two containers&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt; curl your_machine_ip:80
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;lab03---inspecting-state&#34;&gt;Lab03 - Inspecting State&lt;/h1&gt;
+&lt;p&gt;The Service concept allows you to inspect the health and state of your cluster and the running applications.&lt;/p&gt;
+&lt;h2 id=&#34;task-1&#34;&gt;Task&lt;/h2&gt;
+&lt;p&gt;You can view the list of all the tasks associated with a service across the cluster.
+In this case, each task is a container,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;docker service ps http
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;You can view the details and configuration of a service via&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;docker service inspect --pretty http
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;On each node, you can ask what tasks it is currently running. Self refers to the manager node Leader:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;docker node ps self
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Using the ID of a node you can query individual hosts&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;docker node ps $(docker node ls -q | head -n1)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;In the next step, we will scale the service to run more instances of the container.&lt;/p&gt;
+&lt;h1 id=&#34;lab4---scale-service&#34;&gt;Lab4 - Scale Service&lt;/h1&gt;
+&lt;p&gt;A Service allows us to scale how many instances of a task is running across the cluster.
+As it understands how to launch containers and which containers are running, it can easily start, or remove, containers as required.
+At the moment the scaling is manual. However, the API could be hooked up to an external system such as a metrics dashboard.&lt;/p&gt;
+&lt;h1 id=&#34;task-2&#34;&gt;Task&lt;/h1&gt;
+&lt;p&gt;At present, we have two load-balanced containers running, which are processing our requests curl docker&lt;/p&gt;
+&lt;p&gt;The command below will scale our http service to be running across five containers.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;docker service scale http=5
+&lt;/code&gt;&lt;/pre&gt;&lt;pre&gt;&lt;code&gt; docker service scale http=5
+http scaled to 5
+overall progress: 5 out of 5 tasks
+1/5: running   [==================================================&amp;gt;]
+2/5: running   [==================================================&amp;gt;]
+3/5: running   [==================================================&amp;gt;]
+4/5: running   [==================================================&amp;gt;]
+5/5: running   [==================================================&amp;gt;]
+verify: Waiting 4 seconds to verify that tasks are stable...
+verify: Service converged
+[manager1] (local) root@192.168.0.4 ~
+$
+[manager1] (local) root@192.168.0.4 ~
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;On each host, you will see additional nodes being started docker ps&lt;/p&gt;
+&lt;p&gt;The load balancer will automatically be updated. Requests will now be processed across the new containers.
+Try issuing more commands via&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;curl your_machine_ip:80
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Try scaling the service down to see the result.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;docker service scale http=2
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;lab-5---deploy-the-application-components-as-docker-services&#34;&gt;Lab #5 - Deploy the application components as Docker services&lt;/h1&gt;
+&lt;p&gt;Our sleep application is becoming very popular on the internet (due to hitting Reddit and HN).
+People just love it. So, you are going to have to scale your application to meet peak demand.
+You will have to do this across multiple hosts for high availability too.
+We will use the concept of Services to scale our application easily and manage many containers as a single entity.&lt;/p&gt;
+&lt;p&gt;Services were a new concept in Docker 1.12. They work with swarms and are intended for long-running containers.&lt;/p&gt;
+&lt;p&gt;Let’s deploy sleep as a Service across our Docker Swarm.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ docker service create --name sleep-app ubuntu sleep infinity
+k70j90k9cp5n2bxsq72tjdmxs
+overall progress: 1 out of 1 tasks
+1/1: running
+verify: Service converged
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Verify that the service create has been received by the Swarm manager.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ docker service ls
+ID                  NAME                MODE                REPLICAS            IMAGE
+     PORTS
+k70j90k9cp5n        sleep-app           replicated          1/1                 ubuntu:latest
+
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;The state of the service may change a couple times until it is running. The image is being downloaded from Docker Store to the other engines in the Swarm. Once the image is downloaded the container goes into a running state on one of the three nodes.&lt;/p&gt;
+&lt;p&gt;At this point it may not seem that we have done anything very differently than just running a docker run. We have again deployed a single container on a single host. The difference here is that the container has been scheduled on a swarm cluster.&lt;/p&gt;
+&lt;p&gt;Well done. You have deployed the sleep-app to your new Swarm using Docker services.&lt;/p&gt;
+&lt;h1 id=&#34;scaling-the-application&#34;&gt;Scaling the Application&lt;/h1&gt;
+&lt;p&gt;Demand is crazy! Everybody loves your sleep app! It’s time to scale out.&lt;/p&gt;
+&lt;p&gt;One of the great things about services is that you can scale them up and down to meet demand. In this step you’ll scale the service up and then back down.&lt;/p&gt;
+&lt;p&gt;You will perform the following procedure from node1.&lt;/p&gt;
+&lt;p&gt;Scale the number of containers in the sleep-app service to 7 with the docker service update &amp;ndash;replicas 7 sleep-app command. Replicas is the term we use to describe identical containers providing the same service.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ docker service update --replicas 7 sleep-app
+sleep-app
+overall progress: 7 out of 7 tasks
+1/7: running
+2/7: running
+3/7: running
+4/7: running
+5/7: running
+6/7: running
+7/7: running
+verify: Service converged
+&lt;/code&gt;&lt;/pre&gt;&lt;pre&gt;&lt;code&gt;$ docker service ls
+ID                  NAME                MODE                REPLICAS            IMAGE     PORTS
+k70j90k9cp5n        sleep-app           replicated          7/7                 ubuntu:latest
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;The Swarm manager schedules so that there are 7 sleep-app containers in the cluster. These will be scheduled evenly across the Swarm members.&lt;/p&gt;
+&lt;p&gt;We are going to use the docker service ps sleep-app command. If you do this quick enough after using the &amp;ndash;replicas option you can see the containers come up in real time.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ docker service ps sleep-app
+ID                  NAME                IMAGE               NODE                DESIRED STATE     CURRENT STATE                ERROR               PORTS
+bv6ofc6x6moq        sleep-app.1         ubuntu:latest       manager1            Running     Running 6 minutes ago
+5gj1ql7sjt14        sleep-app.2         ubuntu:latest       manager2            Running     Running about a minute ago
+p01z0tchepwa        sleep-app.3         ubuntu:latest       worker2             Running     Running about a minute ago
+x3kwnjcwxnb0        sleep-app.4         ubuntu:latest       worker2             Running     Running about a minute ago
+c98vxyeefmru        sleep-app.5         ubuntu:latest       manager1            Running     Running about a minute ago
+kwmey288bkhp        sleep-app.6         ubuntu:latest       manager3            Running     Running about a minute ago
+vu78hp6bhauq        sleep-app.7         ubuntu:latest       worker1             Running     Running about a minute ago
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Notice that there are now 7 containers listed. It may take a few seconds for the new containers in the service to all show as RUNNING. The NODE column tells us on which node a container is running.&lt;/p&gt;
+&lt;p&gt;Scale the service back down to just four containers with the docker service update &amp;ndash;replicas 4 sleep-app command.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ docker service update --replicas 4 sleep-app
+sleep-app
+overall progress: 4 out of 4 tasks
+1/4: running
+2/4: running
+3/4: running
+4/4: running
+verify: Service converged
+&lt;/code&gt;&lt;/pre&gt;&lt;pre&gt;&lt;code&gt;[manager1] (local) root@192.168.0.9 ~/dockerlabs/intermediate/swarm
+$ docker service ps sleep-app
+ID                  NAME                IMAGE               NODE                DESIRED STATE     CURRENT STATE           ERROR               PORTS
+bv6ofc6x6moq        sleep-app.1         ubuntu:latest       manager1            Running     Running 7 minutes ago
+5gj1ql7sjt14        sleep-app.2         ubuntu:latest       manager2            Running     Running 2 minutes ago
+p01z0tchepwa        sleep-app.3         ubuntu:latest       worker2             Running     Running 2 minutes ago
+kwmey288bkhp        sleep-app.6         ubuntu:latest       manager3            Running     Running 2 minutes ago
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;You have successfully scaled a swarm service up and down.&lt;/p&gt;
+&lt;h1 id=&#34;lab6---drain-a-node-and-reschedule-the-containers&#34;&gt;Lab6 - Drain a node and reschedule the containers&lt;/h1&gt;
+&lt;p&gt;Your sleep-app has been doing amazing after hitting Reddit and HN. It’s now number 1 on the App Store! You have scaled up during the holidays and down during the slow season. Now you are doing maintenance on one of your servers so you will need to gracefully take a server out of the swarm without interrupting service to your customers.&lt;/p&gt;
+&lt;p&gt;Take a look at the status of your nodes again by running docker node ls on node1.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ docker node ls
+ID                            HOSTNAME            STATUS              AVAILABILITY        MANAGER STATUS      ENGINE VERSION
+swfk8vsyfe4z2zbtianz5gh2p *   manager1            Ready               Active              Leader              18.09.3
+sgyr3vxu1n99vyce9al67alwt     manager2            Ready               Active              Reachable           18.09.3
+ud3ghz1zlrmn3fbv9j930ldja     manager3            Ready               Active              Reachable           18.09.3
+v57fk367d1lw4e1ufis3jwa2h     worker1             Ready               Active               18.09.3
+uinkvr56fq7zb711ycbifhf4f     worker2             Ready               Active               18.09.3
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;You will be taking worker2 out of service for maintenance.&lt;/p&gt;
+&lt;p&gt;Let’s see the containers that you have running on worker2.&lt;/p&gt;
+&lt;p&gt;We are going to take the ID for worker2 and run docker node update &amp;ndash;availability drain worker2.
+We are using the worker2 host ID as input into our drain command. Replace yournodeid with the id of worker2.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ docker node update --availability drain worker2
+worker2
+&lt;/code&gt;&lt;/pre&gt;&lt;pre&gt;&lt;code&gt;$ docker node ls
+ID                            HOSTNAME            STATUS              AVAILABILITY        MANAGER STATUS      ENGINE VERSION
+swfk8vsyfe4z2zbtianz5gh2p *   manager1            Ready               Active              Leader              18.09.3
+sgyr3vxu1n99vyce9al67alwt     manager2            Ready               Active              Reachable           18.09.3
+ud3ghz1zlrmn3fbv9j930ldja     manager3            Ready               Active              Reachable           18.09.3
+v57fk367d1lw4e1ufis3jwa2h     worker1             Ready               Active               18.09.3
+uinkvr56fq7zb711ycbifhf4f     worker2             Ready               Drain
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Node worker2 is now in the Drain state.&lt;/p&gt;
+&lt;p&gt;Switch back to node2 and see what is running there by running docker ps.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ docker ps
+CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS     PORTS               NAMES
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;worker2 does not have any containers running on it.&lt;/p&gt;
+&lt;p&gt;Lastly, check the service again on node1 to make sure that the container were rescheduled.
+You should see all four containers running on the remaining two nodes.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ docker service ps sleep-app
+ID                  NAME                IMAGE               NODE                DESIRED STATE     CURRENT STATE            ERROR               PORTS
+bv6ofc6x6moq        sleep-app.1         ubuntu:latest       manager1            Running     Running 18 minutes ago
+5gj1ql7sjt14        sleep-app.2         ubuntu:latest       manager2            Running     Running 12 minutes ago
+5aqy7jv9ojmn        sleep-app.3         ubuntu:latest       worker1             Running     Running 3 minutes ago
+p01z0tchepwa         \_ sleep-app.3     ubuntu:latest       worker2             Shutdown     Shutdown 3 minutes ago
+kwmey288bkhp        sleep-app.6         ubuntu:latest       manager3            Running     Running 12 minutes ago
+&lt;/code&gt;&lt;/pre&gt;&lt;pre&gt;&lt;code&gt;[manager1] (local) root@192.168.0.9 ~/dockerlabs/intermediate/swarm
+$ docker node inspect --pretty worker2
+ID:                     uinkvr56fq7zb711ycbifhf4f
+Hostname:               worker2
+Joined at:              2019-03-08 15:12:03.102015148 +0000 utc
+Status:
+ State:                 Ready
+ Availability:          Drain
+ Address:               192.168.0.10
+Platform:
+ Operating System:      linux
+ Architecture:          x86_64
+Resources:
+ CPUs:                  8
+ Memory:                31.4GiB
+Plugins:
+ Log:           awslogs, fluentd, gcplogs, gelf, journald, json-file, local, logentries, splunk
+, syslog
+ Network:               bridge, host, ipvlan, macvlan, null, overlay
+ Volume:                local
+Engine Version:         18.09.3
+TLS Info:
+ TrustRoot:
+-----BEGIN CERTIFICATE-----
+MIIBajCCARCgAwIBAgIUcfR/4dysEv9qsbuPTFuIn00WbmowCgYIKoZIzj0EAwIw
+EzERMA8GA1UEAxMIc3dhcm0tY2EwHhcNMTkwMzA4MTUwNzAwWhcNMzkwMzAzMTUw
+NzAwWjATMREwDwYDVQQDEwhzd2FybS1jYTBZMBMGByqGSM49AgEGCCqGSM49AwEH
+A0IABPo7tm+Vxk+CIw9AJEGTlyW/JPotQuVqrbvi34fuK6Ak4cWYU6T1WSiJMHI0
+nEGS/1zFIWQzJY0WQbT8eMaqX4ijQjBAMA4GA1UdDwEB/wQEAwIBBjAPBgNVHRMB
+Af8EBTADAQH/MB0GA1UdDgQWBBQ6OEYmo8HUfpFnSxJDHWkjf/wWmTAKBggqhkjO
+PQQDAgNIADBFAiBy39e7JLpHBH0bONWU8rQZPmY2dtkfHjPOUQNLFBdlkAIhAIpD
+Lb6ZrhbEJDcIhlnozKRcPSJi7RWy4/16THIUJdpM
+-----END CERTIFICATE-----
+
+ Issuer Subject:        MBMxETAPBgNVBAMTCHN3YXJtLWNh
+ Issuer Public Key:     MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAE+ju2b5XGT4IjD0AkQZOXJb8k+i1C5Wqtu+Lfh+4roCThxZhTpPVZKIkwcjScQZL/XMUhZDMljRZBtPx4xqpfiA==
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Run docker node update &amp;ndash;availability active &lt;NODE-ID&gt; to return the drained node to an active state:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ docker node update --availability active worker2
+worker2
+[manager1] (local) root@192.168.0.9 ~/dockerlabs/intermediate/swarm
+$ docker node inspect --pretty worker2
+ID:                     uinkvr56fq7zb711ycbifhf4f
+Hostname:               worker2
+Joined at:              2019-03-08 15:12:03.102015148 +0000 utc
+Status:
+State:                 Ready
+Availability:          Active
+Address:               192.168.0.10
+Platform:
+Operating System:      linux
+Architecture:          x86_64
+Resources:
+CPUs:                  8
+Memory:                31.4GiB
+Plugins:
+Log:           awslogs, fluentd, gcplogs, gelf, journald, json-file, local, logentries, splunk, syslog
+Network:               bridge, host, ipvlan, macvlan, null, overlay
+Volume:                local
+Engine Version:         18.09.3
+TLS Info:
+TrustRoot:
+-----BEGIN CERTIFICATE-----
+MIIBajCCARCgAwIBAgIUcfR/4dysEv9qsbuPTFuIn00WbmowCgYIKoZIzj0EAwIw
+EzERMA8GA1UEAxMIc3dhcm0tY2EwHhcNMTkwMzA4MTUwNzAwWhcNMzkwMzAzMTUw
+NzAwWjATMREwDwYDVQQDEwhzd2FybS1jYTBZMBMGByqGSM49AgEGCCqGSM49AwEH
+A0IABPo7tm+Vxk+CIw9AJEGTlyW/JPotQuVqrbvi34fuK6Ak4cWYU6T1WSiJMHI0
+nEGS/1zFIWQzJY0WQbT8eMaqX4ijQjBAMA4GA1UdDwEB/wQEAwIBBjAPBgNVHRMB
+Af8EBTADAQH/MB0GA1UdDgQWBBQ6OEYmo8HUfpFnSxJDHWkjf/wWmTAKBggqhkjO
+PQQDAgNIADBFAiBy39e7JLpHBH0bONWU8rQZPmY2dtkfHjPOUQNLFBdlkAIhAIpD
+Lb6ZrhbEJDcIhlnozKRcPSJi7RWy4/16THIUJdpM
+-----END CERTIFICATE-----
+
+Issuer Subject:        MBMxETAPBgNVBAMTCHN3YXJtLWNh
+Issuer Public Key:     MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAE+ju2b5XGT4IjD0AkQZOXJb8k+i1C5Wqtu+Lfh+4roCThxZhTpPVZKIkwcjScQZL/XMUhZDMljRZBtPx4xqpfiA==
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;lab7---cleaning-up&#34;&gt;Lab7 - Cleaning Up&lt;/h1&gt;
+&lt;p&gt;Execute the docker service rm sleep-app command on manager1 to remove the service called sleep-app.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ docker service rm sleep-app
+sleep-app
+[manager1] (local) root@192.168.0.9 ~/dockerlabs/intermediate/swarm
+$ docker service ls
+ID                  NAME                MODE                REPLICAS            IMAGE     PORTS
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Execute the docker ps command on node1 to get a list of running containers.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;docker ps
+CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS               NAMES
+044bea1c2277        ubuntu              &amp;quot;sleep infinity&amp;quot;    17 minutes ago      17 minutes ag                           distracted_mayer
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;You can use the docker kill &lt;CONTAINER ID&gt; command on node1 to kill the sleep container we started at the beginning.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;docker kill yourcontainerid
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Finally, let’s remove node1, node2, and node3 from the Swarm. We can use the docker swarm leave &amp;ndash;force command to do that.&lt;/p&gt;
+&lt;p&gt;Lets run docker swarm leave &amp;ndash;force on all the nodes to leave swarm cluster.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;docker swarm leave --force
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Congratulations! You’ve completed this lab. You now know how to build a swarm, deploy applications as collections of services, and scale individual services up and down.&lt;/p&gt;
 
       </description>
     </item>
