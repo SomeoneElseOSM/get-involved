@@ -187,5 +187,136 @@
       </description>
     </item>
     
+    <item>
+      <title>Docs: Pre-requisite</title>
+      <link>/docs/communityleaders/eventhandbooks/dockerdesktop/prerequisite/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/communityleaders/eventhandbooks/dockerdesktop/prerequisite/</guid>
+      <description>
+        
+        
+        &lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#creating-your-dockerhub-account&#34;&gt;Creating Your DockerHub Account&lt;/a&gt; - 15 min&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;creating-a-dockerhub-account&#34;&gt;Creating a DockerHub Account&lt;/h2&gt;
+&lt;p&gt;Open &lt;a href=&#34;https://hub.docker.com&#34;&gt;https://hub.docker.com&lt;/a&gt; and click on &amp;ldquo;Sign Up&amp;rdquo; for DockerHub&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;dockerhub1.png&#34; alt=&#34;My image&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Enter your username as DockerID and provide your email address( I would suggest you to provide your Gmail ID)&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;dockerhub2.png&#34; alt=&#34;My image&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;example&#34;&gt;Example:&lt;/h3&gt;
+&lt;p&gt;I have added ajeetraina as my userID as shown below. Please note that we will require this userID at the later point of time during the workshop. Hence, do keep it handy.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;dockerhub3.png&#34; alt=&#34;My image&#34;&gt;&lt;/p&gt;
+&lt;p&gt;That&amp;rsquo;s it. Head over to your Email account to validate this account.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;dockerhub4.png&#34; alt=&#34;My image&#34;&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Installing Docker Desktop</title>
+      <link>/docs/communityleaders/eventhandbooks/dockerdesktop/installingdockerdesktop/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/communityleaders/eventhandbooks/dockerdesktop/installingdockerdesktop/</guid>
+      <description>
+        
+        
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Understanding Docker Dashboard</title>
+      <link>/docs/communityleaders/eventhandbooks/dockerdesktop/dockerdashboard/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/communityleaders/eventhandbooks/dockerdesktop/dockerdashboard/</guid>
+      <description>
+        
+        
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Exploring Docker Images and Containers</title>
+      <link>/docs/communityleaders/eventhandbooks/dockerdesktop/exploringdocker/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/communityleaders/eventhandbooks/dockerdesktop/exploringdocker/</guid>
+      <description>
+        
+        
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Docker Swarm under Docker Desktop</title>
+      <link>/docs/communityleaders/eventhandbooks/dockerdesktop/enableswarm/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/communityleaders/eventhandbooks/dockerdesktop/enableswarm/</guid>
+      <description>
+        
+        
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Enabling Kubernetes under Docker Desktop</title>
+      <link>/docs/communityleaders/eventhandbooks/dockerdesktop/runningk8s/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/communityleaders/eventhandbooks/dockerdesktop/runningk8s/</guid>
+      <description>
+        
+        
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Dev Environments under Docker Desktop</title>
+      <link>/docs/communityleaders/eventhandbooks/dockerdesktop/devenvironments/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/communityleaders/eventhandbooks/dockerdesktop/devenvironments/</guid>
+      <description>
+        
+        
+        &lt;p&gt;~&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Networking under Docker Desktop</title>
+      <link>/docs/communityleaders/eventhandbooks/dockerdesktop/networking/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/communityleaders/eventhandbooks/dockerdesktop/networking/</guid>
+      <description>
+        
+        
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Logs and troubleshooting under Docker Desktop</title>
+      <link>/docs/communityleaders/eventhandbooks/dockerdesktop/troubleshooting/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/communityleaders/eventhandbooks/dockerdesktop/troubleshooting/</guid>
+      <description>
+        
+        
+        
+      </description>
+    </item>
+    
   </channel>
 </rss>
