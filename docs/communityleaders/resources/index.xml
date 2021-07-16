@@ -173,7 +173,7 @@ The first step is to read and understand our &lt;a href=&#34;https://github.com/
 &lt;h2 id=&#34;preparation&#34;&gt;Preparation&lt;/h2&gt;
 &lt;p&gt;At first, make sure you answer the following questions:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Bootstrap or contribute:&lt;/strong&gt; Anyone can start a Docker Chapter as long as there is not an existing Docker user group in your city. Check out the &lt;a href=&#34;https://events.docker.com/chapters/&#34;&gt;Docker community page&lt;/a&gt; to make sure a group does not already exist in your city. If one does exist and you would like to help out please click the contact us button on the chapter page to email the local team.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Bootstrap or contribute:&lt;/strong&gt; Anyone can start a Docker Chapter as long as there is not an existing Docker user group in your city. Check out the &lt;a href=&#34;https://www.meetup.com/pro/docker&#34;&gt;Docker community page&lt;/a&gt; to make sure a group does not already exist in your city. If one does exist and you would like to help out please click the contact us button on the chapter page to email the local team.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Team up!&lt;/strong&gt;
 Try go get others involved. Spread the tasks across several shoulders, but make sure there is not just a single person responsible who manages all the important information and tasks. Life happens, it&amp;rsquo;s nice to know you have someone who can help out when you&amp;rsquo;re busy from time to time.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Check: Commitment&lt;/strong&gt;: Ask yourself: Are you willing to make a long term commitment to your community? Starting a chapter is a long term responsibility and goes far beyond your first event. Organizing events is very rewarding in several aspects but building and maintaining a community requires a commitment. We set a goal of 1 event per quarter. Can you commit to that?&lt;/li&gt;
@@ -183,7 +183,7 @@ Try go get others involved. Spread the tasks across several shoulders, but make 
 &lt;p&gt;Once the group is launched, we recommend scheduling the first meetup with enough lead time for successful promotion.&lt;/p&gt;
 &lt;p&gt;Next, make yourself familiar with the three most relevant tools:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://community.docker.com&#34;&gt;The Docker Community Directory&lt;/a&gt;: This is where you applied to the community leaders program, but it also acts as a Docker Community Directory and its built-in messaging system is the main method of communication from the Docker Team. Subscribing to the community leaders mailing list is imperative as all Docker and community information is sent to organizers this way.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://contribute.docker.com&#34;&gt;The Docker Community Directory&lt;/a&gt;: This is where you applied to the community leaders program, but it also acts as a Docker Community Directory and its built-in messaging system is the main method of communication from the Docker Team. Subscribing to the community leaders mailing list is imperative as all Docker and community information is sent to organizers this way.&lt;/li&gt;
 &lt;li&gt;Github.com: Resources, slide decks, sponsorship resources&lt;/li&gt;
 &lt;li&gt;Events.docker.com: Publish events and track attendees&lt;/li&gt;
 &lt;li&gt;Community Leader Private Slack Channel: Great place to interact with other community leaders, make sure you have access&lt;/li&gt;
