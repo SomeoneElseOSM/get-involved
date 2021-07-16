@@ -137,42 +137,22 @@ Look for potential speakers living in your city&lt;/p&gt;
     </item>
     
     <item>
-      <title>Docs: Bevy</title>
-      <link>/docs/communityleaders/resources/bevy/</link>
+      <title>Docs: Meetup</title>
+      <link>/docs/communityleaders/resources/meetup/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/communityleaders/resources/bevy/</guid>
+      <guid>/docs/communityleaders/resources/meetup/</guid>
       <description>
         
         
-        &lt;p&gt;We&amp;rsquo;ve chosen Bevy to provide innovative features for event organizers, including:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;2 way integration with Meetup.com (create your event in Bevy and it posts to your meetup page and RSVPs from your event on meetup sync with your Bevy events.docker.com page).&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Note: The RSVP limits you set in Bevy do not translate to meetup. The best way to handle this is to keep a watchful eye on both platforms or communicate that seats are first come first serve.&lt;/p&gt;
+        &lt;p&gt;We&amp;rsquo;ve chosen Meetup to provide innovative features for event organizers, including:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Ability to check in guests.&lt;/li&gt;
 &lt;li&gt;Mobile App&lt;/li&gt;
 &lt;li&gt;RSVP as Guest&lt;/li&gt;
-&lt;li&gt;Forms / Surveys&lt;/li&gt;
 &lt;li&gt;Automatic Emails (customizable)&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;For more information, please visit &lt;a href=&#34;https://events.docker.com&#34;&gt;https://events.docker.com&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&#34;faqs&#34;&gt;FAQs:&lt;/h3&gt;
-&lt;h4 id=&#34;1-what-is-the-maximum-number-of-users-that-can-join-event-if-it-is-hosted-over-bevy-virtual&#34;&gt;1. What is the maximum number of users that can join event if it is hosted over Bevy Virtual?&lt;/h4&gt;
-&lt;p&gt;Ans: The maximum number of attendees who can watch a live session is variable, averaging around 500&lt;/p&gt;
-&lt;p&gt;Further Reference: &lt;a href=&#34;https://help.bevylabs.com/article/554-max-limits&#34;&gt;https://help.bevylabs.com/article/554-max-limits&lt;/a&gt;&lt;/p&gt;
-&lt;h4 id=&#34;2-can-i-stream-bevy-virtual-directly-over-the-social-media-platform-like-youtube-and-twitter&#34;&gt;2. Can I stream Bevy Virtual directly over the social media platform like YouTube and Twitter?&lt;/h4&gt;
-&lt;p&gt;Ans: No, today it is not possible with Bevy Virtual. Bevy Labs have such capabilities with Bevy Virtual Conference which is a seperate product.
-Bevy Virtual and Bevy Conference are 2 separate products and are separately enabled on your Bevy Dashboard. Docker Community Leaders have just access to Bevy Virtual(and not for Bevy Conference)&lt;/p&gt;
-&lt;p&gt;With Bevy Conference, you can Livestream to FB, Twitch, YouTube, etc.(upto 4 services at the same time).&lt;/p&gt;
-&lt;p&gt;Further Reference: &lt;a href=&#34;https://help.bevylabs.com/article/503-bevyvirtual-vs-bevyvirtualconferencing&#34;&gt;https://help.bevylabs.com/article/503-bevyvirtual-vs-bevyvirtualconferencing&lt;/a&gt;&lt;/p&gt;
-&lt;h4 id=&#34;3-is-it-possible-to-stream-bevy-virtual-live-under-720p&#34;&gt;3. Is it possible to stream Bevy Virtual LIVE under 720p?&lt;/h4&gt;
-&lt;p&gt;Ans: Yes, it is possible to do Unlimited 720p HD Video Calls with Bevy Virtual.&lt;/p&gt;
-&lt;h4 id=&#34;4-does-bevy-virtual-support-screen-sharing-and-breakout-rooms&#34;&gt;4. Does Bevy Virtual support screen sharing and breakout Rooms?&lt;/h4&gt;
-&lt;p&gt;Ans: Yes, both of these features are supported in Bevy Virtual.&lt;/p&gt;
-&lt;h4 id=&#34;5-does-bevy-virtual-support-recording-the-session&#34;&gt;5. Does Bevy Virtual support recording the session?&lt;/h4&gt;
-&lt;p&gt;Ans: Ofcourse ! Once the event is completed, you can go to Wrap-Up section under the event and find the recordings.&lt;/p&gt;
+&lt;p&gt;For more information, please visit &lt;a href=&#34;https://help.meetup.com/&#34;&gt;https://help.meetup.com/&lt;/a&gt;&lt;/p&gt;
 
       </description>
     </item>
