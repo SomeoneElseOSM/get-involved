@@ -34,7 +34,7 @@
 &lt;tbody&gt;
 &lt;tr&gt;
 &lt;td align=&#34;left&#34;&gt;1&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;#getting-familiar-with-bevy-virtual&#34;&gt;Getting Familiar with Bevy Virtual&lt;/a&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;a href=&#34;#getting-familiar-with-bevy-virtual&#34;&gt;Getting Familiar with Meetup Platform&lt;/a&gt;&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;☑️&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
@@ -98,8 +98,28 @@
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;h2 id=&#34;getting-familiar-with-bevy-virtual&#34;&gt;Getting Familiar with Bevy Virtual&lt;/h2&gt;
-&lt;p&gt;Docker community leaders uses Bevy (&lt;a href=&#34;https://events.docker.com&#34;&gt;https://events.docker.com&lt;/a&gt;) tool to conduct virtual Meetup events. Bevy is the tool that provides the MOST features to your Community, including:&lt;/p&gt;
+&lt;h2 id=&#34;getting-familiar-with-meetup&#34;&gt;Getting Familiar with Meetup&lt;/h2&gt;
+&lt;p&gt;Docker community leaders uses Meetup (&lt;a href=&#34;https://meetup.com/pro/docker&#34;&gt;https://meetup.com/pro/docker&lt;/a&gt;) tool to conduct virtual Meetup events. We’ve chosen Meetup to provide innovative features for event organizers, including:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Ability to check in guests.&lt;/li&gt;
+&lt;li&gt;Mobile App&lt;/li&gt;
+&lt;li&gt;RSVP as Guest&lt;/li&gt;
+&lt;li&gt;Automatic Emails (customizable)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For more information, please visit &lt;a href=&#34;https://www.meetup.com/pro/docker&#34;&gt;https://www.meetup.com/pro/docker&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;events---analytics&#34;&gt;Events |  Analytics&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://help.meetup.com/hc/en-us/articles/360002881251-Creating-an-event&#34;&gt;Create a new event&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://help.meetup.com/hc/en-us/articles/360004373231-How-do-I-download-print-my-event-attendee-list-&#34;&gt;Download Attendees List&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://help.meetup.com/hc/en-us/articles/360002879371-How-do-I-email-my-members-&#34;&gt;How to email members?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://help.meetup.com/hc/en-us/articles/360003883411-Enable-a-waitlist-for-a-Meetup-event&#34;&gt;How to enable a waiting list for a Meetup event&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;planning-an-event-agenda&#34;&gt;Planning an Event Agenda&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Your event must be posted on your &lt;a href=&#34;https://meetup.com/&#34;&gt;city’s Chapter page&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Try to create event 1 month before the event&lt;/li&gt;
+&lt;li&gt;If you are having issues with your page, do not have a page or need admin permissions please contact William over Docker community Slack or send email to william.quiviger(AT)docker.com&lt;/li&gt;
+&lt;/ul&gt;
 
       </description>
     </item>
