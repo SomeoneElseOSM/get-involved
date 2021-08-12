@@ -383,5 +383,53 @@
       </description>
     </item>
     
+    <item>
+      <title>Docs: July 2021</title>
+      <link>/docs/events/meetings/july/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/events/meetings/july/</guid>
+      <description>
+        
+        
+        &lt;h3 id=&#34;meetup-events&#34;&gt;Meetup Events&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;S. No.&lt;/th&gt;
+&lt;th&gt;Name of Event&lt;/th&gt;
+&lt;th&gt;Chapter Name&lt;/th&gt;
+&lt;th&gt;Organizers&lt;/th&gt;
+&lt;th&gt;RSVPs&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://www.meetup.com/Docker-Nantes/events/279122434/&#34;&gt;Au secours, le DevOps part en vrille !&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Docker Nantes&lt;/td&gt;
+&lt;td&gt;Thomas Sicard, Frédéric Lemercier&lt;/td&gt;
+&lt;td&gt;17&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://www.meetup.com/Docker-Lyon/events/279016935/&#34;&gt;Juillet 2021: à la découverte de Dagger (virtual event)&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Docker Lyon&lt;/td&gt;
+&lt;td&gt;Rachid Zarouali&lt;/td&gt;
+&lt;td&gt;27&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://www.meetup.com/Docker-Jaipur/events/279675183/&#34;&gt;AWS UG OSTech 2021&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Docker Jaipur&lt;/td&gt;
+&lt;td&gt;Moby Dock&lt;/td&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+      </description>
+    </item>
+    
   </channel>
 </rss>
