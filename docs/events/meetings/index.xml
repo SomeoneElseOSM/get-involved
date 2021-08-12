@@ -314,5 +314,74 @@
       </description>
     </item>
     
+    <item>
+      <title>Docs: August 2021</title>
+      <link>/docs/events/meetings/august/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/events/meetings/august/</guid>
+      <description>
+        
+        
+        &lt;h3 id=&#34;meetup-events&#34;&gt;Meetup Events&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;S. No.&lt;/th&gt;
+&lt;th&gt;Name of Event&lt;/th&gt;
+&lt;th&gt;Chapter Name&lt;/th&gt;
+&lt;th&gt;Organizers&lt;/th&gt;
+&lt;th&gt;RSVPs&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://www.meetup.com/Docker-Myanmar/events/279882232/&#34;&gt;Money As A Cloud&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Docker Myanmar&lt;/td&gt;
+&lt;td&gt;Ko Ko Ye` | 156 | &lt;br&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://www.meetup.com/Docker-Manila/events/279902012/&#34;&gt;Docker Manila August 2021 Online Meetup&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Docker Manila&lt;/td&gt;
+&lt;td&gt;Zak Elep&lt;/td&gt;
+&lt;td&gt;26&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://www.meetup.com/Docker-Bangalore/events/279022938/&#34;&gt;DevOps India Conference 2021&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Docker Bangalore&lt;/td&gt;
+&lt;td&gt;Ajeet S Raina, Sangam Biradar&lt;/td&gt;
+&lt;td&gt;133&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;4&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://www.meetup.com/Docker-Sobral/events/279912009/&#34;&gt;Prática de pipelines de CI/CD&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Docker Sobral&lt;/td&gt;
+&lt;td&gt;Edson Celio&lt;/td&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;5&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://www.meetup.com/Docker-Dehradun/events/279967746/&#34;&gt;Docker for Beginners&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Docker Dehradun&lt;/td&gt;
+&lt;td&gt;Sarthak Jain&lt;/td&gt;
+&lt;td&gt;69&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;6&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://www.meetup.com/Melbourne-Docker-User-Group/events/280047109/&#34;&gt;All Things Observability &amp;amp; LitmusChaos 2.0: The Evolution of K8S Chaos Eng&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Docker Melbourne&lt;/td&gt;
+&lt;td&gt;Stephen J Wallace (wb)&lt;/td&gt;
+&lt;td&gt;5&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+      </description>
+    </item>
+    
   </channel>
 </rss>
