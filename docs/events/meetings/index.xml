@@ -378,6 +378,7 @@
 &lt;th&gt;S. No.&lt;/th&gt;
 &lt;th&gt;Name of Event&lt;/th&gt;
 &lt;th&gt;Chapter Name&lt;/th&gt;
+&lt;th&gt;Date&lt;/th&gt;
 &lt;th&gt;Organizers&lt;/th&gt;
 &lt;th&gt;RSVPs&lt;/th&gt;
 &lt;/tr&gt;
@@ -387,6 +388,7 @@
 &lt;td&gt;1&lt;/td&gt;
 &lt;td&gt;&lt;a href=&#34;https://www.meetup.com/Docker-Myanmar/events/279882232/&#34;&gt;Money As A Cloud&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Docker Myanmar&lt;/td&gt;
+&lt;td&gt;Aug 8&lt;/td&gt;
 &lt;td&gt;Ko Ko Ye&lt;/td&gt;
 &lt;td&gt;156&lt;/td&gt;
 &lt;/tr&gt;
@@ -394,6 +396,7 @@
 &lt;td&gt;2&lt;/td&gt;
 &lt;td&gt;&lt;a href=&#34;https://www.meetup.com/Docker-Manila/events/279902012/&#34;&gt;Docker Manila August 2021 Online Meetup&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Docker Manila&lt;/td&gt;
+&lt;td&gt;Aug 29&lt;/td&gt;
 &lt;td&gt;Zak Elep&lt;/td&gt;
 &lt;td&gt;26&lt;/td&gt;
 &lt;/tr&gt;
@@ -401,6 +404,7 @@
 &lt;td&gt;3&lt;/td&gt;
 &lt;td&gt;&lt;a href=&#34;https://www.meetup.com/Docker-Bangalore/events/279022938/&#34;&gt;DevOps India Conference 2021&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Docker Bangalore&lt;/td&gt;
+&lt;td&gt;Aug 28&lt;/td&gt;
 &lt;td&gt;Ajeet S Raina, Sangam Biradar&lt;/td&gt;
 &lt;td&gt;133&lt;/td&gt;
 &lt;/tr&gt;
@@ -408,6 +412,7 @@
 &lt;td&gt;4&lt;/td&gt;
 &lt;td&gt;&lt;a href=&#34;https://www.meetup.com/Docker-Sobral/events/279912009/&#34;&gt;Prática de pipelines de CI/CD&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Docker Sobral&lt;/td&gt;
+&lt;td&gt;Aug 27&lt;/td&gt;
 &lt;td&gt;Edson Celio&lt;/td&gt;
 &lt;td&gt;2&lt;/td&gt;
 &lt;/tr&gt;
@@ -415,6 +420,7 @@
 &lt;td&gt;5&lt;/td&gt;
 &lt;td&gt;&lt;a href=&#34;https://www.meetup.com/Docker-Dehradun/events/279967746/&#34;&gt;Docker for Beginners&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Docker Dehradun&lt;/td&gt;
+&lt;td&gt;Aug 25&lt;/td&gt;
 &lt;td&gt;Sarthak Jain&lt;/td&gt;
 &lt;td&gt;69&lt;/td&gt;
 &lt;/tr&gt;
@@ -422,6 +428,7 @@
 &lt;td&gt;6&lt;/td&gt;
 &lt;td&gt;&lt;a href=&#34;https://www.meetup.com/Melbourne-Docker-User-Group/events/280047109/&#34;&gt;All Things Observability &amp;amp; LitmusChaos 2.0: The Evolution of K8S Chaos Eng&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Docker Melbourne&lt;/td&gt;
+&lt;td&gt;Aug 20&lt;/td&gt;
 &lt;td&gt;Stephen J Wallace (wb)&lt;/td&gt;
 &lt;td&gt;5&lt;/td&gt;
 &lt;/tr&gt;
@@ -429,6 +436,7 @@
 &lt;td&gt;7&lt;/td&gt;
 &lt;td&gt;&lt;a href=&#34;https://www.meetup.com/docker-colombia/events/280008519/&#34;&gt;Introducción al maravilloso mundo de Docker&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Docker Colombia&lt;/td&gt;
+&lt;td&gt;Aug 17&lt;/td&gt;
 &lt;td&gt;Johan Giraldo&lt;/td&gt;
 &lt;td&gt;28&lt;/td&gt;
 &lt;/tr&gt;
@@ -436,6 +444,7 @@
 &lt;td&gt;8&lt;/td&gt;
 &lt;td&gt;&lt;a href=&#34;https://www.meetup.com/Docker-Mumbai/events/279841076/&#34;&gt;Getting Started with Docker, DevOps and Cloud-Native Technology&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Docker Mumbai&lt;/td&gt;
+&lt;td&gt;Aug 14&lt;/td&gt;
 &lt;td&gt;Ayush Pattnaik&lt;/td&gt;
 &lt;td&gt;43&lt;/td&gt;
 &lt;/tr&gt;
