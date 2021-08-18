@@ -462,5 +462,41 @@
       </description>
     </item>
     
+    <item>
+      <title>Docs: September 2021</title>
+      <link>/docs/events/meetings/september/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/events/meetings/september/</guid>
+      <description>
+        
+        
+        &lt;h3 id=&#34;meetup-events&#34;&gt;Meetup Events&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;S. No.&lt;/th&gt;
+&lt;th&gt;Name of Event&lt;/th&gt;
+&lt;th&gt;Chapter Name&lt;/th&gt;
+&lt;th&gt;Date&lt;/th&gt;
+&lt;th&gt;Organizers&lt;/th&gt;
+&lt;th&gt;RSVPs&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://www.meetup.com/Docker-Switzerland/events/280186771/&#34;&gt;Docker Images Optimization Workshop&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Docker Switzerland&lt;/td&gt;
+&lt;td&gt;Sep 27&lt;/td&gt;
+&lt;td&gt;Cristovao Cordeiro &amp;amp; Mohammad-Ali A&amp;rsquo;râbi&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+      </description>
+    </item>
+    
   </channel>
 </rss>
