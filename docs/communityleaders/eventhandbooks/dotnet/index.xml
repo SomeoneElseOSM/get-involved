@@ -347,7 +347,7 @@
 &lt;td&gt;11:30 AM to 11:45 AM&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;../dotnetwebapp/&#34;&gt;Dockerize your first Dotnet Application - Part 1 &lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;../dotnetwebapp/&#34;&gt;Dockerize .Net Web Application - Part 1 &lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;11:45 AM to 1:00 PM&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
@@ -355,11 +355,11 @@
 &lt;td&gt;1:00 PM to 2:00 PM&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;../dotnetwebapp/&#34;&gt;Dockerize your first Dotnet Application - Part 2 &lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;../dotnetwebapp/&#34;&gt;Dockerize .Net Web Application - Part 2 &lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;2:00 PM to 2:30 PM&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;a href=&#34;../compose/&#34;&gt;Dockerize Multi-Container Go Application Using Docker Compose&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;../compose/&#34;&gt;Dockerize Multi-Container .Net App Using Compose&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;2:30 PM to 3:00 PM&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
